@@ -1,0 +1,34 @@
+Title: Committers
+Sort-Index: 040
+
+
+%(title)s
+=========
+
+[J. Chris Anderson](http://jchris.mfdz.com), <jchris@apache.org>
+
+  Upgraded the Erlang JSON term format. Integrates community patches,
+  particularly related to the HTTP API and the MapReduce system. Give talks and
+  presentations about CouchDB, with an eye toward recruiting more developers.
+
+[Damien Katz](http://damienkatz.net/), <damien@apache.org>
+
+   Original developer and remains the project lead.
+
+[Jan Lehnardt](http://jan.prima.de/), <jan@apache.org>
+
+   Worked on the original UNIX port and now works on all ends in CouchDB.
+   He is a freelancing CouchDB consultant and gives presentations around the
+   world.
+
+[Christopher Lenz](http://www.cmlenz.net/), <cmlenz@apache.org>
+
+   Developed and maintains Futon, the Web administration console. He works on
+   the JavaScript view engine, SpiderMonkey and MochiWeb integration in
+   addition to an external Python client.
+
+[Noah Slater](http://bytesexual.org/nslater), <nslater@apache.org>
+
+   Developed and maintains the Autotools build system and application
+   infrastructure. He is CouchDB's release manager and maintains a number of
+   related packages for Debian GNU/Linux.

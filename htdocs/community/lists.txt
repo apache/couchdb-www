@@ -1,0 +1,68 @@
+Title: Mailing Lists
+Sort-Index: 010
+
+
+%(title)s
+=========
+
+The following mailing lists relate to the Apache CouchDB project. Users should
+consider subscribing to the Users mailing lists. The other lists are for people 
+interested in helping with the development of CouchDB itself.
+
+Formatted archives are available via the
+[Apache Mail Archives](http://mail-archives.apache.org/mod_mbox/) and also
+via [MarkMail](http://couchdb.markmail.org/).
+
+
+User Support and Discussion (`couchdb-user`)
+--------------------------------------------
+
+This is a general discussion and support list for CouchDB users. It is the
+primary source of free CouchDB support. It is also a place for general
+discussion of topics related to CouchDB.
+
+ * To **subscribe**, send an email to
+   <couchdb-user-subscribe@incubator.apache.org>.
+ * To **unsubscribe** send empty email to
+   <couchdb-user-unsubscribe@incubator.apache.org>
+ * Finally, to post a message to the list use the address
+   <couchdb-user@incubator.apache.org>
+
+The archives for this list can also be [browsed online][user-mbox].
+
+ [user-mbox]: http://mail-archives.apache.org/mod_mbox/incubator-couchdb-user/
+
+
+Development Discussion (`couchdb-dev`)
+--------------------------------------
+
+This is the list where the design and implementation of CouchDB is discussed.
+This includes current and future features, release schedules, and simply
+developer discussion of various CouchDB-related topics. All CouchDB committers
+should be subscribed to this list. Others are welcomed to subscribe and
+participate if they are interested following development.
+
+ * To **subscribe**, send an email to
+   <couchdb-dev-subscribe@incubator.apache.org>.
+ * To **unsubscribe** send empty email to
+   <couchdb-dev-unsubscribe@incubator.apache.org>
+ * Finally, to post a message to the list use the address
+   <couchdb-dev@incubator.apache.org>
+
+The archives for this list can also be [browsed online][dev-mbox].
+
+ [dev-mbox]: http://mail-archives.apache.org/mod_mbox/incubator-couchdb-dev/
+
+Source Change Reports (`couchdb-commits`)
+-----------------------------------------
+
+This is a read-only list that receives all of the SVN commit messages for
+CouchDB. All CouchDB committers should be subscribed to this list to be able
+to see and review changes made by others.
+
+ * To **subscribe**, send an email to
+   <couchdb-commits-subscribe@incubator.apache.org>.
+ * To **unsubscribe** send empty email to
+   <couchdb-commits-unsubscribe@incubator.apache.org>
+
+Replies to commit mails should be directed to the `couchdb-dev` mailing list.

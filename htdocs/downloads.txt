@@ -1,0 +1,64 @@
+Title: Downloads
+Sort-Index: 020
+
+
+%(title)s
+=========
+
+The following releases of Apache CouchDB are available for download.
+
+Current Releases
+----------------
+
+### 0.8.1-incubating
+
+#### Files
+
+ * [apache-couchdb-0.8.1-incubating.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz)
+   [[OpenPGP](http://www.apache.org/dist/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz.asc)]
+   [[MD5](http://www.apache.org/dist/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz.md5)]
+   [[SHA](http://www.apache.org/dist/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz.sha)]
+
+#### Changes
+
+ * Various bug fixes for replication, compaction, the HTTP interface and the
+   Javascript View Server.
+
+### 0.8.0-incubating
+
+#### Files
+
+ * [apache-couchdb-0.8.0-incubating.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz)
+   [[OpenPGP](http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.asc)]
+   [[MD5](http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.md5)]
+   [[SHA](http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.sha)]
+
+#### Changes
+
+ * Changed core licensing to the Apache Software License 2.0.
+ * Refactoring of the core view and storage engines.
+ * Added support for incremental map/reduce views.
+ * Changed database file format.
+ * Many improvements to Futon, the web administration interface.
+ * Miscellaneous improvements to system integration and portability.
+ * Swapped out Erlang's inets HTTP server for the Mochiweb HTTP server.
+ * SpiderMonkey is no longer included with CouchDB, but rather treated as an
+   external dependency.
+ * Added bits of awesome.
+
+Verifying Releases
+------------------
+
+When downloading from a mirror please check the
+[MD5](http://www.apache.org/dev/release-signing#md5) and
+[SHA](http://www.apache.org/dev/release-signing#sha-checksum) checksums as well as
+verifying the [OpenPGP](http://www.apache.org/dev/release-signing#openpgp)
+compatible signature available from the main
+[Apache](http://www.apache.org/) site. The
+[KEYS](http://www.apache.org/dist/incubator/couchdb/KEYS) file contains
+the public keys used for signing release. It is recommended that a
+[web of trust](http://www.apache.org/dev/release-signing#web-of-trust) is used
+to confirm the identity of these keys.
+
+For more information see the
+[Apache Release FAQ](http://www.apache.org/dev/release.html).

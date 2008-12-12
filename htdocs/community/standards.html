@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<!--
+Copyright 2008 The Apache Software Foundation
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Apache CouchDB: Coding Standards</title>
+    <meta name="description" content="Apache,CouchDB is a distributed, fault-tolerant and schema-free
+ document-oriented database accessible via a RESTful HTTP/JSON API.">
+    <meta name="keywords" content="CouchDB,database,document,REST,HTTP,JSON,Javascript">
+    <link rel="icon" type="img/x-icon" href="../favicon.ico">
+    <link rel="shortcut icon" type="img/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../style/layout.css">
+    <link rel="stylesheet" type="text/css" href="../style/print.css" media="print">
+  </head>
+  <body>
+    <div id="header"><div class="wrap">
+      <a class="couchdb" href="../index.html">
+        <object data="../img/couchdb-logo.svg" width="400" height="110" type="image/svg+xml">
+          <img src="../img/couchdb-logo.png" width="400" height="110" alt="CouchDB - Relax">
+        </object>
+      </a>
+      <h1>Apache CouchDB. Relax.</h1>
+    </div></div>
+    <div id="breadcrumbs"><ul>
+<li><a href="../index.html">Home</a></li>
+<li>»</li>
+<li><a href="index.html">Get Involved</a></li>
+<li>»</li>
+<li class="active"><a href="standards.html">Coding Standards</a></li>
+</ul>
+</div>
+    <div id="main"><div class="wrap">
+      <div id="nav"><ul>
+<li><a class="" href="../index.html"><span>Home</span></a></li>
+<li><a class="external" href="http://www.google.com/coop/cse?cx=006426053638666134111:bfy4xffxeqc"><span>Search</span></a></li>
+<li><a class="" href="../downloads.html"><span>Downloads</span></a></li>
+<li><a class="" href="../screenshots.html"><span>Screenshots</span></a></li>
+<li><a class="external" href="http://www.apache.org/licenses/LICENSE-2.0.html"><span>License</span></a></li>
+<li><a class="" href="../roadmap.html"><span>Road Map</span></a></li>
+<li><a class="" href="../docs/index.html"><span>Documentation</span></a><ul>
+<li><a class="" href="../docs/intro.html"><span>Introduction</span></a></li>
+<li><a class="" href="../docs/overview.html"><span>Overview</span></a></li>
+<li><a class="external" href="http://wiki.apache.org/couchdb/"><span>Wiki</span></a></li>
+<li><a class="external" href="http://books.couchdb.org/"><span>Books</span></a></li>
+</ul>
+</li>
+<li><a class="" href="index.html"><span>Get Involved</span></a><ul>
+<li><a class="" href="lists.html"><span>Mailing Lists</span></a></li>
+<li><a class="" href="issues.html"><span>Issue Tracking</span></a></li>
+<li><a class="" href="code.html"><span>Source Code</span></a></li>
+<li><a class="" href="committers.html"><span>Committers</span></a></li>
+<li><a class="active" href="standards.html"><span>Coding Standards</span></a></li>
+<li><a class="external" href="http://planet.couchdb.com/"><span>Planet</span></a></li>
+</ul>
+</li>
+</ul>
+</div>
+      <div id="content"><h1>Coding Standards</h1>
+
+<p>CouchDB comes with code in a variety of different languages. While the core is
+written in Erlang, there are some parts written in C, others written in HTML,
+CSS, and Javascript, and then there are also shell scripts, Makefiles, et
+cetera.</p>
+
+<p>First, some general rules:</p>
+
+<ul>
+<li>Always use spaces for indentation, not tabs, except in Makefiles.</li>
+<li>Use four spaces for indentation in Erlang and C code, two spaces in HTML,
+CSS, and Javascript.</li>
+<li>Try to keep lines shorter than 80 characters.</li>
+<li>When you edit a file, try to stick with the conventions used in the
+surrounding code.</li>
+<li>Avoid mixing purely cosmetic changes (such as removing trailing white-space)
+with functional changes, as that makes review of the actual change (whether
+it&#8217;s a check-in or a patch) much more difficult.</li>
+</ul>
+
+<p>For more detailed coding conventions for Erlang code, please see the <a href="http://www.erlang.se/doc/programming_rules.shtml">Erlang
+Programming Rules and Conventions</a>.</p>
+<div id="clear"></div></div>
+    </div></div>
+    <div id="footer">
+      <p class="copyright">Copyright © 2008, The Apache Software Foundation</p>
+    </div>
+  </body>
+</html>

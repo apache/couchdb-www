@@ -1,0 +1,60 @@
+@import url(basic.css);
+
+html, body { background: #84856A url(tile.gif); min-width: 800px; }
+
+#header { background: #3E3E2E; border-bottom: 1px solid #333; }
+#header .wrap { max-width: 74em; }
+#header a { display: block; }
+#header a object { display: block; }
+#header a.couchdb { position: relative; margin-bottom: -1px; z-index: 99; }
+#header a.incubator { float: right; margin: 44px 0 0 0; }
+#header h1 { display: none; }
+
+#breadcrumbs { background: #E4E4E4;  border-top: 1px solid #fff;
+  border-bottom: 1px solid #999; color: #666; padding-left: 14em;
+}
+#breadcrumbs ul { font-size: 90%; list-style: none; margin: 0;
+  padding: .3em 1em;
+}
+#breadcrumbs li { display: inline; padding: 0 .5em; }
+#breadcrumbs a { color: #666; text-decoration: none; }
+#breadcrumbs a:hover { text-decoration: underline; }
+#breadcrumbs li.active a { color: #999; text-decoration: none; }
+
+#main { border-top: 1px solid #666; }
+#main .wrap { background: #FFF; margin-left: 14em; margin-right: 2em; 
+  max-width: 60em;
+}
+#clear { clear: both; }
+
+#nav { background: #84856A; border: 1px solid #6F7050; float: left;
+  line-height: 1.2em; margin: 1.3em 0 0 -13em; width: 12em;
+}
+*html #nav { margin-left: -6.5em; position: relative; }
+#nav ul { list-style: none; margin: 0 -1em 0; padding: 0; }
+#nav li { margin: .5em 0; }
+#nav a { color: #fff; display: block; padding: 2px 1em 2px 24px;
+  text-decoration: none;
+}
+#nav a:hover { background: #6F7050; }
+#nav a.external span { background: url(extlink.gif) 100% 50% no-repeat;
+  padding-right: 24px;
+}
+#nav a.active { background: url(navbg.png) 100% 0 repeat-y;
+  border-top: 1px solid #DDD; border-bottom: 1px solid #6F7050; color:#000;
+  margin-right: -1px; padding-top: 1px; padding-bottom: 1px;
+}
+* html #nav a.active { position: relative; }
+#nav ul ul { margin: 0; }
+#nav ul ul li { font-size: 95%; margin: 0; }
+#nav ul ul a { color: #E9E9E9; padding-left: 44px; }
+
+#content { border: 1px solid #DDD; border-color: #DDD #666;
+  padding: 0 1.5em 2em; margin: -1px 0 0; min-height: 28em;
+}
+#content h1:first-child { border-bottom: 1px solid #84856A; margin-top: .5em; }
+
+#footer { border-top: 1px solid #666; margin: 0 2em 0 14em; max-width: 60em; }
+#footer p { color: #ddd; font-size: 80%; margin: 0; padding: .5em;
+  text-align: right;
+}

@@ -1,0 +1,29 @@
+Title: Road Map
+Sort-Index: 035
+
+
+%(title)s
+=========
+
+Features for Next Release
+-------------------------
+
+ * Incremental reduce support, for full map/reduce support
+ * Document validation model (validate live and replicated changes)
+ * Live database compaction
+ * Documentation, documentation, documentation
+ * Fulltext search
+
+Priority Feature Work
+---------------------
+
+ * Extensible security model
+ * LDAP authentication
+ * More query capabilities exposed to HTTP, e.g. multi-key view lookups
+
+Future Feature Work
+-------------------
+
+ * Server storage partioning
+ * Server failover clustering
+ 

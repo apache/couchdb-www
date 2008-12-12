@@ -1,0 +1,60 @@
+Title: The CouchDB Project
+Breadcrumb-Title: Home
+Navigation-Title: Home
+Sort-Index: 010
+
+
+%(title)s
+=========
+
+<img src="img/sketch.png" width="292" height="340" alt="CouchDB Server Components"
+     style="float: right; margin-left: 2em">
+
+Apache CouchDB is a distributed, fault-tolerant and schema-free
+document-oriented database accessible via a RESTful HTTP/JSON API. Among other
+features, it provides robust, incremental replication with bi-directional
+conflict detection and resolution, and is queryable and indexable using a
+table-oriented view engine with JavaScript acting as the default view
+definition language.
+
+CouchDB is written in [Erlang][], but can be easily accessed from any
+environment that provides means to make HTTP requests. There are a multitude of
+third-party client libraries that make this even easier for a variety of
+programming languages and environments.
+
+See the [introduction][introduction] and the
+[technical overview][] for more information.
+
+  [erlang]: http://erlang.org/
+  [introduction]: docs/intro.html
+  [technical overview]: docs/overview.html
+
+<div class="disclaimer">
+  <h3>Disclaimer</h3>
+  <p><em>Apache CouchDB</em> is an effort undergoing incubation at The Apache
+  Software Foundation (ASF), sponsored by the Apache Incubator PMC. Incubation
+  is  required of all newly accepted projects until a further review indicates
+  that the infrastructure, communications, and decision making process have
+  stabilized in a manner consistent with other successful ASF projects. While
+  incubation status is not necessarily a reflection of the completeness or
+  stability of the code, it does indicate that the project has yet to be fully
+  endorsed by the ASF.</p>
+</div>
+<br style="clear: both" />
+
+How to Get Started
+------------------
+
+Read the [introduction](docs/intro.html) and the
+[technical overview](docs/overview.html) to learn more about the design and
+basic concepts of CouchDB. To give it a try, download the CouchDB code from
+the [Subversion repository](community/code.html) and follow the included build
+instructions.
+
+How to Get Involved
+-------------------
+
+Join the [mailing lists](community/lists.html) and participate in the
+discussions around the development of CouchDB. If you encounter a problem and
+have an idea how to fix it, please start by making a patch and filing
+it with our [issue tracking system](community/issues.html).

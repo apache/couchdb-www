@@ -1,0 +1,15 @@
+Title: Issue Tracking
+Sort-Index: 020
+
+
+%(title)s
+=========
+
+Bug reports, enhancement requests and tasks generally go in the [JIRA
+issue tracker](https://issues.apache.org/jira/browse/COUCHDB).
+
+Please make sure to search for existing issues before submitting a new one.
+Also, if you're not sure whether the problem you're seeing is actually due to
+a bug in CouchDB, or whether your idea for enhancement fits with the overall
+vision of the project, try stirring up a discussion on the
+[mailing lists](lists.html) first.
