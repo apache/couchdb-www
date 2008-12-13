@@ -6,17 +6,17 @@ Sort-Index: 030
 =========
 
 The CouchDB source code can be found in the
-[Subversion repository](https://svn.apache.org/repos/asf/incubator/couchdb)
+[Subversion repository](https://svn.apache.org/repos/asf/couchdb)
 which can also be
-[browsed online](http://svn.apache.org/viewvc/incubator/couchdb/).
+[browsed online](http://svn.apache.org/viewvc/couchdb/).
 
 You can check out the code using the `svn` command:
 
-    svn co http://svn.apache.org/repos/asf/incubator/couchdb/trunk couchdb
+    svn co http://svn.apache.org/repos/asf/couchdb/trunk couchdb
 
-Committers should use the secure repositor:
+Committers should use the secure repository:
 
-    svn co https://svn.apache.org/repos/asf/incubator/couchdb/trunk couchdb
+    svn co https://svn.apache.org/repos/asf/couchdb/trunk couchdb
 
 If you live near Europe you may experience a faster connection with `svn.eu.apache.org`.
 
