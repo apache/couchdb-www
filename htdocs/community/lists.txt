@@ -22,7 +22,7 @@ primary source of free CouchDB support. It is also a place for general
 discussion of topics related to CouchDB.
 
  * To **subscribe**, send an email to
-   <user-subscribe@apache.org>.
+   <user-subscribe@couchdb.apache.org>.
  * To **unsubscribe** send empty email to
    <user-unsubscribe@couchdb.apache.org>
  * Finally, to post a message to the list use the address
