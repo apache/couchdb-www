@@ -30,7 +30,10 @@ discussion of topics related to CouchDB.
 
 The archives for this list can also be [browsed online][user-mbox].
 
+The pre-incubation archives can [are available][old-user-mbox], too.
+
  [user-mbox]: http://mail-archives.apache.org/mod_mbox/couchdb-user/
+ [old-user-mbox]: http://mail-archives.apache.org/mod_mbox/incubator-couchdb-user/
 
 
 Development Discussion (`dev`)
@@ -51,7 +54,10 @@ participate if they are interested following development.
 
 The archives for this list can also be [browsed online][dev-mbox].
 
+The pre-incubation archives can [are available][old-dev-mbox], too.
+
  [dev-mbox]: http://mail-archives.apache.org/mod_mbox/couchdb-dev/
+ [old-dev-mbox]: http://mail-archives.apache.org/mod_mbox/incubator-couchdb-dev/
 
 Source Change Reports (`commits`)
 -----------------------------------------
