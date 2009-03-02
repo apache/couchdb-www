@@ -32,3 +32,10 @@ Sort-Index: 040
   Upgraded the Erlang JSON term format. Integrates community patches,
   particularly related to the HTTP API and the MapReduce system. Give talks and
   presentations about CouchDB, with an eye toward recruiting more developers.
+
+[Paul J. Davis](http://www.davispj.com/), <davisp@apache.org>
+
+  Developed features for the HTTP API as well as helped with recent upgrades
+  to the MapReduce system. Spends time tracking down various bugs reported in
+  JIRA.
+
