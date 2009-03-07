@@ -30,7 +30,7 @@ Sort-Index: 040
 [J. Chris Anderson](http://jchris.mfdz.com), <jchris@apache.org>
 
   Upgraded the Erlang JSON term format. Integrates community patches,
-  particularly related to the HTTP API and the MapReduce system. Give talks and
+  particularly related to the HTTP API and the MapReduce system. Gives talks and
   presentations about CouchDB, with an eye toward recruiting more developers.
 
 [Paul J. Davis](http://www.davispj.com/), <davisp@apache.org>
@@ -38,4 +38,9 @@ Sort-Index: 040
   Developed features for the HTTP API as well as helped with recent upgrades
   to the MapReduce system. Spends time tracking down various bugs reported in
   JIRA.
+
+Adam Kocoloski, <kocolosk@apache.org>
+
+  Maintains and extends the replicator. Hacks on various other parts of the 
+  core database.
 
