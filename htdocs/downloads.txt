@@ -10,6 +10,30 @@ The following releases of Apache CouchDB are available for download.
 Current Releases
 ----------------
 
+### 0.9.0
+
+#### Files
+
+ * [apache-couchdb-0.9.0.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz)
+   [[OpenPGP](http://www.apache.org/dist/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz.asc)]
+   [[MD5](http://www.apache.org/dist/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz.md5)]
+   [[SHA](http://www.apache.org/dist/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz.sha)]
+
+#### Changes
+
+ * Modular configuration.
+ * Performance enhancements for document and view access.
+ * More resilient replication process.
+ * Replication streams binary attachments.
+ * Administrator role and basic authentication.
+ * Document validation functions in design documents.
+ * Show and list functions for rendering documents and views as developer
+   controlled content-types.
+ * External process server module.
+ * Attachment uploading from Futon.
+ * Etags for views, lists, shows, document and attachment requests.
+ * Miscellaneous improvements to build, system integration, and portability.
+
 ### 0.8.1-incubating
 
 #### Files
@@ -55,7 +79,7 @@ When downloading from a mirror please check the
 verifying the [OpenPGP](http://www.apache.org/dev/release-signing#openpgp)
 compatible signature available from the main
 [Apache](http://www.apache.org/) site. The
-[KEYS](http://www.apache.org/dist/incubator/couchdb/KEYS) file contains
+[KEYS](http://www.apache.org/dist/couchdb/KEYS) file contains
 the public keys used for signing release. It is recommended that a
 [web of trust](http://www.apache.org/dev/release-signing#web-of-trust) is used
 to confirm the identity of these keys.
