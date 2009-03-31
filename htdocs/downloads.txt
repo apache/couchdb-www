@@ -21,6 +21,8 @@ Current Releases
 
 #### Changes
 
+This release contains [backwards incompatible changes](http://wiki.apache.org/couchdb/Breaking_changes).
+
  * Modular configuration.
  * Performance enhancements for document and view access.
  * More resilient replication process.
@@ -58,6 +60,8 @@ Current Releases
    [[SHA](http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.sha)]
 
 #### Changes
+
+This release contains [backwards incompatible changes](http://wiki.apache.org/couchdb/Breaking_changes).
 
  * Changed core licensing to the Apache Software License 2.0.
  * Refactoring of the core view and storage engines.
