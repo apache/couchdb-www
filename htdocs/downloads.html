@@ -153,17 +153,28 @@ external dependency.</li>
 
 <p>When downloading from a mirror please check the
 <a href="http://www.apache.org/dev/release-signing#md5">MD5</a> and
-<a href="http://www.apache.org/dev/release-signing#sha-checksum">SHA</a> checksums as well as
-verifying the <a href="http://www.apache.org/dev/release-signing#openpgp">OpenPGP</a>
-compatible signature available from the main
-<a href="http://www.apache.org/">Apache</a> site. The
-<a href="http://www.apache.org/dist/couchdb/KEYS">KEYS</a> file contains
-the public keys used for signing release. It is recommended that a
-<a href="http://www.apache.org/dev/release-signing#web-of-trust">web of trust</a> is used
-to confirm the identity of these keys.</p>
+<a href="http://www.apache.org/dev/release-signing#sha-checksum">SHA</a> checksums as well
+as verifying the <a href="http://www.apache.org/dev/release-signing#openpgp">OpenPGP</a>
+compatible signature available from the main Apache site. The
+<a href="http://www.apache.org/dist/couchdb/KEYS">KEYS</a> file contains the public keys
+used for signing release. It is recommended that a <a href="http://www.apache.org/dev/release-signing#web-of-trust">web of
+trust</a> is used to
+confirm the identity of these keys.</p>
 
-<p>For more information see the
-<a href="http://www.apache.org/dev/release.html">Apache Release FAQ</a>.</p>
+<p>You can check the OpenPGP signature with:</p>
+
+<pre><code>gpg --verify apache-couchdb-*.tar.gz.asc
+</code></pre>
+
+<p>You can check the MD5 checksum with:</p>
+
+<pre><code>md5sum --check apache-couchdb-*.tar.gz.md5
+</code></pre>
+
+<p>You can check the SHA checksum with:</p>
+
+<pre><code>sha1sum --check apache-couchdb-*.tar.gz.sha
+</code></pre>
 <div id="clear"></div></div>
     </div></div>
     <div id="footer">
