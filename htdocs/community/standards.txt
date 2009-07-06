@@ -18,6 +18,8 @@ First, some general rules:
  * Try to keep lines shorter than 80 characters.
  * When you edit a file, try to stick with the conventions used in the
    surrounding code.
+ * Avoid trailing spaces and newlines in your files. Good editors
+   usually have a configuration option that prevents this from happening.
  * Avoid mixing purely cosmetic changes (such as removing trailing white-space)
    with functional changes, as that makes review of the actual change (whether
    it's a check-in or a patch) much more difficult.
