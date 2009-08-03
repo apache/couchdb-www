@@ -10,20 +10,22 @@ Sort-Index: 010
 <img src="img/sketch.png" width="292" height="340" alt="CouchDB Server Components"
      style="float: right; margin-left: 2em">
 
-Apache CouchDB is a distributed, fault-tolerant and schema-free
-document-oriented database accessible via a RESTful HTTP/JSON API. Among other
-features, it provides robust, incremental replication with bi-directional
-conflict detection and resolution, and is queryable and indexable using a
-table-oriented view engine with JavaScript acting as the default view
-definition language.
+Apache CouchDB is a document-oriented database that can be queried and indexed
+in a MapReduce fashion using JavaScript. CouchDB also offers with incremental
+replication with bi-directional conflict detection and resolution.
 
-CouchDB is written in [Erlang][], but can be easily accessed from any
-environment that provides means to make HTTP requests. There are a multitude of
-third-party client libraries that make this even easier for a variety of
-programming languages and environments.
+CouchDB provides a RESTful JSON API than can be accessed from any environment
+that allows HTTP requests. There are myriad third-party client libraries that
+make this even easier from your programming language of choice. CouchDB's built
+in Web administration console speaks directly to the database using HTTP
+requests issued from your browser.
 
-See the [introduction][introduction] and the
-[technical overview][] for more information.
+CouchDB is written in [Erlang][], a robust functional programming language ideal
+for building concurrent distributed systems. Erlang allows for a flexible design
+that is easily scalable and readily extensible.
+
+See the [introduction][introduction] and the [technical overview][] for more
+information.
 
   [erlang]: http://erlang.org/
   [introduction]: docs/intro.html
@@ -32,16 +34,15 @@ See the [introduction][introduction] and the
 How to Get Started
 ------------------
 
-Read the [introduction](docs/intro.html) and the
-[technical overview](docs/overview.html) to learn more about the design and
-basic concepts of CouchDB. To give it a try, download the CouchDB code from
-the [Subversion repository](community/code.html) and follow the included build
-instructions.
+Read the [introduction](docs/intro.html) and the [technical
+overview](docs/overview.html) to learn more about the design and basic concepts
+of CouchDB. To give it a try, download the CouchDB code from the [Subversion
+repository](community/code.html) and follow the included build instructions.
 
 How to Get Involved
 -------------------
 
 Join the [mailing lists](community/lists.html) and participate in the
 discussions around the development of CouchDB. If you encounter a problem and
-have an idea how to fix it, please start by making a patch and filing
-it with our [issue tracking system](community/issues.html).
+have an idea how to fix it, please start by making a patch and filing it with
+our [issue tracking system](community/issues.html).
