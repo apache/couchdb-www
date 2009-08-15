@@ -15,7 +15,7 @@ Sort-Index: 040
    He is a freelancing CouchDB consultant and gives presentations around the
    world.
 
-[Noah Slater](http://bytesexual.org/nslater), <nslater@apache.org>
+[Noah Slater](http://tumbolia.org/nslater), <nslater@apache.org>
 
    Developed and maintains the Autotools build system and application
    infrastructure. He is CouchDB's release manager and maintains a number of
@@ -41,6 +41,6 @@ Sort-Index: 040
 
 Adam Kocoloski, <kocolosk@apache.org>
 
-  Maintains and extends the replicator. Hacks on various other parts of the 
+  Maintains and extends the replicator. Hacks on various other parts of the
   core database.
 
