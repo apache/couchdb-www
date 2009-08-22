@@ -1,0 +1,4 @@
+Title: Become a Sponsor
+Location: http://www.apache.org/foundation/sponsorship.html
+Navigation-Class: external
+Sort-Index: 060

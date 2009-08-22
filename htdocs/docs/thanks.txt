@@ -1,0 +1,4 @@
+Title: Thanks
+Location: http://www.apache.org/foundation/thanks.html
+Navigation-Class: external
+Sort-Index: 050

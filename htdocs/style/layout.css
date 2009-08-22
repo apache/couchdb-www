@@ -58,3 +58,5 @@ html, body { background: #84856A url(tile.gif); min-width: 800px; }
 #footer p { color: #ddd; font-size: 80%; margin: 0; padding: .5em;
   text-align: right;
 }
+
+#footer a { color: #fff; text-decoration:underline;}
