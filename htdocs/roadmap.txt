@@ -5,25 +5,29 @@ Sort-Index: 035
 %(title)s
 =========
 
-Features for Next Release
+Features for Next Release (0.10)
 -------------------------
 
- * Incremental reduce support, for full map/reduce support
- * Document validation model (validate live and replicated changes)
- * Live database compaction
- * Documentation, documentation, documentation
- * Fulltext search
+  * Cookie and OAuth authentication support
+  * Windows build supports
+  * Continuous replication
+  * Pure tail-append storage
+  * More reliable and faster replication
+  * Better RFC 2616 compliance
+  * Several Futon (Admin UI) improvements
+  * Native Erlang view servers
+  * Filter API for filtered replication
+  * Update API to parse client requests in JavaScript
 
 Priority Feature Work
 ---------------------
 
  * Extensible security model
- * LDAP authentication
- * More query capabilities exposed to HTTP, e.g. multi-key view lookups
+
 
 Future Feature Work
 -------------------
 
- * Server storage partioning
+ * Server storage partitioning
  * Server failover clustering
  
