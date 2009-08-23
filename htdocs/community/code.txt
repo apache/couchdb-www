@@ -18,6 +18,4 @@ Committers should use the secure repository:
 
     svn co https://svn.apache.org/repos/asf/couchdb/trunk couchdb
 
-If you live near Europe you may experience a faster connection with `svn.eu.apache.org`.
-
 Read more about [version control](http://www.apache.org/dev/version-control.html) at the Apache Software Foundation.
