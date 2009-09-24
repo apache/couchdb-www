@@ -44,3 +44,6 @@ Adam Kocoloski, <kocolosk@apache.org>
   Maintains and extends the replicator. Hacks on various other parts of the
   core database.
 
+Mark Hammond, <mhammond@apache.org>
+
+  Windows support.
