@@ -97,7 +97,10 @@ class Page(object):
     def url(self):
         if self['location']:
             return self['location']
-        fname = self.html_filename[len(self.site.docroot):].lstrip('/')
+        fname = self.html_filename[len(self.site.docroot):].lstrip(os.sep)
+        if os.sep != "/":
+            # slash is always the sep for a URL.
+            fname = fname.replace(os.sep, "/")
         return fname
 
     def relative_url(self, page):
