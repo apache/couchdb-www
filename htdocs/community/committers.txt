@@ -47,3 +47,8 @@ Adam Kocoloski, <kocolosk@apache.org>
 Mark Hammond, <mhammond@apache.org>
 
   Windows support.
+
+[Jason Davies](http://www.jasondavies.com/), <jasondavies@apache.org>
+
+  Developed various authentication features including cookie-based
+  authentication and OAuth support.
