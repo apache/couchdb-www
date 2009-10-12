@@ -10,6 +10,22 @@ The following releases of Apache CouchDB are available for download.
 Current Releases
 ----------------
 
+### 0.10.0
+
+#### Files
+
+ * [apache-couchdb-0.10.0.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.9.1/apache-couchdb-0.10.0.tar.gz)
+   [[OpenPGP](http://www.apache.org/dist/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz.asc)]
+   [[MD5](http://www.apache.org/dist/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz.md5)]
+   [[SHA](http://www.apache.org/dist/couchdb/0.10.0/apache-couchdb-0.10.0.tar.gz.sha)]
+
+#### Changes
+
+This release contains [backwards incompatible changes](http://wiki.apache.org/couchdb/Breaking_changes).
+
+ * Added modular configuration file directories.
+ * Miscellaneous improvements to build, system integration, and portability.
+
 ### 0.9.1
 
 #### Files
