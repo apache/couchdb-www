@@ -75,6 +75,29 @@ limitations under the License.
 
 <h2>Current Releases</h2>
 
+<h3>0.10.1</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz">apache-couchdb-0.10.1.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.10.1/apache-couchdb-0.10.1.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Fixed test suite to work with build system.</li>
+<li>Fixed a problem with statistics timers and system sleep.</li>
+<li>Fixed an edge case for HTTP redirects during replication.</li>
+<li>Fixed HTTP timeout handling for replication.</li>
+<li>Fixed query parameter handling in OAuth&#8217;d replication.</li>
+<li>Fixed a bug preventing mixing languages with lists and views.</li>
+<li>Avoid OS process leaks in lists.</li>
+</ul>
+
 <h3>0.10.0</h3>
 
 <h4>Files</h4>
@@ -103,6 +126,25 @@ preparation).</li>
 <li>Better RFC 2616 (HTTP 1.1) compliance.</li>
 <li>Added modular configuration file directories.</li>
 <li>Miscellaneous improvements to build, system integration, and portability.</li>
+</ul>
+
+<h3>0.9.2</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz">apache-couchdb-0.9.2.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Remove branch callbacks to allow building couchjs against newer versions of
+Spidermonkey.</li>
+<li>Fix replication with 0.10 servers initiated by an 0.9 server.</li>
 </ul>
 
 <h3>0.9.1</h3>
