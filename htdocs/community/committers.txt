@@ -55,6 +55,6 @@ Mark Hammond, <mhammond@apache.org>
 
 [Benoît Chesneau](http://benoitc.im), <benoitc@apache.org>
 
-  Developed the rewriting and proxy authentication handlers and provides some
+  Developed the URL rewriter and proxy authentication handlers and provides some
   patches. He also maintains the couchapp script and some other tools and
   libraries related to CouchDB.
