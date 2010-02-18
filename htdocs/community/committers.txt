@@ -52,3 +52,9 @@ Mark Hammond, <mhammond@apache.org>
 
   Developed various authentication features including cookie-based
   authentication and OAuth support.
+
+[Benoît Chesneau](http://benoitc.im), <benoitc@apache.org>
+
+  Developed the rewriting and proxy authentication handlers and provides some
+  patches. He also maintains the couchapp script and some other tools and
+  libraries related to CouchDB.
