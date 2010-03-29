@@ -75,6 +75,54 @@ limitations under the License.
 
 <h2>Current Releases</h2>
 
+<h3>0.11.0</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz">apache-couchdb-0.11.0.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Added support for building a Windows installer as part of &#8216;make dist&#8217;.</li>
+<li>Added optional &#8216;raw&#8217; binary collation for faster view builds where Unicode
+collation is not important.</li>
+<li>Improved view index build time by reducing ICU collation callouts.</li>
+<li>Added option to implicitly create replication target databases.</li>
+<li>Improved view information objects.</li>
+<li>Bug fix for partial updates during view builds.</li>
+<li>Bug fix for building couch.app&#8217;s module list.</li>
+<li>Fixed a problem with statistics timers and system sleep.</li>
+<li>Improved the statistics calculations to use an online moving window
+algorithm.</li>
+<li>Adds batching of multiple updating requests, to improve throughput with many
+writers. Removed the now redundant couch<em>batch</em>save module.</li>
+<li>Bug fix for premature termination of chunked responses.</li>
+<li>Improved speed and concurrency of config lookups.</li>
+<li>Fixed an edge case for HTTP redirects during replication.</li>
+<li>Fixed HTTP timeout handling for replication.</li>
+<li>Fixed query parameter handling in OAuth&#8217;d replication.</li>
+<li>Fixed a bug preventing mixing languages with lists and views.</li>
+<li>Avoid OS process leaks in lists.</li>
+<li>Avoid leaking file descriptors on automatic replication restarts.</li>
+<li>Various improvements to the Futon UI.</li>
+<li>Provide Content-MD5 header support for attachments.</li>
+<li>Adds configurable compression of attachments.</li>
+<li>Added default cookie-authentication and users db.</li>
+<li>Added per-db reader access control lists.</li>
+<li>Added per-db security object for configuration data in validation functions.</li>
+<li>Added URL Rewriter handler.</li>
+<li>Added proxy authentication handler.</li>
+<li>Added ability to replicate documents by id.</li>
+<li>Added virtual host handling.</li>
+<li>Uses json2.js for JSON serialization compatiblity with native JSON.</li>
+</ul>
+
 <h3>0.10.1</h3>
 
 <h4>Files</h4>
@@ -128,119 +176,21 @@ preparation).</li>
 <li>Miscellaneous improvements to build, system integration, and portability.</li>
 </ul>
 
-<h3>0.9.2</h3>
+<h2>Archived Releases</h2>
 
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz">apache-couchdb-0.9.2.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.9.2/apache-couchdb-0.9.2.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
+<p>Old Apache CouchDB releases can be found here:</p>
 
 <ul>
-<li>Remove branch callbacks to allow building couchjs against newer versions of
-Spidermonkey.</li>
-<li>Fix replication with 0.10 servers initiated by an 0.9 server.</li>
+<li><a href="http://archive.apache.org/dist/couchdb/">Apache CouchDB archive</a></li>
 </ul>
 
-<h3>0.9.1</h3>
-
-<h4>Files</h4>
+<p>Even older Apache Incubator releases of CouchDB can be found here:</p>
 
 <ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.9.1/apache-couchdb-0.9.1.tar.gz">apache-couchdb-0.9.1.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/0.9.1/apache-couchdb-0.9.1.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.9.1/apache-couchdb-0.9.1.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.9.1/apache-couchdb-0.9.1.tar.gz.sha">SHA</a>]</li>
+<li><a href="http://archive.apache.org/dist/incubator/couchdb/">Apache Incubator archive of CouchDB</a></li>
 </ul>
 
-<h4>Changes</h4>
-
-<ul>
-<li>Various bug fixes for the build system, configuration, statistics reporting,
-database core, external handlers, Futon interface, HTTP interface,
-JavaScript View Server and replicator.</li>
-</ul>
-
-<h3>0.9.0</h3>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz">apache-couchdb-0.9.0.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.9.0/apache-couchdb-0.9.0.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<p>This release contains <a href="http://wiki.apache.org/couchdb/Breaking_changes">backwards incompatible changes</a>.</p>
-
-<ul>
-<li>Modular configuration.</li>
-<li>Performance enhancements for document and view access.</li>
-<li>More resilient replication process.</li>
-<li>Replication streams binary attachments.</li>
-<li>Administrator role and basic authentication.</li>
-<li>Document validation functions in design documents.</li>
-<li>Show and list functions for rendering documents and views as developer
-controlled content-types.</li>
-<li>External process server module.</li>
-<li>Attachment uploading from Futon.</li>
-<li>Etags for views, lists, shows, document and attachment requests.</li>
-<li>Miscellaneous improvements to build, system integration, and portability.</li>
-</ul>
-
-<h3>0.8.1-incubating</h3>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz">apache-couchdb-0.8.1-incubating.tar.gz</a>
-[<a href="http://www.apache.org/dist/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/incubator/couchdb/0.8.1-incubating/apache-couchdb-0.8.1-incubating.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<ul>
-<li>Various bug fixes for replication, compaction, the HTTP interface and the
-Javascript View Server.</li>
-</ul>
-
-<h3>0.8.0-incubating</h3>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz">apache-couchdb-0.8.0-incubating.tar.gz</a>
-[<a href="http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/incubator/couchdb/0.8.0-incubating/apache-couchdb-0.8.0-incubating.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<p>This release contains <a href="http://wiki.apache.org/couchdb/Breaking_changes">backwards incompatible changes</a>.</p>
-
-<ul>
-<li>Changed core licensing to the Apache Software License 2.0.</li>
-<li>Refactoring of the core view and storage engines.</li>
-<li>Added support for incremental map/reduce views.</li>
-<li>Changed database file format.</li>
-<li>Many improvements to Futon, the web administration interface.</li>
-<li>Miscellaneous improvements to system integration and portability.</li>
-<li>Swapped out Erlang&#8217;s inets HTTP server for the Mochiweb HTTP server.</li>
-<li>SpiderMonkey is no longer included with CouchDB, but rather treated as an
-external dependency.</li>
-<li>Added bits of awesome.</li>
-</ul>
+<p>These are provided for references purposes only, it is recommended you use a current release of CouchDB.</p>
 
 <h2>Verifying Releases</h2>
 
