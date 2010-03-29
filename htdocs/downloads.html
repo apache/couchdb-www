@@ -88,6 +88,8 @@ limitations under the License.
 
 <h4>Changes</h4>
 
+<p>This version is a feature-freeze release candidate for Apache CouchDB 1.0.</p>
+
 <ul>
 <li>Added support for building a Windows installer as part of &#8216;make dist&#8217;.</li>
 <li>Added optional &#8216;raw&#8217; binary collation for faster view builds where Unicode
@@ -101,7 +103,8 @@ collation is not important.</li>
 <li>Improved the statistics calculations to use an online moving window
 algorithm.</li>
 <li>Adds batching of multiple updating requests, to improve throughput with many
-writers. Removed the now redundant couch<em>batch</em>save module.</li>
+writers.</li>
+<li>Removed the now redundant couch_batch_save module.</li>
 <li>Bug fix for premature termination of chunked responses.</li>
 <li>Improved speed and concurrency of config lookups.</li>
 <li>Fixed an edge case for HTTP redirects during replication.</li>

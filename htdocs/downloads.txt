@@ -21,6 +21,8 @@ Current Releases
 
 #### Changes
 
+This version is a feature-freeze release candidate for Apache CouchDB 1.0.
+
  * Added support for building a Windows installer as part of 'make dist'.
  * Added optional 'raw' binary collation for faster view builds where Unicode
    collation is not important.
@@ -33,7 +35,8 @@ Current Releases
  * Improved the statistics calculations to use an online moving window
    algorithm.
  * Adds batching of multiple updating requests, to improve throughput with many
-   writers. Removed the now redundant couch_batch_save module.
+   writers.
+ * Removed the now redundant couch\_batch\_save module.
  * Bug fix for premature termination of chunked responses.
  * Improved speed and concurrency of config lookups.
  * Fixed an edge case for HTTP redirects during replication.
