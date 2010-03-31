@@ -17,7 +17,7 @@ limitations under the License.
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>Apache CouchDB: Screenshots</title>
+    <title>Apache CouchDB: Security</title>
     <meta name="description" content="Apache,CouchDB is a distributed, fault-tolerant and schema-free
  document-oriented database accessible via a RESTful HTTP/JSON API.">
     <meta name="keywords" content="CouchDB,database,document,REST,HTTP,JSON,Javascript">
@@ -38,7 +38,7 @@ limitations under the License.
     <div id="breadcrumbs"><ul>
 <li><a href="index.html">Home</a></li>
 <li>»</li>
-<li class="active"><a href="screenshots.html">Screenshots</a></li>
+<li class="active"><a href="security.html">Security</a></li>
 </ul>
 </div>
     <div id="main"><div class="wrap">
@@ -46,7 +46,7 @@ limitations under the License.
 <li><a class="" href="index.html"><span>Home</span></a></li>
 <li><a class="external" href="http://www.google.com/coop/cse?cx=006426053638666134111:bfy4xffxeqc"><span>Search</span></a></li>
 <li><a class="" href="downloads.html"><span>Downloads</span></a></li>
-<li><a class="active" href="screenshots.html"><span>Screenshots</span></a></li>
+<li><a class="" href="screenshots.html"><span>Screenshots</span></a></li>
 <li><a class="external" href="http://www.apache.org/licenses/LICENSE-2.0.html"><span>License</span></a></li>
 <li><a class="" href="roadmap.html"><span>Road Map</span></a></li>
 <li><a class="" href="docs/index.html"><span>Documentation</span></a><ul>
@@ -67,26 +67,50 @@ limitations under the License.
 <li><a class="external" href="http://planet.couchdb.com/"><span>Planet</span></a></li>
 </ul>
 </li>
-<li><a class="" href="security.html"><span>Security</span></a></li>
+<li><a class="active" href="security.html"><span>Security</span></a></li>
 </ul>
 </div>
-      <div id="content"><h1>Screenshots</h1>
+      <div id="content"><h1>Security</h1>
 
-<p>The following screenshots show Futon, the Web based administration console.</p>
+<h2>Reporting New Security Problems with Apache CouchDB</h2>
 
-<div class="showcase">
-  <a href="img/screenshot-a-large.png">
-    <img src="img/screenshot-a-small.png" alt="Screenshot of CouchDB Futon">
-  </a>
-  <p><em>Editing a document in Futon.</em></p>
-</div>
+<p>The Apache Software Foundation takes a very active stance in eliminating security
+problems and denial of service attacks against Apache CouchDB.</p>
 
-<div class="showcase">
-  <a href="img/screenshot-b-large.png" class="showcase">
-    <img src="img/screenshot-b-small.png" alt="Screenshot of CouchDB Futon">
-  </a>
-  <p><em>Running the unit tests in Futon.</em></p>
-</div>
+<p>We strongly encourage folks to report such problems to our private security mailing
+list first, before disclosing them in a public forum.</p>
+
+<p>Please note that the security mailing list should only be used for reporting
+undisclosed security vulnerabilities in Apache CouchDB and managing the process of
+fixing such vulnerabilities. We cannot accept regular bug reports or other queries at
+this address. All mail sent to this address that does not relate to an undisclosed
+security problem in the Apache CouchDB source code will be ignored.</p>
+
+<p>If you need to report a bug that isn&#8217;t an undisclosed security vulnerability, please
+use <a href="https://issues.apache.org/jira/browse/COUCHDB">the bug reporting page</a>.</p>
+
+<p>Questions about:</p>
+
+<ul>
+<li>how to configure Tomcat securely</li>
+<li>if a vulnerability applies to your particular application</li>
+<li>obtaining further information on a published vulnerability</li>
+<li>availability of patches and/or new releases</li>
+</ul>
+
+<p>should be address to the <a href="community/lists.html">users mailing list</a>. Please see <a href="community/lists.html">the mailing lists
+page</a> for details of how to subscribe.</p>
+
+<p>The private security mailing address is: security@couchdb.apache.org</p>
+
+<p>Please read <a href="http://www.apache.org/security/committers.html">how the Apache Software Foundation handles security</a>
+reports to know what to expect.</p>
+
+<p>Note that all networked servers are subject to denial of service attacks, and we
+cannot promise magic workarounds to generic problems (such as a client streaming lots
+of data to your server, or re-requesting the same URL repeatedly). In general our
+philosophy is to avoid any attacks which can cause the server to consume resources in
+a non-linear relationship to the size of inputs.</p>
 <div id="clear"></div></div>
     </div></div>
     <div id="footer">

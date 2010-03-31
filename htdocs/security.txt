@@ -1,0 +1,51 @@
+Title: Security
+Breadcrumb-Title: Security
+Navigation-Title: Security
+Sort-Index: 090
+
+
+%(title)s
+=========
+
+Reporting New Security Problems with Apache CouchDB
+--------------------------------------------------- 
+
+The Apache Software Foundation takes a very active stance in eliminating security
+problems and denial of service attacks against Apache CouchDB.
+
+We strongly encourage folks to report such problems to our private security mailing
+list first, before disclosing them in a public forum.
+
+Please note that the security mailing list should only be used for reporting
+undisclosed security vulnerabilities in Apache CouchDB and managing the process of
+fixing such vulnerabilities. We cannot accept regular bug reports or other queries at
+this address. All mail sent to this address that does not relate to an undisclosed
+security problem in the Apache CouchDB source code will be ignored.
+
+If you need to report a bug that isn't an undisclosed security vulnerability, please
+use [the bug reporting page][jira].
+
+Questions about:
+
+ - how to configure Tomcat securely
+ - if a vulnerability applies to your particular application
+ - obtaining further information on a published vulnerability
+ - availability of patches and/or new releases
+
+should be address to the [users mailing list][lists]. Please see [the mailing lists
+page][lists] for details of how to subscribe.
+
+The private security mailing address is: security@couchdb.apache.org
+
+Please read [how the Apache Software Foundation handles security][asf-security]
+reports to know what to expect.
+
+Note that all networked servers are subject to denial of service attacks, and we
+cannot promise magic workarounds to generic problems (such as a client streaming lots
+of data to your server, or re-requesting the same URL repeatedly). In general our
+philosophy is to avoid any attacks which can cause the server to consume resources in
+a non-linear relationship to the size of inputs.
+
+[jira]: https://issues.apache.org/jira/browse/COUCHDB
+[lists]: community/lists.html
+[asf-security]: http://www.apache.org/security/committers.html
