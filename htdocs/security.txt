@@ -27,7 +27,7 @@ use [the bug reporting page][jira].
 
 Questions about:
 
- - how to configure Tomcat securely
+ - how to configure CouchDB securely
  - if a vulnerability applies to your particular application
  - obtaining further information on a published vulnerability
  - availability of patches and/or new releases
