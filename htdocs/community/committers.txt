@@ -7,7 +7,7 @@ Sort-Index: 040
 
 [Damien Katz](http://damienkatz.net/), <damien@apache.org>
 
-   Original developer and remains the project lead.
+   Original developer and Apache CouchDB PMC Chair.
 
 [Jan Lehnardt](http://jan.prima.de/), <jan@apache.org>
 
