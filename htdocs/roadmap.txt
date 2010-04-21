@@ -1,4 +1,4 @@
 Title: Road Map
-Location: https://issues.apache.org/jira/secure/BrowseProject.jspa?id=12310780&subset=-1
+Location: https://issues.apache.org/jira/browse/COUCHDB?report=com.atlassian.jira.plugin.system.project:roadmap-panel
 Navigation-Class: external
 Sort-Index: 031
