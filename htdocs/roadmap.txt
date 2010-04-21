@@ -1,33 +1,4 @@
 Title: Road Map
-Sort-Index: 035
-
-
-%(title)s
-=========
-
-Features for Next Release (0.10)
--------------------------
-
-  * Cookie and OAuth authentication support
-  * Windows build supports
-  * Continuous replication
-  * Pure tail-append storage
-  * More reliable and faster replication
-  * Better RFC 2616 compliance
-  * Several Futon (Admin UI) improvements
-  * Native Erlang view servers
-  * Filter API for filtered replication
-  * Update API to parse client requests in JavaScript
-
-Priority Feature Work
----------------------
-
- * Extensible security model
-
-
-Future Feature Work
--------------------
-
- * Server storage partitioning
- * Server failover clustering
- 
+Location: https://issues.apache.org/jira/secure/BrowseProject.jspa?id=12310780&subset=-1
+Navigation-Class: external
+Sort-Index: 031
