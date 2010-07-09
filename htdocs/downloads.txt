@@ -1,5 +1,6 @@
 Title: Downloads
 Sort-Index: 020
+Navigation-Item: True
 
 
 %(title)s
