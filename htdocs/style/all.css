@@ -140,6 +140,8 @@ blockquote, p, ol, ul { margin: 1.5em 0; }
 
 ul ul, ol ol { margin: 0 0 0 1em; }
 
+#content ul { padding-left: 2em; }
+
 pre, code { font-family: "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Liberation Mono", "Lucida Console", Monaco, monospace; }
 
 p code { font-size: 87.5%; letter-spacing: .075em; }
