@@ -2,13 +2,13 @@ Title: The CouchDB Project
 Breadcrumb-Title: Home
 Navigation-Title: Home
 Sort-Index: 010
-Navigation-Item: True
+
 
 %(title)s
 =========
 
 <img src="img/sketch.png" width="292" height="340" alt="CouchDB Server Components"
-     style="float: right; margin: 0 0 2em 2em">
+     style="float: right; margin-left: 2em">
 
 Apache CouchDB is a document-oriented database that can be queried and indexed
 in a MapReduce fashion using JavaScript. CouchDB also offers incremental
@@ -46,10 +46,3 @@ Join the [mailing lists](community/lists.html) and participate in the
 discussions around the development of CouchDB. If you encounter a problem and
 have an idea how to fix it, please start by making a patch and filing it with
 our [issue tracking system](community/issues.html).
-
-Team
-----
-
-Ever wondered who's spending so much time making CouchDB? Even if you
-didn't, you should take a look at the [committers](community/committers.html)
-that work so hard to make your couch as comfy and relaxing as possible.

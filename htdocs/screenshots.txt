@@ -1,6 +1,5 @@
 Title: Screenshots
-Sort-Index: 035
-Navigation-Item: True
+Sort-Index: 025
 
 
 %(title)s

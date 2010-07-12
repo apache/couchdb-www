@@ -154,14 +154,18 @@ class Page(object):
         def _gen(pages):
             buf.append('<ul>\n')
             for page in pages:
+                if page['no-navigation-item']:
+                    continue
                 title = page['navigation-title'] or page['title']
                 classes = page['navigation-class'].split()
-                if top == page or (top in page.children and title != 'Home'):
+                if top == page:
                     classes = filter(None, classes) + ['active']
-                if page['navigation-item'] == 'True':
-                    buf.append('<li><a class="%s" href="%s"><span>%s</span></a></li>\n' % (
-                        ' '.join(classes), self.relative_url(page), escape(title)
-                    ))
+                buf.append('<li><a class="%s" href="%s"><span>%s</span></a>' % (
+                    ' '.join(classes), self.relative_url(page), escape(title)
+                ))
+                if page != self.site.root and page.children:
+                    _gen(page.children)
+                buf.append('</li>\n')
             buf.append('</ul>\n')
         _gen([self.site.root] + self.site.root.children)
         return ''.join(buf)

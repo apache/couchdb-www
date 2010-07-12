@@ -21,34 +21,57 @@ limitations under the License.
     <meta name="description" content="Apache,CouchDB is a distributed, fault-tolerant and schema-free
  document-oriented database accessible via a RESTful HTTP/JSON API.">
     <meta name="keywords" content="CouchDB,database,document,REST,HTTP,JSON,Javascript">
-    <link rel="icon" type="img/x-icon" href="./img/layout/favicon.ico">
-    <link rel="shortcut icon" type="img/x-icon" href="./img/layout/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./style/all.css">
+    <link rel="icon" type="img/x-icon" href="./favicon.ico">
+    <link rel="shortcut icon" type="img/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./style/layout.css">
     <link rel="stylesheet" type="text/css" href="./style/print.css" media="print">
   </head>
   <body>
-    <div id="header">
-      <a href="./index.html">
-        <img src="./img/layout/couchdb-logo.png" width="400" height="110" alt="CouchDB - Relax">
-        <!--<object data="./img/couchdb-logo.svg" width="400" height="110" type="image/svg+xml">
+    <div id="header"><div class="wrap">
+      <a class="couchdb" href="./index.html">
+        <object data="./img/couchdb-logo.svg" width="400" height="110" type="image/svg+xml">
           <img src="./img/couchdb-logo.png" width="400" height="110" alt="CouchDB - Relax">
-        </object>-->
+        </object>
       </a>
       <h1>Apache CouchDB. Relax.</h1>
-    </div>
-    <dl id="navigation"><dt>Navigation</dt><dd><ul>
-<li><a class="active" href="index.html"><span>Home</span></a></li>
-<li><a class="external" href="http://wiki.apache.org/couchdb/"><span>Documentation</span></a></li>
-<li><a class="" href="downloads.html"><span>Downloads</span></a></li>
-<li><a class="external" href="https://issues.apache.org/jira/browse/COUCHDB?report=com.atlassian.jira.plugin.system.project:roadmap-panel"><span>Road Map</span></a></li>
-<li><a class="external" href="http://www.apache.org/licenses/LICENSE-2.0.html"><span>License</span></a></li>
-<li><a class="" href="screenshots.html"><span>Screenshots</span></a></li>
+    </div></div>
+    <div id="breadcrumbs"><ul>
+<li class="active"><a href="index.html">Home</a></li>
 </ul>
-</dd></dl>
-    <div id="content"><h1>The CouchDB Project</h1>
+</div>
+    <div id="main"><div class="wrap">
+      <div id="nav"><ul>
+<li><a class="active" href="index.html"><span>Home</span></a></li>
+<li><a class="external" href="http://www.google.com/coop/cse?cx=006426053638666134111:bfy4xffxeqc"><span>Search</span></a></li>
+<li><a class="" href="downloads.html"><span>Downloads</span></a></li>
+<li><a class="" href="screenshots.html"><span>Screenshots</span></a></li>
+<li><a class="external" href="http://www.apache.org/licenses/LICENSE-2.0.html"><span>License</span></a></li>
+<li><a class="external" href="https://issues.apache.org/jira/browse/COUCHDB?report=com.atlassian.jira.plugin.system.project:roadmap-panel"><span>Road Map</span></a></li>
+<li><a class="" href="docs/index.html"><span>Documentation</span></a><ul>
+<li><a class="" href="docs/intro.html"><span>Introduction</span></a></li>
+<li><a class="" href="docs/overview.html"><span>Overview</span></a></li>
+<li><a class="external" href="http://wiki.apache.org/couchdb/"><span>Wiki</span></a></li>
+<li><a class="" href="docs/books.html"><span>Books</span></a></li>
+<li><a class="external" href="http://www.apache.org/foundation/thanks.html"><span>Thanks</span></a></li>
+<li><a class="external" href="http://www.apache.org/foundation/sponsorship.html"><span>Become a Sponsor</span></a></li>
+</ul>
+</li>
+<li><a class="" href="community/index.html"><span>Get Involved</span></a><ul>
+<li><a class="" href="community/lists.html"><span>Mailing Lists</span></a></li>
+<li><a class="" href="community/issues.html"><span>Issue Tracking</span></a></li>
+<li><a class="" href="community/code.html"><span>Source Code</span></a></li>
+<li><a class="" href="community/committers.html"><span>Committers</span></a></li>
+<li><a class="external" href="http://wiki.apache.org/couchdb/Coding_Standards"><span>Coding Standards</span></a></li>
+<li><a class="external" href="http://planet.couchdb.com/"><span>Planet</span></a></li>
+</ul>
+</li>
+<li><a class="" href="security.html"><span>Security</span></a></li>
+</ul>
+</div>
+      <div id="content"><h1>The CouchDB Project</h1>
 
 <p><img src="img/sketch.png" width="292" height="340" alt="CouchDB Server Components"
-     style="float: right; margin: 0 0 2em 2em"></p>
+     style="float: right; margin-left: 2em"></p>
 
 <p>Apache CouchDB is a document-oriented database that can be queried and indexed
 in a MapReduce fashion using JavaScript. CouchDB also offers incremental
@@ -80,15 +103,10 @@ repository</a> and follow the included build instructions.</p>
 discussions around the development of CouchDB. If you encounter a problem and
 have an idea how to fix it, please start by making a patch and filing it with
 our <a href="community/issues.html">issue tracking system</a>.</p>
-
-<h2>Team</h2>
-
-<p>Ever wondered who&#8217;s spending so much time making CouchDB? Even if you
-didn&#8217;t, you should take a look at the <a href="community/committers.html">committers</a>
-that work so hard to make your couch as comfy and relaxing as possible.</p>
-</div>
+<div id="clear"></div></div>
+    </div></div>
     <div id="footer">
-      <p class="copyright">Copyright © 2008–2010 <a href="http://www.apache.org/">The Apache Software Foundation</a></p>
+      <p class="copyright">Copyright © 2008,2009 <a href="http://www.apache.org/">The Apache Software Foundation</a></p>
     </div>
     <script type="text/javascript">
       var _gaq = _gaq || [];

@@ -59,7 +59,7 @@ Mark Hammond, <mhammond@apache.org>
   patches. He also maintains the couchapp script and some other tools and
   libraries related to CouchDB.
 
-[Filipe Manana](http://fdmanana.wordpress.com), <fdmanana@apache.org>
+Filipe Manana, <fdmanana@apache.org>
 
   Contributes mostly to the replicator, some parts of the core database and
   the security features.

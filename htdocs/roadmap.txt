@@ -1,5 +1,4 @@
 Title: Road Map
 Location: https://issues.apache.org/jira/browse/COUCHDB?report=com.atlassian.jira.plugin.system.project:roadmap-panel
 Navigation-Class: external
-Sort-Index: 030
-Navigation-Item: True
+Sort-Index: 031

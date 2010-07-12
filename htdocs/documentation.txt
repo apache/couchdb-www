@@ -1,6 +1,0 @@
-Title: Documentation
-Location: http://wiki.apache.org/couchdb/
-Navigation-Class: external
-Sort-Index: 015
-Navigation-Item: True
-
