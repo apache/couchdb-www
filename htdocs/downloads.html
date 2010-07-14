@@ -53,8 +53,8 @@ limitations under the License.
 <li><a class="" href="docs/intro.html"><span>Introduction</span></a></li>
 <li><a class="" href="docs/overview.html"><span>Overview</span></a></li>
 <li><a class="external" href="http://wiki.apache.org/couchdb/"><span>Wiki</span></a></li>
-<li><a class="external" href="http://www.apache.org/foundation/thanks.html"><span>Thanks</span></a></li>
 <li><a class="" href="docs/books.html"><span>Books</span></a></li>
+<li><a class="external" href="http://www.apache.org/foundation/thanks.html"><span>Thanks</span></a></li>
 <li><a class="external" href="http://www.apache.org/foundation/sponsorship.html"><span>Become a Sponsor</span></a></li>
 </ul>
 </li>
@@ -75,6 +75,86 @@ limitations under the License.
 <p>The following releases of Apache CouchDB are available for download.</p>
 
 <h2>Current Releases</h2>
+
+<h3>1.0.0</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz">apache-couchdb-1.0.0.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>More efficient header commits.</li>
+<li>Use O_APPEND to save lseeks.</li>
+<li>Faster implementation of pread_iolist(). Further improves performance on
+concurrent reads.</li>
+<li>Added authentication caching</li>
+<li>Faster default view collation.</li>
+<li>Added option to include update_seq in view responses.</li>
+</ul>
+
+<h3>0.11.1</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz">apache-couchdb-0.11.1.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Mask passwords in active tasks and logging.</li>
+<li>Update mochijson2 to allow output of BigNums not in float form.</li>
+<li>Added support for X-HTTP-METHOD-OVERRIDE.</li>
+<li>Disable jsonp by default.</li>
+<li>Accept gzip encoded standalone attachments.</li>
+<li>Made max_concurrent_connections configurable.</li>
+<li>Added continuous replication option to Futon.</li>
+<li>Added option to replicating test results anonymously to a community
+CouchDB instance.</li>
+<li>Allow creation and deletion of config entries in Futon.</li>
+<li>Fixed various UI issues in Futon.</li>
+<li>Fixed compatibility with the Erlang R14 series.</li>
+<li>Fixed warnings on Linux builds.</li>
+<li>Fixed build error when aclocal needs to be called during the build.</li>
+<li>Require ICU 4.3.1.</li>
+<li>Fixed compatibility with Solaris.</li>
+<li>Added authentication redirect URL to log in clients.</li>
+<li>Added authentication caching, to avoid repeated opening and closing of the
+users database for each request requiring authentication.</li>
+<li>Made authentication timeout configurable.</li>
+<li>Temporary views are now admin-only resources.</li>
+<li>Don&#8217;t require a revpos for attachment stubs.</li>
+<li>Make file deletions async to avoid pauses during compaction and db
+deletion.</li>
+<li>Fixed for wrong offset when writing headers and converting them to blocks,
+only triggered when header is larger than 4k.</li>
+<li>Preserve _revs_limit and instance_start_time after compaction.</li>
+<li>Fixed timeout with large .ini files.</li>
+<li>Added tests for couch.js and jquery.couch.js</li>
+<li>Added various API features to jquery.couch.js</li>
+<li>Faster default view collation.</li>
+<li>Upgrade CommonJS modules support to 1.1.1.</li>
+<li>Added option to include update_seq in view responses.</li>
+<li>Fixed erlang filter funs and normalize filter fun API.</li>
+<li>Fixed hang in view shutdown.</li>
+<li>Refactored various internal APIs related to attachment streaming.</li>
+<li>Fixed hanging replication.</li>
+<li>Fixed keepalive issue.</li>
+<li>Allow global rewrites so system defaults are available in vhosts.</li>
+<li>Allow isolation of databases with vhosts.</li>
+<li>Made the test suite overall more reliable.</li>
+</ul>
 
 <h3>0.11.0</h3>
 
