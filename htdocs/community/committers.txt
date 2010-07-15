@@ -63,3 +63,7 @@ Mark Hammond, <mhammond@apache.org>
 
   Contributes mostly to the replicator, some parts of the core database and
   the security features.
+
+Robert Newson, <rnewson@apache.org>
+
+ Contributes bug fixes and small features.
