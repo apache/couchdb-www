@@ -12,7 +12,7 @@ Current Releases
 
   <div style="border:5px dashed #F00;padding:1em">
 
-**CAUTION** The 1.0.0 release has a data-loss bug in it's default configuration.
+**CAUTION** The 1.0.0 release has a data-loss bug in its default configuration.
 Please stand by and wait for the 1.0.1 release.
 
 If you *are* running CouchDB 1.0.0 in production, here are the steps to
