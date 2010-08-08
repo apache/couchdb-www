@@ -67,6 +67,10 @@ limitations under the License.
 <li><a class="external" href="http://planet.couchdb.com/"><span>Planet</span></a></li>
 </ul>
 </li>
+<li><a class="" href="notice/index.html"><span>Notices</span></a><ul>
+<li><a class="" href="notice/1.0.1.html"><span>Notice for 1.0.1</span></a></li>
+</ul>
+</li>
 <li><a class="" href="security.html"><span>Security</span></a></li>
 </ul>
 </div>
@@ -78,23 +82,12 @@ limitations under the License.
 
 <p><div style="border:5px dashed #F00;padding:1em"></p>
 
-<p><strong>CAUTION</strong> The 1.0.0 release has a data-loss bug in its default configuration.
-Please stand by and wait for the 1.0.1 release.</p>
+<p><strong>CAUTION</strong></p>
 
-<p>If you <em>are</em> running CouchDB 1.0.0 in production, here are the steps to
-reconfigure CouchDB to avoid the bug.</p>
+<p>The 1.0.0 release has a data-loss bug in its default configuration.
+Please wait for the 1.0.1 release.</p>
 
-<p><em>It is important that you do not stop or restart the server.</em></p>
-
-<pre><code>curl -X PUT http://127.0.0.1:5984/_config/couchdb/delayed_commits -d'"false"'
-</code></pre>
-
-<p>This disables <em>delayed commits</em>, the feature that includes the bug.</p>
-
-<p>Then, for each of your databases, run:</p>
-
-<pre><code>curl -X POST http://127.0.0.1:5984/database_name/_ensure_full_commit
-</code></pre>
+<p><a href="notice/1.0.1.html">If you are running version 1.0.0, please read this notice</a>.</p>
 
 <p></div></p>
 

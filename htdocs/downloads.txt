@@ -12,21 +12,12 @@ Current Releases
 
   <div style="border:5px dashed #F00;padding:1em">
 
-**CAUTION** The 1.0.0 release has a data-loss bug in its default configuration.
-Please stand by and wait for the 1.0.1 release.
+**CAUTION**
 
-If you *are* running CouchDB 1.0.0 in production, here are the steps to
-reconfigure CouchDB to avoid the bug.
+The 1.0.0 release has a data-loss bug in its default configuration.
+Please wait for the 1.0.1 release.
 
-*It is important that you do not stop or restart the server.*
-
-    curl -X PUT http://127.0.0.1:5984/_config/couchdb/delayed_commits -d'"false"'
-
-This disables *delayed commits*, the feature that includes the bug.
-
-Then, for each of your databases, run:
-
-    curl -X POST http://127.0.0.1:5984/database_name/_ensure_full_commit
+[If you are running version 1.0.0, please read this notice](notice/1.0.1.html).
 
   </div>
 

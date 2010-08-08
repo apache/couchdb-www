@@ -1,0 +1,138 @@
+Title: Notice for 1.0.1
+Sort-Index: 061
+
+# %(title)s
+
+## Warning
+
+If you are using CouchDB 1.0.0 and have the default setting for 'delayed_commits' (true) then you are affected by this data loss bug. You should read this page very carefully and apply the remedy as soon as practicable.
+
+This bug does not affect earlier releases of CouchDB.
+
+Even if you have lost data due to this bug it is possible that it can be recovered. If you can, archive a copy of the database that has lost data. Please subscribe to the [user@ or dev@ mailing list](http://couchdb.apache.org/community/lists.html) to get notified when the tool will be available.
+
+## Post mortem for a nasty bug
+
+Over the weekend of August 7th–8th, 2010 we discovered and fixed a nasty bug in CouchDB 1.0.0. The problem was subtle (cancelling a timer, without deleting the reference to it) but the ramifications are not: **once the bad code path is triggered, subsequent writes to the database are never committed.** This means there is potential data-loss for users of 1.0.0.
+
+Luckily, triggering the bad code path doesn't happen to everyone, and there is a hot fix that can prevent data loss (as long as it is applied before the server is restarted or crashes.)
+
+The 1.0.1 release will contain a permanent fix, and is expected this week. For now, this article will explain how to achieve data-safety on CouchDB 1.0.0. We will also look at the bug itself, how it happened, and what we are doing to prevent something similar happening again.
+
+## The Remedy
+
+For current users, these instructions will ensure your data is safe. First: **do not restart your CouchDB!** The hot fix involves changing configuration on the running server, so have your admin credentials handy  (if your CouchDB is in Admin Party mode with no admins defined, you won't need admin credentials). (If you do not have admin credentials, but you can restart the server, you can still prevent data loss. Read on.)
+
+### If you have admin credentials (or if your CouchDB is in Admin Party mode)
+
+Visit the Futon admin console at <http://yourserver:5984/_utils/>, and click "Login" in the lower right hand corner. Login as an administrator, and visit the "Configuration" page linked in the sidebar: <http://yourserver:5984/_utils/config.html>
+
+Now that you are in the configuration page, set `delayed_commits` (in the `couchdb` section) to `false`. You can do this by clicking on the word `true`, and replacing it with false, and hitting enter.
+
+The next time you write a document to each database, it will commit the header to disk, and your data will be secure. For safety, please continue with the next set of instructions.
+
+### For everyone
+
+To ensure that each database is committed, you can use the `_ensure_full_commit` command. There are a couple of ways to do this. Here is a simple HTML file that you can upload to your CouchDB using Futon. When you visit it, it will make sure your data is all safely committed. If you prefer a shell script, skip below this file.
+
+Save this HTML to a file on your machine called `commit_all.html`
+
+    <!DOCTYPE html>
+    <html>
+      <head><title>Commit All Databases</title></head>
+      <body>
+        <h1>Commit All Databases</h1>
+        <p>This script will trigger <tt>_ensure_full_commit</tt> on all databases.</p>
+        <ul id="databases"></ul>
+      </body>
+      <script src="/_utils/script/jquery.js"></script>
+      <script src="/_utils/script/jquery.couch.js"></script>
+      <script>
+        $.couch.allDbs({
+          success : function(dbs) {
+            dbs.forEach(function(db) {
+              $.ajax({
+                type: "POST", url: "/" + encodeURIComponent(db) + "/_ensure_full_commit",
+                contentType: "application/json", dataType: "json",
+                complete : function(r) {
+                  if (r.status == 201) {
+                    $("#databases").append('<li>committed: '+db+'</li>');                
+                  } else {
+                    $("#databases").append('<li style="color:red;">error: '+db+'</li>');                
+                  }
+                }
+              });
+            });
+          }
+        });
+      </script>
+    </html>
+
+Now browse to your CouchDB's Futon at <http://localhost:5984/_utils/> and create a database. Now visit that database, and create a document, and save it. Now click the button labeled "Upload Attachment" and choose the `commit_all.html` file you just created, and upload it. A link to that HTML file will appear in Futon.
+
+Now click the link in Futon for `commit_all.html`, and it will run `_ensure_full_commit` on all of your databases.
+
+If you prefer a shell script, [this will also commit all your databases.](http://wiki.couchone.com/page/ensure-full_commit-sh)
+
+At this point your data is safe.
+
+### If you don't have admin credentials
+
+**Warning:** make sure you followed the instructions in the above section "For everyone" before you do the rest of these steps. If you were able to log into CouchDB as an administrator (and complete the first section, before "For Everyone") than you can skip this section.
+
+In this step we will configure your CouchDB so that future updates will be durable.
+
+Did you run the above HTML script? Do that now, or the next action may destroy data.
+
+Now, find CouchDB's configuration file. It will be called `local.ini` and it is probably in a locations like: `/usr/local/etc/couchdb/local.ini`
+
+Open the file, and add the following lines to it:
+
+    [couchdb]
+    delayed_commits = false
+
+Now, restart your CouchDB. This will be different on different operating systems. If you have your CouchDB configured as a system service, restarting the computer will do the trick, but if you don't want to do that, you can probably find the pid of CouchDB, by running `ps ax | grep couchdb`. Once you have the pid, you can kill CouchDB by running `kill <pid>`. If you are a fan of magic, you can do all that in one ninja move by running:
+  
+      kill `ps ax | grep couchdb | head -n1 | awk '{print $1}'`
+
+Note: you might need to sudo.
+
+Once CouchDB is killed, the system should bring it back up. When it boots, it will load the config for `delayed_commits = false` so updates from that point forward will be durable.
+
+## The Bug
+
+Now that we have you fixed up, you might enjoy a look at the technicalities of what got broken in CouchDB.
+
+A commit is what causes writes to become durably flushed to storage. It is an expensive operation. During a commit, recent writes are flushed to disk and a new database header is written. Finally, the new header is also flushed to disk. At the operating system level this involves multiple fsync() calls to ensure data has been fully written.
+
+Delayed commits are a feature of CouchDB that allows it to achieve better write performance for some workloads while sacrificing a small amount of durability. The setting causes CouchDB to wait up to a full second before committing new data after an update. If the server crashes before the header is written then any writes since the last commit are lost. The choice of delayed commits as a default has been discussed many times and the consensus was that they should remain on for the 1.0 release.
+
+For each open database in CouchDB there is an erlang process referred to as the update process, the source for which is in a file called `couch_db_updater.erl`. All writes to a given database pass through the corresponding update process. This process is in charge of preparing, writing and committing batches of updates. In order to provide delayed commits, the update process sets a timer for one second in the future. When the timer expires a commit message is sent back to the updater. A reference to this timer is kept in the updater state. This reference prevents the updater from scheduling excessive commit messages when one is already pending.
+
+In the updater code that shipped with 1.0 a delayed commit message that arrived when there were no pending writes never cleared the timer reference. As a result, the updater state erroneously indicated that there was a future commit scheduled. Once in this bad state the updater would never schedule another commit. In practice, this problem occurred when a write conflict was followed by a period of inactivity. The conflicting write triggered the delayed commit, but when the commit message arrived no new data needed to be written and the timer reference was not cleared. This scenario is thankfully unlikely to occur in a busy database.
+
+## Mixups and Fixes
+
+One can never say exactly what lead to a particular bug.  In this case, there were some contributing factors.
+
+### Release procedure
+
+In the run-up to 1.0, there was some confusion about which branch would ultimately become 1.0. Originally we'd discussed branching 1.0 from the 0.11.x line, as 0.11 was a feature freeze release, so that we could concentrate on bugs and performance for 1.0. However, as we approached 1.0's release, there was very little work in trunk that involved new features. And the few features added to trunk were really just refinements of existing functionality, to make it more user friendly, etc.
+
+So in the final weeks before 1.0's release, we decided to cut it from trunk (as opposed to from the 0.11.x branch) as that would make for more straightforward code management in the future. It has also been our release policy since the early days of the project.
+
+As a result the commit that introduced the bug went into trunk when 0.11.x was still designated to become the 1.0 release with the intention to have it prove its stability before a future 1.1 release. After we decided to cut 1.0 from trunk, this commit didn't get the necessary review to stay in the 1.0 release branch.
+
+The fix here is that we are now crystal clear that future releases will always be cut from trunk. So if people are committing stuff that they feel is not baked enough for trunk, those commits will be more likely done in a feature branch. Keeping clear about this is one way we can avoid similar issues in the future.
+
+### Code review
+
+In the run up to 1.0, there were mailing list messages about which commits were trivial, and which needed review. In the case of the commits that weren't trivial, the original committer was the one who said he thought they were fine. In the future, for any commits to the deepest parts of the storage engine, we will be careful to have review from multiple parties. Many eyes make bugs shallow, but for code like the core CouchDB storage engine, there aren't a lot of folks who are ready to review and understand a particular patch.
+
+### Testing
+
+CouchDB currently has a suite of unit and integration tests, which guide development and provide the first line of documentation. We also have a few independent benchmark suites, which we can use to track performance improvements and regressions.
+
+What we don't have is a set of correctness stress tests. In this case, a fuzzing test, that applies a random set of operations to a constrained keyspace, while tracking the expected database state, and then restarting the server to make sure the state is as expected, would have caught the error.
+
+We could learn a lot from the [SQLite testing methodology](http://www.sqlite.org/testing.html). Expect to see more stress and correctness tests in CouchDB's future.
