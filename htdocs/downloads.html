@@ -82,7 +82,7 @@ limitations under the License.
 Please stand by and wait for the 1.0.1 release.</p>
 
 <p>If you <em>are</em> running CouchDB 1.0.0 in production, here are the steps to
-reconfigure CouchDB to avoid the bug. </p>
+reconfigure CouchDB to avoid the bug.</p>
 
 <p><em>It is important that you do not stop or restart the server.</em></p>
 
@@ -97,29 +97,6 @@ reconfigure CouchDB to avoid the bug. </p>
 </code></pre>
 
 <p></div></p>
-
-<h3>1.0.0</h3>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz">apache-couchdb-1.0.0.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<ul>
-<li>More efficient header commits.</li>
-<li>Use O_APPEND to save lseeks.</li>
-<li>Faster implementation of pread_iolist(). Further improves performance on
-concurrent reads.</li>
-<li>Added authentication caching</li>
-<li>Faster default view collation.</li>
-<li>Added option to include update_seq in view responses.</li>
-</ul>
 
 <h3>0.11.1</h3>
 

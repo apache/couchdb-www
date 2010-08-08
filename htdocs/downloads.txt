@@ -16,7 +16,7 @@ Current Releases
 Please stand by and wait for the 1.0.1 release.
 
 If you *are* running CouchDB 1.0.0 in production, here are the steps to
-reconfigure CouchDB to avoid the bug. 
+reconfigure CouchDB to avoid the bug.
 
 *It is important that you do not stop or restart the server.*
 
@@ -29,25 +29,6 @@ Then, for each of your databases, run:
     curl -X POST http://127.0.0.1:5984/database_name/_ensure_full_commit
 
   </div>
-
-### 1.0.0
-
-#### Files
-
- * [apache-couchdb-1.0.0.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz)
-   [[OpenPGP](http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.asc)]
-   [[MD5](http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.md5)]
-   [[SHA](http://www.apache.org/dist/couchdb/1.0.0/apache-couchdb-1.0.0.tar.gz.sha)]
-
-#### Changes
-
- * More efficient header commits.
- * Use O\_APPEND to save lseeks.
- * Faster implementation of pread\_iolist(). Further improves performance on
-   concurrent reads.
- * Added authentication caching
- * Faster default view collation.
- * Added option to include update\_seq in view responses.
 
 ### 0.11.1
 
