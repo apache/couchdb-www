@@ -9,7 +9,7 @@ If you are using CouchDB 1.0.0 and have the default setting for 'delayed_commits
 
 This bug does not affect earlier releases of CouchDB.
 
-Even if you have lost data due to this bug it is possible that it can be recovered. If you can, archive a copy of the database that has lost data. Please subscribe to the [user@ or dev@ mailing list](http://couchdb.apache.org/community/lists.html) to get notified when the tool will be available.
+Even if you have lost data due to this bug it is possible that it can be recovered. If you can, archive a copy of the database that has lost data, if not, at least do not compact your databases as the repair tool will not be effective if you do so. Please subscribe to the [user@ or dev@ mailing list](http://couchdb.apache.org/community/lists.html) to get notified when the tool will be available.
 
 ## Post mortem for a nasty bug
 
