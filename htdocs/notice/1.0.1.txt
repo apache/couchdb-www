@@ -33,7 +33,15 @@ The next time you write a document to each database, it will commit the header t
 
 ### For everyone
 
-To ensure that each database is committed, you can use the `_ensure_full_commit` command. There are a couple of ways to do this. Here is a simple HTML file that you can upload to your CouchDB using Futon. When you visit it, it will make sure your data is all safely committed. If you prefer a shell script, skip below this file.
+To ensure that each database is committed, you can use the `_ensure_full_commit` command. There are a few of ways to do this. 
+
+The simplest method is to right click the following link and add it to your bookmarks. 
+
+Bookmarklet: [Commit All Databases](copy_link_text_from_full_commit.js)
+
+Now visit Futon on your CouchDB instance at <http://localhost:5984/_utils/>, and select the bookmark. It will use the JavaScript libraries included with Futon to ensure all your databases are fully committed.
+
+Alternatively, here is a simple HTML file that you can upload to your CouchDB using Futon. When you visit it, it will make sure your data is all safely committed. If you prefer a shell script, skip below this file.
 
 Save this HTML to a file on your machine called `commit_all.html`
 
