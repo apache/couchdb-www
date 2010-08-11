@@ -21,6 +21,23 @@ Please wait for the 1.0.1 release.
 
   </div>
 
+### 0.11.2
+
+#### Files
+
+ * [apache-couchdb-0.11.2.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz)
+   [[OpenPGP](http://www.apache.org/dist/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz.asc)]
+   [[MD5](http://www.apache.org/dist/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz.md5)]
+   [[SHA](http://www.apache.org/dist/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz.sha)]
+
+#### Changes
+
+  * Replicator buxfixes for replicating design documents from secured databases.
+  * Better error messages on invalid URL requests.
+  * User documents can now be deleted by admins or the user.
+  * Avoid potential DOS attack by guarding all creation of atoms.
+  * Some Futon and JavaScript library bugfixes.
+
 ### 0.11.1
 
 #### Files
