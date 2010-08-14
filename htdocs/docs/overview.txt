@@ -129,10 +129,10 @@ documents** and can replicate across database instances like regular documents,
 so that not only data replicates in CouchDB, but entire application designs 
 replicate too.
 
-Javascript View Functions
+JavaScript View Functions
 -------------------------
 
-Views are defined using Javascript functions acting as the ''map'' part in [a 
+Views are defined using JavaScript functions acting as the ''map'' part in [a 
 map-reduce system][mapreduce]. A view function takes a CouchDB document as an 
 argument and then does whatever computation it needs to do to determine the
 data that is to be made available through the view, if any. It can add multiple
@@ -207,7 +207,7 @@ list is used, protected documents are only viewable by listed users.
 
 When a user accesses a database, the his/her credentials (name and password) 
 are used to dynamically determine his reader names. The user credentials are 
-input to a javascript function and the function returns a list of names for the 
+input to a JavaScript function and the function returns a list of names for the 
 user, or an error if the user credentials are wrong.
 
 When a document is protected by reader access lists, any user attempting to 
@@ -219,7 +219,7 @@ non-readers.
 Update Validation
 -----------------
 
-As documents written to disk, they can be validated dynamically by javascript 
+As documents written to disk, they can be validated dynamically by JavaScript 
 functions for both security and data validation. When the document passes all 
 the formula validation criteria, the update is allowed to continue. If the 
 validation fails, the update is aborted and the user client gets an error 
@@ -258,7 +258,7 @@ network. If replication fails at any step, due to network problems or crash for
 example, the next replication restarts at the same document where it left off.
 
 Partial replicas can be created and maintained. Replication can be filtered by 
-a javascript function, so that only particular documents or those meeting 
+a JavaScript function, so that only particular documents or those meeting 
 specific criteria are replicated. This can allow users to take subsets of a 
 large shared database application offline for their own use, while maintaining 
 normal interaction with the application and that subset of data.

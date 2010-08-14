@@ -13,7 +13,7 @@ What CouchDB is
  * Distributed, featuring robust, incremental replication with bi-directional 
    conflict detection and management.
  * Query-able and index-able, featuring a table oriented reporting engine that 
-   uses Javascript as a query language.
+   uses JavaScript as a query language.
 
 What it is Not
 --------------
@@ -47,7 +47,7 @@ identified by a unique ID.
 ### Views ###
 
 To address this problem of adding structure back to semi-structured data, 
-CouchDB integrates a view model using Javascript for description. Views are the 
+CouchDB integrates a view model using JavaScript for description. Views are the 
 method of aggregating and reporting on the documents in a database, and are 
 built on-demand to aggregate, join and report on database documents. Views are 
 built dynamically and don’t affect the underlying document, you can have as 
@@ -67,7 +67,7 @@ weren't anticipated in the initial database designs, and makes distributed
 "upgrades" a problem for every host that needs to go through a schema update.
 
 With CouchDB, no schema is enforced, so new document types with new meaning can 
-be safely added alongside the old. The view engine, using Javascript, is 
+be safely added alongside the old. The view engine, using JavaScript, is 
 designed to easily handle new document types and disparate but similar 
 documents.
 
