@@ -2,14 +2,14 @@ Title: Notice for 1.0.1
 Sort-Index: 061
 
 # %(title)s
-  <div class="notice">
 
-<h1>The Repair Tool is available</h1>
+  <div style="border:5px dashed #F00;padding:1em">
 
-Download the **CouchDB 1.0.0 Repair Tool** [here](http://wiki.couchone.com/page/repair-tool#/).
+**A REPAIR TOOL IS NOW AVAILABLE**
+
+Download the [CouchDB 1.0.0 Repair Tool](http://wiki.couchone.com/page/repair-tool#/) if you want to recover your data.
 
   </div>
-
 
 ## Warning
 
@@ -41,9 +41,9 @@ The next time you write a document to each database, it will commit the header t
 
 ### For everyone
 
-To ensure that each database is committed, you can use the `_ensure_full_commit` command. There are a few of ways to do this. 
+To ensure that each database is committed, you can use the `_ensure_full_commit` command. There are a few of ways to do this.
 
-The simplest method is to right click the following link and add it to your bookmarks. 
+The simplest method is to right click the following link and add it to your bookmarks.
 
 Bookmarklet: [Commit All Databases](javascript:%%24.couch.allDbs%%28%%7Bsuccess%%3Afunction%%28dbs%%29%%7Bfunction%%20commitDbs%%28list%%29%%7Bvar%%20db%%3Dlist.pop%%28%%29%%3B%%24.ajax%%28%%7Btype%%3A%%22POST%%22%%2Curl%%3A%%22%%2F%%22%%2BencodeURIComponent%%28db%%29%%2B%%22%%2F_ensure_full_commit%%22%%2CcontentType%%3A%%22application%%2Fjson%%22%%2CdataType%%3A%%22json%%22%%2Ccomplete%%3Afunction%%28r%%29%%7B%%24%%28%%22%%23content%%22%%29.prepend%%28%%27%%3Cul%%20id%%3D%%22commit_all%%22%%3E%%3C%%2Ful%%3E%%27%%29%%3Bif%%28r.status%%3D%%3D201%%29%%7B%%24%%28%%22%%23commit_all%%22%%29.append%%28%%27%%3Cli%%3Ecommitted%%3A%%20%%27%%2Bdb%%2B%%27%%3C%%2Fli%%3E%%27%%29%%3B%%7Delse%%7B%%24%%28%%22%%23commit_all%%22%%29.append%%28%%27%%3Cli%%20style%%3D%%22color%%3Ared%%3B%%22%%3Eerror%%3A%%20%%27%%2Bdb%%2B%%27%%3C%%2Fli%%3E%%27%%29%%3B%%7Dif%%28list.length%%3E0%%29%%7BcommitDbs%%28list%%29%%3B%%7D%%7D%%7D%%29%%3B%%7DcommitDbs%%28dbs%%29%%3B%%7D%%7D%%29%%3B)
 
@@ -72,9 +72,9 @@ Save this HTML to a file on your machine called `commit_all.html`
                 contentType: "application/json", dataType: "json",
                 complete : function(r) {
                   if (r.status == 201) {
-                    $("#databases").append('<li>committed: '+db+'</li>');                
+                    $("#databases").append('<li>committed: '+db+'</li>');
                   } else {
-                    $("#databases").append('<li style="color:red;">error: '+db+'</li>');                
+                    $("#databases").append('<li style="color:red;">error: '+db+'</li>');
                   }
                 }
               });
@@ -108,7 +108,7 @@ Open the file, and add the following lines to it:
     delayed_commits = false
 
 Now, restart your CouchDB. This will be different on different operating systems. If you have your CouchDB configured as a system service, restarting the computer will do the trick, but if you don't want to do that, you can probably find the pid of CouchDB, by running `ps ax | grep couchdb`. Once you have the pid, you can kill CouchDB by running `kill <pid>`. If you are a fan of magic, you can do all that in one ninja move by running:
-  
+
       kill `ps ax | grep couchdb | head -n1 | awk '{print $1}'`
 
 Note: you might need to sudo.

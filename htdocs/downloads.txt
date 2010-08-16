@@ -15,11 +15,32 @@ Current Releases
 **CAUTION**
 
 The 1.0.0 release has a data-loss bug in its default configuration.
-Please wait for the 1.0.1 release.
 
-[If you are running version 1.0.0, please read this notice](notice/1.0.1.html).
+**IF YOU ARE RUNNING 1.0.0, PLEASE UPGRADE TO 1.0.1 AS SOON AS POSSIBLE**
+
+See [the release notice](notice/1.0.1.html) for more information.
 
   </div>
+
+### 1.0.1
+
+#### Files
+
+ * [apache-couchdb-1.0.1.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz)
+   [[OpenPGP](http://www.apache.org/dist/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz.asc)]
+   [[MD5](http://www.apache.org/dist/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz.md5)]
+   [[SHA](http://www.apache.org/dist/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz.sha)]
+
+#### Changes
+
+  * Fix data corruption bug COUCHDB-844. Please see
+    [the release notice](http://couchdb.apache.org/notice/1.0.1.html) for details.
+  * Added support for replication via an HTTP/HTTP proxy.
+  * Fixed various replicator bugs for interop with older CouchDB versions.
+  * Show fields saved along with _deleted=true. Allows for auditing of deletes.
+  * Enable basic-auth popup when required to access the server, to prevent
+    people from getting locked out.
+  * User interface element for querying stale (cached) views.
 
 ### 0.11.2
 
