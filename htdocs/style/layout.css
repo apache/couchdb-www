@@ -60,3 +60,6 @@ html, body { background: #84856A url(tile.gif); min-width: 800px; }
 }
 
 #footer a { color: #fff; text-decoration:underline;}
+
+div.notice { border:5px dashed #F00;padding:1em; }
+#content .notice h1:first-child { border: none; }

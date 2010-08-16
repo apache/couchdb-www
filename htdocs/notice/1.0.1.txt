@@ -2,6 +2,14 @@ Title: Notice for 1.0.1
 Sort-Index: 061
 
 # %(title)s
+  <div class="notice">
+
+<h1>The Repair Tool is available</h1>
+
+Download the **CouchDB 1.0.0 Repair Tool** [here](http://wiki.couchone.com/page/repair-tool#/).
+
+  </div>
+
 
 ## Warning
 
