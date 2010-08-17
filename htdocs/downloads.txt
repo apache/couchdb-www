@@ -229,7 +229,7 @@ Even older Apache Incubator releases of CouchDB can be found here:
 
   * [Apache Incubator archive of CouchDB](http://archive.apache.org/dist/incubator/couchdb/)
 
-These are provided for references purposes only. It is recommended you use a current release of CouchDB.
+These are provided for reference purposes only. It is recommended you use a current release of CouchDB.
 
 Verifying Releases
 ------------------
