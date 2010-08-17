@@ -58,6 +58,7 @@ See [the release notice](notice/1.0.1.html) for more information.
   * User documents can now be deleted by admins or the user.
   * Avoid potential DOS attack by guarding all creation of atoms.
   * Some Futon and JavaScript library bugfixes.
+  * Fixed CVE-2010-2234: Apache CouchDB Cross Site Request Forgery Attack
 
 ### 0.11.1
 
