@@ -108,13 +108,12 @@ limitations under the License.
 <ul>
 <li>Fix data corruption bug COUCHDB-844. Please see
 <a href="http://couchdb.apache.org/notice/1.0.1.html">the release notice</a> for details.</li>
-<li>Added support for replication via an HTTP/HTTP proxy.</li>
+<li>Added support for replication via an HTTP/HTTPS proxy.</li>
 <li>Fixed various replicator bugs for interop with older CouchDB versions.</li>
 <li>Show fields saved along with _deleted=true. Allows for auditing of deletes.</li>
 <li>Enable basic-auth popup when required to access the server, to prevent
 people from getting locked out.</li>
 <li>User interface element for querying stale (cached) views.</li>
-<li>Fixed CVE-2010-2234: Apache CouchDB Cross Site Request Forgery Attack</li>
 </ul>
 
 <h3>0.11.2</h3>
@@ -136,6 +135,7 @@ people from getting locked out.</li>
 <li>User documents can now be deleted by admins or the user.</li>
 <li>Avoid potential DOS attack by guarding all creation of atoms.</li>
 <li>Some Futon and JavaScript library bugfixes.</li>
+<li>Fixed CVE-2010-2234: Apache CouchDB Cross Site Request Forgery Attack</li>
 </ul>
 
 <h3>0.11.1</h3>
