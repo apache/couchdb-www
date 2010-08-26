@@ -80,27 +80,19 @@ limitations under the License.
 
 <p><div style="border:5px dashed #F00;padding:1em"></p>
 
-<p><strong>A REPAIR TOOL IS NOW AVAILABLE</strong></p>
+<p><strong>A 1.0.0 RECOVERY TOOL IS NOW AVAILABLE</strong></p>
 
-<p>Download the <a href="http://wiki.couchone.com/page/repair-tool#/">CouchDB 1.0.0 Repair Tool</a> if you want to recover your data.</p>
+<p>Download the <a href="http://wiki.couchone.com/page/repair-tool#/">CouchDB 1.0.0 Repair Tool</a> to recover data.</p>
 
 <p></div></p>
 
-<h2>Warning</h2>
+<h2>Notes on a Nasty Bug</h2>
 
-<p>If you are using CouchDB 1.0.0 and have the default setting for &#8216;delayed_commits&#8217; (true) then you are affected by this data loss bug. You should read this page very carefully and apply the remedy as soon as practicable.</p>
+<p>Developers should be using 1.0.1 release only at this point; not the 1.0.0 version. Read on to find out why.</p>
 
-<p>This bug does not affect earlier releases of CouchDB.</p>
+<p>On the weekend of August 7th–8th, 2010 we discovered and fixed a bug in CouchDB 1.0.0. The problem was subtle (cancelling a timer, without deleting the reference to it) but the ramifications were not: there was potential data loss for users of 1.0.0. The 1.0.1 release contains a permanent fix, and <a href="../downloads.html">is available now on the download page</a>.</p>
 
-<p>Even if you have lost data due to this bug it is possible that it can be recovered. If you can, archive a copy of the database that has lost data, if not, at least do not compact your databases as the repair tool will not be effective if you do so. Please subscribe to the <a href="http://couchdb.apache.org/community/lists.html">user@ or dev@ mailing list</a> to get notified when the tool will be available.</p>
-
-<h2>Post mortem for a nasty bug</h2>
-
-<p>Over the weekend of August 7th–8th, 2010 we discovered and fixed a nasty bug in CouchDB 1.0.0. The problem was subtle (cancelling a timer, without deleting the reference to it) but the ramifications are not: <strong>once the bad code path is triggered, subsequent writes to the database are never committed.</strong> This means there is potential data-loss for users of 1.0.0.</p>
-
-<p>Luckily, triggering the bad code path doesn&#8217;t happen to everyone, and there is a hot fix that can prevent data loss (as long as it is applied before the server is restarted or crashes.)</p>
-
-<p>The 1.0.1 release will contain a permanent fix, and is expected this week. For now, this article will explain how to achieve data-safety on CouchDB 1.0.0. We will also look at the bug itself, how it happened, and what we are doing to prevent something similar happening again.</p>
+<p>We are proud how quickly the CouchDB community recovered from this bug and went the extra mile to make sure everyone&#8217;s data was safe. It is clear we have a group of developers who care enough about all users&#8217; data that it aggressively pursued an &#8220;edge case&#8221; bug so no one would be caught off guard. Further, the team worked for the next week to create a repair tool to recover access to data which was affected by the bug. As a result, no users lost data permanently. Kudos!</p>
 
 <h2>The Remedy</h2>
 
