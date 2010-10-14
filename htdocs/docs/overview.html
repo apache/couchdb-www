@@ -256,23 +256,6 @@ can create other administrator accounts and update design documents. Design
 documents are special documents containing view definitions and other special 
 formulas, as well as regular fields and blobs.</p>
 
-<h2>Reader Access</h2>
-
-<p>To protect document contents, CouchDB documents can have a reader list. This is 
-an optional list of reader-names allowed to read the document. When a reader 
-list is used, protected documents are only viewable by listed users.</p>
-
-<p>When a user accesses a database, the his/her credentials (name and password) 
-are used to dynamically determine his reader names. The user credentials are 
-input to a JavaScript function and the function returns a list of names for the 
-user, or an error if the user credentials are wrong.</p>
-
-<p>When a document is protected by reader access lists, any user attempting to 
-read the document must be listed. Reader lists are enforced in views too. 
-Documents that are not allowed to be read by the user are dynamically filtered 
-out of views, keeping the document row and extracted information invisible to 
-non-readers.</p>
-
 <h2>Update Validation</h2>
 
 <p>As documents written to disk, they can be validated dynamically by JavaScript 
