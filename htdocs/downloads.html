@@ -92,6 +92,60 @@ limitations under the License.
 
 <p></div></p>
 
+<h3>1.0.2</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz">apache-couchdb-1.0.2.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Make test suite work with Safari and Chrome.</li>
+<li>Fixed animated progress spinner.</li>
+<li>Fix raw view document link due to overzealous URI encoding.</li>
+<li>Spell javascript correctly in loadScript(uri).</li>
+<li>Fix leaking file handles after compacting databases and views.</li>
+<li>Fix databases forgetting their validation function after compaction.</li>
+<li>Fix occasional timeout errors after successfully compacting large databases.</li>
+<li>Fix ocassional error when writing to a database that has just been compacted.</li>
+<li>Fix occasional timeout errors on systems with slow or heavily loaded IO.</li>
+<li>Fix for OOME when compactions include documents with many conflicts.</li>
+<li>Fix for missing attachment compression when MIME types included parameters.</li>
+<li>Preserve purge metadata during compaction to avoid spurious view rebuilds.</li>
+<li>Fix spurious conflicts introduced when uploading an attachment after
+a doc has been in a conflict. See COUCHDB-902 for details.</li>
+<li>Fix for frequently edited documents in multi-master deployments being
+duplicated in <em>changes and _all</em>docs.  See COUCHDDB-968 for details on how
+to repair.</li>
+<li>Significantly higher read and write throughput against database and
+view index files.</li>
+<li>Reduce lengthy stack traces.</li>
+<li>Allow logging of native <xml> types.</li>
+<li>Allow reduce=false parameter in map-only views.</li>
+<li>Fix parsing of Accept headers.</li>
+<li>Fix for multipart GET APIs when an attachment was created during a
+local-local replication. See COUCHDB-1022 for details.</li>
+<li>Updated ibrowse library to 2.1.2 fixing numerous replication issues.</li>
+<li>Make sure that the replicator respects HTTP settings defined in the config.</li>
+<li>Fix error when the ibrowse connection closes unexpectedly.</li>
+<li>Fix authenticated replication (with HTTP basic auth) of design documents
+with attachments.</li>
+<li>Various fixes to make replication more resilient for edge-cases.</li>
+<li>Don&#8217;t trigger view updates when requesting <code>_design/doc/_info</code>.</li>
+<li>Fix for circular references in CommonJS requires.</li>
+<li>Made isArray() function available to functions executed in the query server.</li>
+<li>Documents are now sealed before being passed to map functions.</li>
+<li>Force view compaction failure when duplicated document data exists. When
+this error is seen in the logs users should rebuild their views from
+scratch to fix the issue. See COUCHDB-999 for details.</li>
+</ul>
+
 <h3>1.0.1</h3>
 
 <h4>Files</h4>
