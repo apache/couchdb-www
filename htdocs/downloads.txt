@@ -10,18 +10,6 @@ The following releases of Apache CouchDB are available for download.
 Current Releases
 ----------------
 
-  <div style="border:5px dashed #F00;padding:1em">
-
-**CAUTION**
-
-The 1.0.0 release has a data-loss bug in its default configuration.
-
-**IF YOU ARE RUNNING 1.0.0, PLEASE UPGRADE TO 1.0.1 AS SOON AS POSSIBLE**
-
-See [the release notice](notice/1.0.1.html) for more information.
-
-  </div>
-
 ### 1.0.2
 
 #### Files
@@ -73,6 +61,19 @@ See [the release notice](notice/1.0.1.html) for more information.
    scratch to fix the issue. See COUCHDB-999 for details.
 
 ### 1.0.1
+
+  <div style="border:5px dashed #F00;padding:1em">
+
+**CAUTION**
+
+The 1.0.0 release has a data-loss bug in its default configuration.
+
+**IF YOU ARE RUNNING 1.0.0, PLEASE UPGRADE TO 1.0.1 AS SOON AS POSSIBLE**
+
+See [the release notice](notice/1.0.1.html) for more information.
+
+  </div>
+
 
 #### Files
 
