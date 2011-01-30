@@ -12,9 +12,12 @@ List of Vulnerabilities
 
 * [CVE-2010-0009][] affects all versions of Apache CouchDB prior to 0.11.0.
 * [CVE-2010-2234][] affects all versions of Apache CouchDB prior to 0.11.2.
+* [CVE-2010-3854][] affects all versions of Apache CouchDB prior to 1.0.1.
 
 [CVE-2010-0009]: http://markmail.org/message/7x6ljrjsj5u3zr4h
 [CVE-2010-2234]: http://mail-archives.apache.org/mod_mbox/couchdb-dev/201008.mbox/%%3cD105F928-15C0-403A-A958-1FD2648F5B38@apache.org%%3e
+[CVE-2010-3854]:  http://mail-archives.apache.org/mod_mbox/couchdb-dev/201101.mbox/%%3cC840F655-C8C5-4EC6-8AA8-DD223E39C34A@apache.org%%3e
+
 
 Reporting New Security Problems with Apache CouchDB
 --------------------------------------------------- 
