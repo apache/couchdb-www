@@ -1,5 +1,5 @@
 Title: License
-Location: http://www.apache.org/licenses/LICENSE-2.0.html
+Location: http://www.apache.org/licenses/
 Navigation-Class: external
 Sort-Index: 030
 
