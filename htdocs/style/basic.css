@@ -37,3 +37,11 @@ div.disclaimer p { font-width: bold; }
 .showcase p {
     margin-top: 10px;
 }
+
+.logo-tm {
+  position:absolute;
+  top:2px;
+  left:2px;
+  z-index:1000;
+  color:#777777
+}
