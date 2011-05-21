@@ -67,3 +67,10 @@ Mark Hammond, <mhammond@apache.org>
 Robert Newson, <rnewson@apache.org>
 
  Contributes bug fixes and small features.
+
+Randall Leeds, <randall@apache.org>
+
+ Squashes bugs and tunes performance. Tweaks API interoperabilities,
+ forward-/backward-compatibility and developer interactions. Maintains
+ CouchDB-Lounge.
+
