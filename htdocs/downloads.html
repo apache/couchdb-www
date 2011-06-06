@@ -81,6 +81,39 @@ limitations under the License.
 
 <h2>Current Releases</h2>
 
+<h3>1.1.0</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz">apache-couchdb-1.1.0.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Native SSL support.</li>
+<li>Added support for HTTP range requests for attachments.</li>
+<li>Added built-in filters for <code>_changes</code>: <code>_doc_ids</code> and <code>_design</code>.</li>
+<li>Added configuration option for TCP_NODELAY aka &#8220;Nagle&#8221;.</li>
+<li>Allow wildcards in vhosts definitions.</li>
+<li>More granular ETag support for views.</li>
+<li>More flexible URL rewriter.</li>
+<li>Added OS Process module to manage daemons outside of CouchDB.</li>
+<li>Added HTTP Proxy handler for more scalable externals.</li>
+<li>Added <code>_replicator</code> database to manage replications.</li>
+<li>Multiple micro-optimizations when reading data.</li>
+<li>Added CommonJS support to map functions.</li>
+<li>Added <code>stale=update_after</code> query option that triggers a view update after
+returning a <code>stale=ok</code> response.</li>
+<li>More explicit error messages when it&#8217;s not possible to access a file due
+to lack of permissions.</li>
+<li>Added a &#8220;change password&#8221;-feature to Futon.</li>
+</ul>
+
 <h3>1.0.2</h3>
 
 <h4>Files</h4>
