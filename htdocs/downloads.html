@@ -116,6 +116,18 @@ to lack of permissions.</li>
 
 <h3>1.0.2</h3>
 
+<p><div style="border:5px dashed #F00;padding:1em"></p>
+
+<p><strong>CAUTION</strong></p>
+
+<p>The 1.0.0 release has a data-loss bug in its default configuration.</p>
+
+<p><strong>IF YOU ARE RUNNING 1.0.0, PLEASE UPGRADE TO 1.0.1 (OR HIGHER) AS SOON AS POSSIBLE</strong></p>
+
+<p>See <a href="notice/1.0.1.html">the release notice</a> for more information.</p>
+
+<p></div></p>
+
 <h4>Files</h4>
 
 <ul>
@@ -168,42 +180,6 @@ this error is seen in the logs users should rebuild their views from
 scratch to fix the issue. See COUCHDB-999 for details.</li>
 </ul>
 
-<h3>1.0.1</h3>
-
-<p><div style="border:5px dashed #F00;padding:1em"></p>
-
-<p><strong>CAUTION</strong></p>
-
-<p>The 1.0.0 release has a data-loss bug in its default configuration.</p>
-
-<p><strong>IF YOU ARE RUNNING 1.0.0, PLEASE UPGRADE TO 1.0.1 AS SOON AS POSSIBLE</strong></p>
-
-<p>See <a href="notice/1.0.1.html">the release notice</a> for more information.</p>
-
-<p></div></p>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz">apache-couchdb-1.0.1.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/1.0.1/apache-couchdb-1.0.1.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<ul>
-<li>Fix data corruption bug COUCHDB-844. Please see
-<a href="http://couchdb.apache.org/notice/1.0.1.html">the release notice</a> for details.</li>
-<li>Added support for replication via an HTTP/HTTPS proxy.</li>
-<li>Fixed various replicator bugs for interop with older CouchDB versions.</li>
-<li>Show fields saved along with _deleted=true. Allows for auditing of deletes.</li>
-<li>Enable basic-auth popup when required to access the server, to prevent
-people from getting locked out.</li>
-<li>User interface element for querying stale (cached) views.</li>
-</ul>
-
 <h3>0.11.2</h3>
 
 <h4>Files</h4>
@@ -224,115 +200,6 @@ people from getting locked out.</li>
 <li>Avoid potential DOS attack by guarding all creation of atoms.</li>
 <li>Some Futon and JavaScript library bugfixes.</li>
 <li>Fixed CVE-2010-2234: Apache CouchDB Cross Site Request Forgery Attack</li>
-</ul>
-
-<h3>0.11.1</h3>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz">apache-couchdb-0.11.1.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.11.1/apache-couchdb-0.11.1.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<ul>
-<li>Mask passwords in active tasks and logging.</li>
-<li>Update mochijson2 to allow output of BigNums not in float form.</li>
-<li>Added support for X-HTTP-METHOD-OVERRIDE.</li>
-<li>Disable jsonp by default.</li>
-<li>Accept gzip encoded standalone attachments.</li>
-<li>Made max_concurrent_connections configurable.</li>
-<li>Added continuous replication option to Futon.</li>
-<li>Added option to replicating test results anonymously to a community
-CouchDB instance.</li>
-<li>Allow creation and deletion of config entries in Futon.</li>
-<li>Fixed various UI issues in Futon.</li>
-<li>Fixed compatibility with the Erlang R14 series.</li>
-<li>Fixed warnings on Linux builds.</li>
-<li>Fixed build error when aclocal needs to be called during the build.</li>
-<li>Require ICU 4.3.1.</li>
-<li>Fixed compatibility with Solaris.</li>
-<li>Added authentication redirect URL to log in clients.</li>
-<li>Added authentication caching, to avoid repeated opening and closing of the
-users database for each request requiring authentication.</li>
-<li>Made authentication timeout configurable.</li>
-<li>Temporary views are now admin-only resources.</li>
-<li>Don&#8217;t require a revpos for attachment stubs.</li>
-<li>Make file deletions async to avoid pauses during compaction and db
-deletion.</li>
-<li>Fixed for wrong offset when writing headers and converting them to blocks,
-only triggered when header is larger than 4k.</li>
-<li>Preserve _revs_limit and instance_start_time after compaction.</li>
-<li>Fixed timeout with large .ini files.</li>
-<li>Added tests for couch.js and jquery.couch.js</li>
-<li>Added various API features to jquery.couch.js</li>
-<li>Faster default view collation.</li>
-<li>Upgrade CommonJS modules support to 1.1.1.</li>
-<li>Added option to include update_seq in view responses.</li>
-<li>Fixed erlang filter funs and normalize filter fun API.</li>
-<li>Fixed hang in view shutdown.</li>
-<li>Refactored various internal APIs related to attachment streaming.</li>
-<li>Fixed hanging replication.</li>
-<li>Fixed keepalive issue.</li>
-<li>Allow global rewrites so system defaults are available in vhosts.</li>
-<li>Allow isolation of databases with vhosts.</li>
-<li>Made the test suite overall more reliable.</li>
-</ul>
-
-<h3>0.11.0</h3>
-
-<h4>Files</h4>
-
-<ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz">apache-couchdb-0.11.0.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/0.11.0/apache-couchdb-0.11.0.tar.gz.sha">SHA</a>]</li>
-</ul>
-
-<h4>Changes</h4>
-
-<p>This version is a feature-freeze release candidate for Apache CouchDB 1.0.</p>
-
-<ul>
-<li>Added support for building a Windows installer as part of &#8216;make dist&#8217;.</li>
-<li>Added optional &#8216;raw&#8217; binary collation for faster view builds where Unicode
-collation is not important.</li>
-<li>Improved view index build time by reducing ICU collation callouts.</li>
-<li>Added option to implicitly create replication target databases.</li>
-<li>Improved view information objects.</li>
-<li>Bug fix for partial updates during view builds.</li>
-<li>Bug fix for building couch.app&#8217;s module list.</li>
-<li>Fixed a problem with statistics timers and system sleep.</li>
-<li>Improved the statistics calculations to use an online moving window
-algorithm.</li>
-<li>Adds batching of multiple updating requests, to improve throughput with many
-writers.</li>
-<li>Removed the now redundant couch_batch_save module.</li>
-<li>Bug fix for premature termination of chunked responses.</li>
-<li>Improved speed and concurrency of config lookups.</li>
-<li>Fixed an edge case for HTTP redirects during replication.</li>
-<li>Fixed HTTP timeout handling for replication.</li>
-<li>Fixed query parameter handling in OAuth&#8217;d replication.</li>
-<li>Fixed a bug preventing mixing languages with lists and views.</li>
-<li>Avoid OS process leaks in lists.</li>
-<li>Avoid leaking file descriptors on automatic replication restarts.</li>
-<li>Various improvements to the Futon UI.</li>
-<li>Provide Content-MD5 header support for attachments.</li>
-<li>Adds configurable compression of attachments.</li>
-<li>Added default cookie-authentication and users db.</li>
-<li>Added per-db reader access control lists.</li>
-<li>Added per-db security object for configuration data in validation functions.</li>
-<li>Added URL Rewriter handler.</li>
-<li>Added proxy authentication handler.</li>
-<li>Added ability to replicate documents by id.</li>
-<li>Added virtual host handling.</li>
-<li>Uses json2.js for JSON serialization compatiblity with native JSON.</li>
-<li>Fixed CVE-2010-0009: Apache CouchDB Timing Attack Vulnerability.</li>
 </ul>
 
 <h2>Archived Releases</h2>
