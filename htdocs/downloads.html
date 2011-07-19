@@ -114,70 +114,34 @@ to lack of permissions.</li>
 <li>Added a &#8220;change password&#8221;-feature to Futon.</li>
 </ul>
 
-<h3>1.0.2</h3>
-
-<p><div style="border:5px dashed #F00;padding:1em"></p>
-
-<p><strong>CAUTION</strong></p>
-
-<p>The 1.0.0 release has a data-loss bug in its default configuration.</p>
-
-<p><strong>IF YOU ARE RUNNING 1.0.0, PLEASE UPGRADE TO 1.0.1 (OR HIGHER) AS SOON AS POSSIBLE</strong></p>
-
-<p>See <a href="notice/1.0.1.html">the release notice</a> for more information.</p>
-
-<p></div></p>
+<h3>1.0.3</h3>
 
 <h4>Files</h4>
 
 <ul>
-<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz">apache-couchdb-1.0.2.tar.gz</a>
-[<a href="http://www.apache.org/dist/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz.asc">OpenPGP</a>]
-[<a href="http://www.apache.org/dist/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz.md5">MD5</a>]
-[<a href="http://www.apache.org/dist/couchdb/1.0.2/apache-couchdb-1.0.2.tar.gz.sha">SHA</a>]</li>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.0.3/apache-couchdb-1.0.3.tar.gz">apache-couchdb-1.0.3.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/1.0.3/apache-couchdb-1.0.3.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.0.3/apache-couchdb-1.0.3.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.0.3/apache-couchdb-1.0.3.tar.gz.sha">SHA</a>]</li>
 </ul>
 
 <h4>Changes</h4>
 
 <ul>
-<li>Make test suite work with Safari and Chrome.</li>
-<li>Fixed animated progress spinner.</li>
-<li>Fix raw view document link due to overzealous URI encoding.</li>
-<li>Spell javascript correctly in loadScript(uri).</li>
-<li>Fix leaking file handles after compacting databases and views.</li>
-<li>Fix databases forgetting their validation function after compaction.</li>
-<li>Fix occasional timeout errors after successfully compacting large databases.</li>
-<li>Fix ocassional error when writing to a database that has just been compacted.</li>
-<li>Fix occasional timeout errors on systems with slow or heavily loaded IO.</li>
-<li>Fix for OOME when compactions include documents with many conflicts.</li>
-<li>Fix for missing attachment compression when MIME types included parameters.</li>
-<li>Preserve purge metadata during compaction to avoid spurious view rebuilds.</li>
-<li>Fix spurious conflicts introduced when uploading an attachment after
-a doc has been in a conflict. See COUCHDB-902 for details.</li>
-<li>Fix for frequently edited documents in multi-master deployments being
-duplicated in <em>changes and _all</em>docs.  See COUCHDDB-968 for details on how
-to repair.</li>
-<li>Significantly higher read and write throughput against database and
-view index files.</li>
-<li>Reduce lengthy stack traces.</li>
-<li>Allow logging of native <xml> types.</li>
-<li>Allow reduce=false parameter in map-only views.</li>
-<li>Fix parsing of Accept headers.</li>
-<li>Fix for multipart GET APIs when an attachment was created during a
-local-local replication. See COUCHDB-1022 for details.</li>
-<li>Updated ibrowse library to 2.1.2 fixing numerous replication issues.</li>
-<li>Make sure that the replicator respects HTTP settings defined in the config.</li>
-<li>Fix error when the ibrowse connection closes unexpectedly.</li>
-<li>Fix authenticated replication (with HTTP basic auth) of design documents
-with attachments.</li>
-<li>Various fixes to make replication more resilient for edge-cases.</li>
-<li>Don&#8217;t trigger view updates when requesting <code>_design/doc/_info</code>.</li>
-<li>Fix for circular references in CommonJS requires.</li>
-<li>Made isArray() function available to functions executed in the query server.</li>
-<li>Documents are now sealed before being passed to map functions.</li>
-<li>Force view compaction failure when duplicated document data exists. When
-this error is seen in the logs users should rebuild their views from
-scratch to fix the issue. See COUCHDB-999 for details.</li>
+<li>Fixed compatibility issues with Erlang R14B02.</li>
+<li>Fix bug that allows invalid UTF-8 after valid escapes.</li>
+<li>Enabled replication over IPv6.</li>
+<li>Fixed for crashes in continuous and filtered changes feeds.</li>
+<li>Changes feeds now honor conflicts=true parameter.</li>
+<li>Fixed error when restarting replications in OTP R14B02.</li>
+<li>Fixed error with filter replication with a limit of 1.</li>
+<li>Upgrade ibrowse to version 2.2.0.</li>
+<li>Fixed OAuth signature computation in OTP R14B02.</li>
+<li>Handle passwords with : in them.</li>
+<li>Made compatible with jQuery 1.5.x.</li>
+<li>Added support for inclusive_end wiht reduce views.</li>
+<li>Etap tests no longer require use of port 5984.</li>
+<li>Windows builds now require ICU >= 4.4.0 and Erlang >= R14B03.</li>
 </ul>
 
 <h3>0.11.2</h3>
