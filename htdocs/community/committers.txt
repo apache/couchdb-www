@@ -7,13 +7,13 @@ Sort-Index: 040
 
 [Damien Katz](http://damienkatz.net/), <damien@apache.org>
 
-   Original developer and Apache CouchDB PMC Chair.
+   Inventor, original developer and all around relaxed dude.
 
 [Jan Lehnardt](http://jan.prima.de/), <jan@apache.org>
 
-   Worked on the original UNIX port and now works on all ends in CouchDB.
-   He is a freelancing CouchDB consultant and gives presentations around the
-   world.
+   Contributes to all parts of CouchDB, helps out with the community, and
+   is PMC Chair. Co-author of <a href="http://guide.couchdb.org/">CouchDB:
+   The Definitive Guide</a>.
 
 [Noah Slater](http://tumbolia.org/nslater), <nslater@apache.org>
 
