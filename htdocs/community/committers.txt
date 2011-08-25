@@ -18,7 +18,7 @@ Sort-Index: 040
 [Noah Slater](http://nslater.org/), <nslater@apache.org>
 
    Developed and maintains the Autotools build system and application
-   infrastructure. He is CouchDB's primary release manager and co-author of
+   infrastructure. He is CouchDB's primary release manager, and is co-author of
    <a href="http://guide.couchdb.org/">CouchDB: The Definitive Guide</a>.
 
 [Christopher Lenz](http://www.cmlenz.net/), <cmlenz@apache.org>
