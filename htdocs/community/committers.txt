@@ -12,14 +12,14 @@ Sort-Index: 040
 [Jan Lehnardt](http://jan.prima.de/), <jan@apache.org>
 
    Contributes to all parts of CouchDB, helps out with the community, and
-   is PMC Chair. Co-author of <a href="http://guide.couchdb.org/">CouchDB:
+   is PMC Chair. He is co-author of <a href="http://guide.couchdb.org/">CouchDB:
    The Definitive Guide</a>.
 
-[Noah Slater](http://tumbolia.org/nslater), <nslater@apache.org>
+[Noah Slater](http://nslater.org/), <nslater@apache.org>
 
    Developed and maintains the Autotools build system and application
-   infrastructure. He is CouchDB's release manager and maintains a number of
-   related packages for Debian GNU/Linux.
+   infrastructure. He is CouchDB's primary release manager and co-author of
+   <a href="http://guide.couchdb.org/">CouchDB: The Definitive Guide</a>.
 
 [Christopher Lenz](http://www.cmlenz.net/), <cmlenz@apache.org>
 
@@ -31,7 +31,8 @@ Sort-Index: 040
 
   Upgraded the Erlang JSON term format. Integrates community patches,
   particularly related to the HTTP API and the MapReduce system. Gives talks and
-  presentations about CouchDB, with an eye toward recruiting more developers.
+  presentations about CouchDB, and is co-author of
+   <a href="http://guide.couchdb.org/">CouchDB: The Definitive Guide</a>.
 
 [Paul J. Davis](http://www.davispj.com/), <davisp@apache.org>
 
