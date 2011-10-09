@@ -5,36 +5,21 @@ Sort-Index: 030
 %(title)s
 =========
 
-The CouchDB source code can be found in the
-[Subversion repository](https://svn.apache.org/repos/asf/couchdb)
-which can also be
-[browsed online](http://svn.apache.org/viewvc/couchdb/).
+The CouchDB source code can be found in the [Git repository][gitweb].
 
-You can check out the code using the `svn` command:
+You can check out the code using the `git` command:
 
-    svn co http://svn.apache.org/repos/asf/couchdb/trunk couchdb
+    git clone http://git-wip-us.apache.org/repos/asf/couchdb.git
 
 Committers should use the secure repository:
 
-    svn co https://svn.apache.org/repos/asf/couchdb/trunk couchdb
+    git clone https://git-wip-us.apache.org/repos/asf/couchdb.git
 
-Read more about [version control](http://www.apache.org/dev/version-control.html) at
-the Apache Software Foundation.
+Read more about [Git][gitdocs] at the Apache Software Foundation.
 
-Git Mirrors
------------
+The issue tracker can be found [here][jira].
 
-If you prefer to use [git][] as your version control system, the Apache Software
-Foundation maintains a mirror at [http://git.apache.org/][asf-git]
-
-[Committers can follow these instructions to commit via git][asf-git-committers].
-
-If you like working on [GitHub][], here is the [GitHub Apache CouchDB
-mirror][asf-github].
-
-[git]: http://git-scm.com/
-[asf-git]: http://git.apache.org/
-[asf-git-committers]: http://wiki.apache.org/general/GitAtApache
-[GitHub]: https://github.com/
-[asf-github]: https://github.com/apache/couchdb
+[gitweb]: http://git-wip-us.apache.org/repos/asf/couchdb
+[gidocs]: http://git-wip-us.apache.org/
 [jira]: https://issues.apache.org/jira/browse/COUCHDB
+
