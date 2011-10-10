@@ -20,6 +20,6 @@ Read more about [Git][gitdocs] at the Apache Software Foundation.
 The issue tracker can be found [here][jira].
 
 [gitweb]: http://git-wip-us.apache.org/repos/asf/couchdb
-[gidocs]: http://git-wip-us.apache.org/
+[gitdocs]: http://git-wip-us.apache.org/
 [jira]: https://issues.apache.org/jira/browse/COUCHDB
 
