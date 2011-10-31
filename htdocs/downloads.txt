@@ -47,35 +47,6 @@ Current Releases
  * Fixes to the document multipart PUT API.
  * Fixes regarding file descriptor leaks for databases with views.
 
-### 1.1.0
-
-#### Files
-
- * [apache-couchdb-1.1.0.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz)
-   [[OpenPGP](http://www.apache.org/dist/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz.asc)]
-   [[MD5](http://www.apache.org/dist/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz.md5)]
-   [[SHA](http://www.apache.org/dist/couchdb/1.1.0/apache-couchdb-1.1.0.tar.gz.sha)]
-
-#### Changes
-
- * Native SSL support.
- * Added support for HTTP range requests for attachments.
- * Added built-in filters for `_changes`: `_doc_ids` and `_design`.
- * Added configuration option for TCP_NODELAY aka "Nagle".
- * Allow wildcards in vhosts definitions.
- * More granular ETag support for views.
- * More flexible URL rewriter.
- * Added OS Process module to manage daemons outside of CouchDB.
- * Added HTTP Proxy handler for more scalable externals.
- * Added `_replicator` database to manage replications.
- * Multiple micro-optimizations when reading data.
- * Added CommonJS support to map functions.
- * Added `stale=update_after` query option that triggers a view update after
-   returning a `stale=ok` response.
- * More explicit error messages when it's not possible to access a file due
-   to lack of permissions.
- * Added a "change password"-feature to Futon.
-
 ### 1.0.3
 
 #### Files
@@ -101,24 +72,6 @@ Current Releases
  * Added support for inclusive_end with reduce views.
  * Etap tests no longer require use of port 5984.
  * Windows builds now require ICU >= 4.4.0 and Erlang >= R14B03.
-
-### 0.11.2
-
-#### Files
-
- * [apache-couchdb-0.11.2.tar.gz](http://www.apache.org/dyn/closer.cgi?path=/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz)
-   [[OpenPGP](http://www.apache.org/dist/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz.asc)]
-   [[MD5](http://www.apache.org/dist/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz.md5)]
-   [[SHA](http://www.apache.org/dist/couchdb/0.11.2/apache-couchdb-0.11.2.tar.gz.sha)]
-
-#### Changes
-
-  * Replicator buxfixes for replicating design documents from secured databases.
-  * Better error messages on invalid URL requests.
-  * User documents can now be deleted by admins or the user.
-  * Avoid potential DOS attack by guarding all creation of atoms.
-  * Some Futon and JavaScript library bugfixes.
-  * Fixed CVE-2010-2234: Apache CouchDB Cross Site Request Forgery Attack
 
 Archived Releases
 -----------------
