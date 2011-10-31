@@ -96,26 +96,26 @@ limitations under the License.
 
 <ul>
 <li>Support SpiderMonkey 1.8.5</li>
-<li>Add configurable maximum to the number of bytes returned by _log.</li>
+<li>Add configurable maximum to the number of bytes returned by <code>_log</code>.</li>
 <li>Allow CommonJS modules to be an empty string.</li>
 <li>Bump minimum Erlang version to R13B02.</li>
-<li>Do not run deleted validate<em>doc</em>update functions.</li>
-<li>ETags for views include current sequence if include_docs=true.</li>
-<li>Fix bug where duplicates can appear in _changes feed.</li>
+<li>Do not run deleted <code>validate_doc_update</code> functions.</li>
+<li>ETags for views include current sequence if <code>include_docs=true</code>.</li>
+<li>Fix bug where duplicates can appear in <code>_changes</code> feed.</li>
 <li>Fix bug where update handlers break after conflict resolution.</li>
-<li>Fix bug with _replicator where include &#8220;filter&#8221; could crash couch.</li>
+<li>Fix bug with <code>_replicator</code> where include &#8220;filter&#8221; could crash couch.</li>
 <li>Fix crashes when compacting large views.</li>
-<li>Fix file descriptor leak in _log</li>
-<li>Fix missing revisions in <em>changes?style=all</em>docs.</li>
-<li>Improve handling of compaction at max<em>dbs</em>open limit.</li>
+<li>Fix file descriptor leak in <code>_log</code></li>
+<li>Fix missing revisions in <code>_changes?style=all_docs</code>.</li>
+<li>Improve handling of compaction at <code>max_dbs_open</code> limit.</li>
 <li>JSONP responses now send &#8220;text/javascript&#8221; for Content-Type.</li>
 <li>Link to ICU 4.2 on Windows.</li>
 <li>Permit forward slashes in path to update functions.</li>
-<li>Reap couchjs processes that hit reduce_overflow error.</li>
+<li>Reap couchjs processes that hit <code>reduce_overflow</code> error.</li>
 <li>Status code can be specified in update handlers.</li>
 <li>Support provides() in show functions.</li>
-<li><em>view</em>cleanup when ddoc has no views now removes all index files.</li>
-<li>max<em>replication</em>retry_count now supports &#8220;infinity&#8221;.</li>
+<li><code>_view_cleanup</code> when ddoc has no views now removes all index files.</li>
+<li><code>max_replication_retry_count</code> now supports &#8220;infinity&#8221;.</li>
 <li>Fix replication crash when source database has a document with empty ID.</li>
 <li>Fix deadlock when assigning couchjs processes to serve requests.</li>
 <li>Fixes to the document multipart PUT API.</li>
