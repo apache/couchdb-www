@@ -81,6 +81,47 @@ limitations under the License.
 
 <h2>Current Releases</h2>
 
+<h3>1.1.1</h3>
+
+<h4>Files</h4>
+
+<ul>
+<li><a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/1.1.1/apache-couchdb-1.1.1.tar.gz">apache-couchdb-1.1.1.tar.gz</a>
+[<a href="http://www.apache.org/dist/couchdb/1.1.1/apache-couchdb-1.1.1.tar.gz.asc">OpenPGP</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.1.1/apache-couchdb-1.1.1.tar.gz.md5">MD5</a>]
+[<a href="http://www.apache.org/dist/couchdb/1.1.1/apache-couchdb-1.1.1.tar.gz.sha">SHA</a>]</li>
+</ul>
+
+<h4>Changes</h4>
+
+<ul>
+<li>Support SpiderMonkey 1.8.5</li>
+<li>Add configurable maximum to the number of bytes returned by _log.</li>
+<li>Allow CommonJS modules to be an empty string.</li>
+<li>Bump minimum Erlang version to R13B02.</li>
+<li>Do not run deleted validate<em>doc</em>update functions.</li>
+<li>ETags for views include current sequence if include_docs=true.</li>
+<li>Fix bug where duplicates can appear in _changes feed.</li>
+<li>Fix bug where update handlers break after conflict resolution.</li>
+<li>Fix bug with _replicator where include &#8220;filter&#8221; could crash couch.</li>
+<li>Fix crashes when compacting large views.</li>
+<li>Fix file descriptor leak in _log</li>
+<li>Fix missing revisions in <em>changes?style=all</em>docs.</li>
+<li>Improve handling of compaction at max<em>dbs</em>open limit.</li>
+<li>JSONP responses now send &#8220;text/javascript&#8221; for Content-Type.</li>
+<li>Link to ICU 4.2 on Windows.</li>
+<li>Permit forward slashes in path to update functions.</li>
+<li>Reap couchjs processes that hit reduce_overflow error.</li>
+<li>Status code can be specified in update handlers.</li>
+<li>Support provides() in show functions.</li>
+<li><em>view</em>cleanup when ddoc has no views now removes all index files.</li>
+<li>max<em>replication</em>retry_count now supports &#8220;infinity&#8221;.</li>
+<li>Fix replication crash when source database has a document with empty ID.</li>
+<li>Fix deadlock when assigning couchjs processes to serve requests.</li>
+<li>Fixes to the document multipart PUT API.</li>
+<li>Fixes regarding file descriptor leaks for databases with views.</li>
+</ul>
+
 <h3>1.1.0</h3>
 
 <h4>Files</h4>
