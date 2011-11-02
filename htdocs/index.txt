@@ -8,7 +8,7 @@ Sort-Index: 010
 =========
 
 Apache CouchDB is a document-oriented database that can be queried and indexed
-in a MapReduce fashion using JavaScript. CouchDB also offers incremental
+using JavaScript in a MapReduce fashion. CouchDB also offers incremental
 replication with bi-directional conflict detection and resolution.
 
 CouchDB provides a RESTful JSON API than can be accessed from any environment
