@@ -1,18 +1,5 @@
 Title: Books
-Sort-Index: 050
-
-%(title)s
-=========
-
-As of August 2009, there are three book on CouchDB being written and due to be
- published in late 2009 or early 2010:
-
- * [CouchDB: The Definitive Guide][relax], O'Reilly Media, by J Chris Anderson, 
-   Jan Lehnardt &amp; Noah Slater
- * [CouchDB in Action][inaction], Manning, by Chris Chandler
- * [Beginning CouchDB][beginning], Apress, by Joe Lennon
-
-[relax]: http://books.couchdb.org/relax
-[inaction]: http://manning.com/chandler/
-[beginning]: http://www.apress.com/book/view/9781430272373
+Location: http://wiki.apache.org/couchdb/FrontPage#Books
+Navigation-Class: external
+Sort-Index: 040
 
