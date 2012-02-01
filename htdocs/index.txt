@@ -33,7 +33,7 @@ How to Get Started
 
 Read the [introduction](docs/intro.html) and the [technical
 overview](docs/overview.html) to learn more about the design and basic concepts
-of CouchDB. To give it a try, download the CouchDB code from the [Subversion
+of CouchDB. To give it a try, download the CouchDB code from the [Git
 repository](community/code.html) and follow the included build instructions.
 
 How to Get Involved
