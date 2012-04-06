@@ -1,8 +1,0 @@
-Title: Notices
-Sort-Index: 070
-
-
-%(title)s
-=========
-
-%(children)s

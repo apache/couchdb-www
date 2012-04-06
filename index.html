@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+<title>Apache CouchDB</title>
+
+<!--
+
+Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
+
+Thanks to Patrick Hoesly for his original artwork:
+
+    http://www.flickr.com/photos/zooboing/4715048673/
+
+This fabulous linen texture was integrated into the site design.
+
+-->
+
+<link rel="stylesheet" type="text/css" href="style/master.css">
+
+<script src="script/smooth.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<a class="scroll-point pt-top" name="top"></div>
+
+<div id="header">
+
+    <div class="wrap">
+
+        <a class="logo" href="#top"></a>
+
+        <div class="menu">
+            <a href="#about">About</a>
+            <a href="#contribute">Contribute</a>
+            <a href="#mailing-list">Mailing List</a>
+            <a href="#download">Download</a>
+        </div>
+
+        <form class="menu-dropdown">
+            <select onchange="location = this.options[this.selectedIndex].value;">
+                <option value="#about">About</option>
+                <option value="#contribute">Contribute</option>
+                <option value="#mailing-list">Mailing List</option>
+                <option value="#download">Download</option>
+            </select>
+        </form>
+
+    </div>
+
+    <div class="shadow"></div>
+
+</div>
+
+<div class="header-placeholder"></div>
+
+<div class="grid leadin">
+
+    <div class="wrap">
+    
+        <img src="image/couch.png" alt=""/>
+
+        <ul class="text-block">
+            <li><h1><strong>Apache CouchDB</strong> is a database</h1></li>
+            <li><h1>that uses <strong>JSON</strong> for documents,</h1></li>
+            <li><h1><strong>JavaScript</strong> for <strong>MapReduce</strong> queries,</h1></li>
+            <li><h1>and regular <strong>HTTP</strong> for an <strong>API</strong></h1></li>
+        </ul>
+
+        <div class="button-container">
+            <a class="button" href="#download">DOWNLOAD<label>Version 1.2</label></a>
+        </div>
+
+    </div>
+
+</div>
+
+<a class="scroll-point pt-about" name="about"></a>
+
+<div class="wrap feature">
+
+    <h2 class="icon icon-about">A Database for the Web</h2>
+
+    <p>CouchDB is a document database that completely embraces the web. Data is stored as JSON documents. These documents can then be accessed via HTTP, with a web browser. And queries can be done in JavaScript. Because of this, CouchDB works well with modern web applications and mobile apps. You can distribute data to any number of machines efficiently using CouchDB’s incremental replication. And CouchDB even supports master-master setups with automatic conflict detection.</p>
+
+    <p>To top it all off, CouchDB comes with a suite of features, including on-the-fly transformation of documents and query results, and real-time change notifications that makes web application development a breeze. It even comes with an easy to use administration console. But what about <a href="http://en.wikipedia.org/wiki/CAP_theorem">CAP</a>? Well, CouchDB is highly available and partition tolerant, but is also <a href="http://guide.couchdb.org/editions/1/en/consistency.html">eventually consistent</a>. This makes it very easy to distribute and scale CouchDB. And, it has a fault-tolerant storage engine that puts the safety of your data first.</p>
+    
+    <p>See the <a href="http://wiki.apache.org/couchdb/Introduction">introduction</a>, <a href="http://wiki.apache.org/couchdb/Technical%20Overview">technical overview</a>, or one of the <a href="http://wiki.apache.org/couchdb/Basics">guides</a> for more information.</p>
+
+</div>
+
+<a class="scroll-point" name="contribute"></a>
+
+<hr/>
+
+<div class="wrap feature">
+
+    <h2 class="icon icon-contribute">Want to Contribute?</h2>
+
+    <p>CouchDB is an open source project. And that means everything, from this website to the core of the database itself, has been contributed by passionate, helpful individuals who liked what they saw and wanted to make something better of it. So if you like what you see, and want to make something better of it, <em>we&rsquo;</em> like to see your contributions. It doesn&rsquo;t matter how familiar you are with CouchDB, or whether you know how to programme Erlang. There are plenty of ways to be helpful!
+
+    <p>One of the first things you should do is actually use CouchDB, and get to know it, read about it, evangelise it, and engage with the wider community. Our community is our most valuable asset, and it could always do with a bit more love and attention. You could also get stuck in on the <a href="#mailing-list">user mailing list</a>, helping new users with their problems. Or come join us on the <a href="#mailing-list">developer mailing list</a> and lets us know how else you think you can help. There&rsquo;s bound to be someone to point you in the right direction.
+
+    <p>Why don&rsquo;t you check out <a href="http://s.apache.org/Bni">JIRA</a> and help us triage some of those  issues? Or maybe you&rsquo;d like to help us keep the <a href="http://wiki.apache.org/couchdb/">wiki</a> up-to-date? If you&rsquo;re looking for something a little more technical, you could help us with our documentation, QA, packaging, mobile, or release efforts, perhaps? Just drop by on the <a href="#mailing-list">developer mailing list</a> and let us know what you want to do. There's enough room for any sort of contribution!</p>
+    
+    <p>Do you want to contribute code? Great! You can use JIRA to find <a href="http://s.apache.org/couchdb-easy-issues">easy</a>, <a href="http://s.apache.org/couchdb-medium-issues">medium</a>, and <a href="http://s.apache.org/couchdb-hard-issues">hard</a> issues to work on. Or, if you&rsquo;d prefer, just open a new issue, and attach your patch. Or <a href="https://github.com/apache/couchdb">fork us on GitHub</a> and send a pull request. Yes, it really <em>is</em> that easy! Read about more about this in the <a href="http://wiki.apache.org/couchdb/ContributorWorkflow">contributor workflow</a> guide.
+
+</div>
+
+<a class="scroll-point" name="mailing-list"></a>
+
+<hr/>
+
+<div class="wrap">
+    <h2 class="icon icon-mailing-list">Mailing List</h2>
+</div>
+
+<div class="grid">
+
+    <div class="wrap">
+
+        <div class="corner"></div>
+
+        <br/>
+
+        <div class="list-header">
+            <a href="http://mail-archives.apache.org/mod_mbox/couchdb-user/"><strong>User Mailing List</strong></a>
+            <p>This is a general discussion and support forum for all CouchDB users.</p>
+        </div>
+
+        <ul class="list mailing-list">
+            <li>Writing to the list<a href="mailto:user@couchdb.apache.org">user@couchdb.apache.org<span></span></a></li>
+            <li>Subscription address<a href="mailto:user-subscribe@couchdb.apache.org">user-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Digest subscription address<a href="mailto:user-digest-subscribe@couchdb.apache.org">user-digest-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Unsubscription addresses<a href="mailto:user-unsubscribe@couchdb.apache.org">user-unsubscribe@couchdb.apache.org<span></span></a></li>
+            <li>Getting help with the list<a href="mailto:user-help@couchdb.apache.org">user-help@couchdb.apache.org<span></span></a></li> 
+        </ul>
+
+        <br/>
+
+        <div class="list-header">
+            <a href="http://mail-archives.apache.org/mod_mbox/couchdb-dev/"><strong>Developer Mailing List</strong></a>
+            <p>This is where people working on CouchDB itself get together and discuss things.</p>
+        </div>
+
+        <ul class="list mailing-list">
+            <li>Writing to the list<a href="mailto:dev@couchdb.apache.org">dev@couchdb.apache.org<span></span></a></li>
+            <li>Subscription address<a href="mailto:dev-subscribe@couchdb.apache.org">dev-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Digest subscription address<a href="mailto:dev-digest-subscribe@couchdb.apache.org">dev-digest-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Unsubscription addresses<a href="mailto:dev-unsubscribe@couchdb.apache.org">dev-unsubscribe@couchdb.apache.org<span></span></a></li>
+            <li>Getting help with the list<a href="mailto:dev-help@couchdb.apache.org">dev-help@couchdb.apache.org<span></span></a></li> 
+        </ul>
+
+        <br/>
+
+        <div class="list-header">
+            <a href="http://mail-archives.apache.org/mod_mbox/couchdb-commits/"><strong>Commits Mailing List</strong></a>
+            <p>This is where all source code changes and wiki changes are sent.</p>
+        </div>
+
+        <ul class="list mailing-list">
+            <li>Writing to the list<a href="mailto:commits@couchdb.apache.org">commits@couchdb.apache.org<span></span></a></li>
+            <li>Subscription address<a href="mailto:commits-subscribe@couchdb.apache.org">commits-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Digest subscription address<a href="mailto:commits-digest-subscribe@couchdb.apache.org">commits-digest-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Unsubscription addresses<a href="mailto:commits-unsubscribe@couchdb.apache.org">commits-unsubscribe@couchdb.apache.org<span></span></a></li>
+            <li>Getting help with the list<a href="mailto:commits-help@couchdb.apache.org">commits-help@couchdb.apache.org<span></span></a></li>
+        </ul>
+
+    </div>
+    
+</div>
+
+<a class="scroll-point" name="download"></a>
+
+<hr/>
+
+<div class="wrap download-pane">
+    <h2 class="icon icon-download">Download</h2>
+</div>
+
+<div class="grid">
+
+    <div class="wrap">
+
+        <div class="corner"></div>
+
+        <div class="download-list-container">
+
+            <ul class="list download-list">
+                <li>
+                    <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/releases/1.2.0/apache-couchdb-1.2.0.tar.gz" class="type">Source</a>
+                    <span class="info">
+                        Version 1.2 | 
+                        <a href="http://www.apache.org/dist/couchdb/notes/1.2.0/apache-couchdb-1.2.0.html" class="release">Release Notes</a> |
+                        <a href="http://www.apache.org/dist/couchdb/releases/1.2.0/apache-couchdb-1.2.0.tar.gz.asc">OpenPGP</a> |
+                        <a href="http://www.apache.org/dist/couchdb/releases/1.2.0/apache-couchdb-1.2.0.tar.gz.md5">MD5</a> |
+                        <a href="http://www.apache.org/dist/couchdb/releases/1.2.0/apache-couchdb-1.2.0.tar.gz.sha">SHA</a>
+                    </span>
+                </li>
+                <li>
+                    <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R15B.exe" class="type">Windows (R15B)</a>
+                    <span class="info">
+                        Version 1.2 | 
+                        <a href="http://www.apache.org/dist/couchdb/notes/1.2.0/apache-couchdb-1.2.0.html" class="release">Release Notes</a> |
+                        <a href="http://www.apache.org/dist/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R15B.exe.asc">OpenPGP</a> |
+                        <a href="http://www.apache.org/dist/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R15B.exe.md5">MD5</a> |
+                        <a href="http://www.apache.org/dist/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R15B.exe.sha">SHA</a>
+                    </span>
+                </li>
+                <li>
+                    <a href="http://www.apache.org/dyn/closer.cgi?path=/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R14B04.exe" class="type">Windows (R14B04)</a>
+                    <span class="info">
+                        Version 1.2 | 
+                        <a href="http://www.apache.org/dist/couchdb/notes/1.2.0/apache-couchdb-1.2.0.html" class="release">Release Notes</a> |
+                        <a href="http://www.apache.org/dist/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R14B04.exe.asc">OpenPGP</a> |
+                        <a href="http://www.apache.org/dist/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R14B04.exe.md5">MD5</a> |
+                        <a href="http://www.apache.org/dist/couchdb/packages/win32/1.2.0/setup-couchdb-1.2.0_otp_R14B04.exe.sha">SHA</a>
+                    </span>
+                </li>
+                <li>
+                    <a href="#" class="type" onclick="return false;">Mac OS X</a>
+                    <span class="info">
+                        <em>Coming soon? Why don&rsquo;t you <a href="#contribute">contribute one</a>?</em>
+                    </span>
+                </li>
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+</div>
+
+<a class="scroll-point" name="quick-links"></a>
+
+<hr/>
+
+<div class="wrap quick-links-pane">
+
+    <h2 class="icon icon-quick-links">Quick Links</h2>
+
+    <br/>
+
+    <ul class="quick-links-header">
+        <li>General</li>
+        <li>Development</li>
+        <li class="last">Apache Software Foundation</li>
+    </ul>
+
+    <div class="clear"></div>
+
+</div>
+
+<div class="grid">
+
+    <div class="wrap">
+
+        <div class="list-container">
+
+            <ul class="list quick-links">
+                <li class="corner"></li>
+                <li><a href="#about">About CouchDB<span></span></a></li>
+                <li><a href="http://wiki.apache.org/couchdb/CurrentReleases">Current Releases<span></span></a></li>
+                <li><a href="https://blogs.apache.org/couchdb/">Blog<span></span></a></li>
+                <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li>
+            </ul>
+
+            <ul class="list quick-links">
+                <li class="corner"></li>
+                <li><a href="http://wiki.apache.org/couchdb/">Documentation<span></span></a></li>
+                <li><a href="#mailing-list">Mailing Lists<span></span></a></li>
+                <li><a href="https://issues.apache.org/jira/browse/CouchDB">Issue Tracker<span></span></a></li>
+                <li><a href="http://wiki.apache.org/couchdb/SourceCode">Source Code<span></span></a></li>
+            </ul>
+
+            <ul class="list quick-links last">
+                <li class="corner"></li>
+                <li><a href="http://www.apache.org/">About the ASF<span></span></a></li>
+                <li><a href="http://www.apache.org/foundation/thanks.html">Thanks<span></span></a></li>
+                <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a></li>
+                <li><a href="http://www.apache.org/security/">Security<span></span></a></li>
+            </ul>
+
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="footer">
+
+    <p>Copyright &copy; 2012 The Apache Software Foundation &mdash; Apache CouchDB, Apache, CouchDB, and the project logo are <a href="http://www.apache.org/foundation/marks/list/">trademarks</a> of The Apache Software Foundation</p>
+
+    <a class="closing" href="#top"></a>
+
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-658988-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+
+</html>

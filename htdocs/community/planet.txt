@@ -1,4 +1,0 @@
-Title: Planet
-Location: http://planet.couchdb.com/
-Navigation-Class: external
-Sort-Index: 060

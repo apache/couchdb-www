@@ -1,5 +1,0 @@
-Title: License
-Location: http://www.apache.org/licenses/
-Navigation-Class: external
-Sort-Index: 030
-

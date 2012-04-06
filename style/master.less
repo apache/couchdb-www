@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust:none;
+}
+
+body {
+}
+
+body, a {
+	color: @main-color;
+}
+
+/** LESS **/
+@column:		320px;
+@gutter:		24px;
+@padding:       16px;
+@full-width:	@column*3 + @gutter*2;
+@gap:			32px;
+
+@background-half-size: 112px 425px;
+
+@main-color:        #291d1e;
+@key-color:         #ff0000;
+@key-color-hover:   #ae2323;
+@disable-color:     #abafb0;
+
+.animate-background {
+	-webkit-transition: background 0.25s linear;
+	-moz-transition: background 0.25s linear;
+	transition: background 0.25s linear;
+}
+
+.animate {
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+.secondary-bg {
+	background: url(../image/linen_pattern2.jpg) #EEE 50% 0%;
+}
+
+.sprite {
+	background: url(../image/sprite.png) no-repeat
+}
+
+.ellipsis {
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*---------------------------------------------------
+	Font
+---------------------------------------------------*/
+
+body, h1, h2, h3, h4 {
+	font-size: 16px;
+	font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+}
+
+h1 {font-size: 34px;}
+h2 {font-size: 34px; padding: @gap+@padding 0;}
+
+b, strong {
+	font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
+	font-weight: 900;
+}
+
+label {
+	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-weight: 400;	
+	font-size: 12px;
+}
+
+.feature {
+	font-size: 22px;
+}
+
+.platforms-list li, .list-header.mini, .quick-links-header li {
+	font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+
+/*---------------------------------------------------
+	Generic
+---------------------------------------------------*/
+
+a:hover {
+    color: @key-color;
+}
+
+p {
+	line-height: 2em;
+	margin-bottom: 2em;
+}
+
+p + p {
+	margin-top: 2em;
+}
+
+
+.button-container {
+    position: absolute;
+    right: -5px;
+    background: url(../image/shadow.png);
+}
+
+.button {
+    display: block;
+	.sprite;
+    background-color: @key-color;
+	background-position: 100% -171px;
+    width: @column - @padding*2;
+    padding: @padding;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+    left: -5px;
+	.animate-background
+}
+
+.button:hover {
+    background-color: @key-color-hover;
+    color: #fff;
+}
+
+div.button, div.button:hover {
+    background-color: @disable-color;
+}
+
+.button label {
+    display: block;
+    font-size: 0.5em;
+    height: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+/*---------------------------------------------------
+	Layout
+---------------------------------------------------*/
+
+#wrap, .wrap, #footer, hr {
+	width: @full-width;
+	margin: 0 auto;
+	position: relative;
+}
+
+.grid {
+	.secondary-bg;
+	padding: @gap 0;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #ddd;
+	margin-top: @gap*2;
+	margin-bottom: @gap;
+}
+
+blockquote {
+	width: 70%;
+	margin: 0 auto;
+	font-style: italic;
+}
+
+.cite {
+	text-align: right;
+}
+
+/*---------------------------------------------------
+	Layout - Header
+---------------------------------------------------*/
+
+.header-placeholder {
+	height: 90px;
+}
+
+#header {
+    height: 90px;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+#header .shadow {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -3px;
+	height: 3px;
+    background: url(../image/shadow.png);
+}
+
+.logo, .closing {
+    .sprite;
+	.animate-background;
+	background-color: @key-color;
+    background-position: 0 0px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 220px;
+    height: 75px;
+}
+
+.logo:hover {
+	background-color: @key-color-hover;
+}
+
+.menu {
+    padding: @padding 0;
+    float: right;
+}
+.menu a {
+    text-decoration: none;
+    .animate;
+    padding: @padding;
+    margin: 0 @padding/2;
+    line-height: 55px;
+}
+.menu a:hover {
+    color: @key-color;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    right: @padding;
+    top: @gap;
+    width: 40%;
+}
+
+.menu-dropdown select{
+    width: 100%;
+}
+
+/*---------------------------------------------------
+	Layout - Leadin
+---------------------------------------------------*/
+
+.leadin {
+    margin-bottom: @gap;
+}
+
+.leadin .wrap {
+	height: @column+@gap+@padding;
+}
+
+.leadin .text-block {
+	position: absolute;
+	left: @padding*4 + @column;
+	top: @gap+@padding*2;
+}
+
+.leadin img {
+	position: absolute;
+	top: @gap;
+	left: @gutter;
+}
+
+.leadin li {
+	list-style: none;
+	margin: 9px 8px;
+}
+
+.leadin h1 {
+	background: #fff;
+	display: inline;
+	padding: 4px 8px;
+}
+
+.leadin .button-container {
+    bottom: 0;
+}
+
+/*---------------------------------------------------
+	Layout - Contribution, Mailing List, 
+	Download and Quick Links
+---------------------------------------------------*/
+
+@link-box: 36px;
+@link-box-gap: 3px;
+.container-box {    
+    background: #fff;
+    padding: @padding/2;
+    position: relative;
+}
+
+.list-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+.list {
+    padding-top: @padding;
+}
+
+.list li {
+    .container-box;
+    list-style: none;
+    margin-bottom: @padding;
+}
+
+.list-header {
+    .container-box;
+    margin-top: @padding;
+}
+
+.list-header p {
+    margin-bottom: 0;
+}
+
+.list-container {
+    position: relative;
+}
+
+/**** Platforms ****/
+
+.platforms-list {
+	padding-top: @padding*2;
+    width: @full-width/2 - @gutter*2;
+}
+
+.platforms-list.second {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.platforms-list li a {
+    .list-link;
+	.animate-background;
+    width: @link-box;
+	.sprite;
+	background-position: 3px -127px;
+    background-color: @key-color;
+}
+
+.platforms-list li a:hover {
+	background-color: @key-color-hover;
+}
+
+.platforms-list li.first a {
+    width: @link-box*3;
+}
+
+.platforms-list li a.link-apache {
+    right: @link-box + @link-box-gap;
+	background-position: 2px -94px;
+}
+
+.platforms-list li.first a.link-apache {
+	width: @link-box*4;
+    right: @link-box*3 + @link-box-gap;
+}
+
+/**** Mailing List ****/
+
+.mailing-list {
+    width: @column*2 + @gap*2 + @gutter*2;
+    margin-bottom: @gutter;
+}
+
+.mailing-list a {
+    .list-link;
+    .animate;
+    backround: #fff;
+    padding: @padding/2;
+    width: @column + @gap*2 + @gutter;
+    font-size: 14px;
+}
+
+.mailing-list a:hover {
+    color: #fff;
+    background: @key-color;
+}
+
+.mailing-list a span {
+    .list-link;
+    width: @link-box;
+	.sprite;
+	background-position: -156px -95px;
+    background-color: @key-color;
+}
+
+.mailing-list li {
+    margin-bottom: @link-box-gap;
+}
+
+
+/**** Download ****/
+
+.download-pane .button-container{
+    bottom: -70px;
+}
+
+.list-header.mini {
+    display: inline;
+}
+
+.download-list-container {
+    position: relative;
+}
+
+.download-list {
+    width: 100%;
+    margin-bottom: @gutter;
+}
+
+.download-list li {
+    height: 18px;
+}
+
+.download-list .type {
+    .list-link;
+    .animate-background;
+	.sprite;
+	background-position: -160px -127px;
+    background-color: @key-color;
+    color: #fff;
+    text-decoration: none;
+    right: auto;
+    left: 0;
+    padding: @padding/2;
+	padding-left: 32px;
+    width: 40%;
+}
+.download-list .type:hover {
+    background-color: @key-color-hover;
+}
+
+.download-list .info {
+    float: right;
+    font-size: 12px;
+	margin-top: 2px;
+}
+
+
+/**** Quick Links ****/
+
+
+.list-header.mini {
+    display: inline;
+}
+
+.quick-links, .quick-links-header li {
+    float: left;
+    width: @column;
+    margin-right: @gutter;
+    list-style: none;
+	position: relative;
+}
+
+.quick-links-header li {
+    margin-bottom: @gutter;
+}
+
+.quick-links.last, .quick-links-header li.last {
+    margin-right: 0;
+}
+
+.quick-links li {
+    padding: 0;
+}
+
+.quick-links a {
+    .animate;
+    display: block;
+    text-decoration: none;
+    padding: @padding/2;
+}
+
+.quick-links a:hover {
+    color: #fff;
+    background: @key-color;
+}
+
+.quick-links a span {
+    .list-link;
+    width: @link-box;
+	.sprite;
+	background-position: -156px -95px;
+    background-color: @key-color;
+}
+
+
+/*---------------------------------------------------
+	Layout - Footer
+---------------------------------------------------*/
+
+#footer {
+    padding: @gap 0 @gap*2;
+}
+
+#footer p {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.closing {
+	background-position: 0 -725px;
+    left: auto;
+	right: 0;
+    top: 20px;
+    width: 60px;
+    height: 65px;
+}
+
+.closing:hover {
+	background-color: @key-color-hover;
+}
+
+
+/*---------------------------------------------------
+	Misc
+---------------------------------------------------*/
+
+@spacer-base: -220px;
+@spacer: 96px;
+
+.icon {
+    .sprite;
+    background-position: 0 @spacer-base;
+	padding-left: 78px;
+}
+.icon-about { 			background-position: 0 @spacer-base;}
+.icon-contribute { 			background-position: 0 @spacer-base - @spacer;}
+.icon-mailing-list { 		background-position: 0 @spacer-base - @spacer*2;}
+.icon-download { 			background-position: 0 @spacer-base - @spacer*3;}
+.icon-quick-links { 		background-position: 0 @spacer-base - @spacer*4;}
+
+a.scroll-point {
+	display: block;
+	border-bottom: transparent 1px solid;
+}
+
+a.pt-top {
+	border: none;
+}
+
+a.pt-about {
+	margin: -100px 0 130px; 
+	border:none
+}
+
+.corner, .quick-links .corner {
+	.sprite;
+	background-position: 0 -808px;
+	position: absolute;
+	left: 0;
+	top: -@gap;
+	width: 40px;
+	height: 40px;
+}
+
+.quick-links .corner {
+}
+
+
+/*---------------------------------------------------
+	Mobile
+---------------------------------------------------*/
+@mobile-pad: 24px;
+
+@media all and (max-width:1024px) { 
+    #wrap, .wrap, #footer, hr {
+        width: auto;
+    }    
+    .wrap, #footer {
+        margin-left: @mobile-pad;
+        margin-right: @mobile-pad;
+    }       
+    .quick-links, .quick-links-header li {
+        width: 30%;
+    }
+    .platforms-list {
+        width: 48%;
+    }    
+    h1 {
+        font-size: 30px;
+    }
+    .button-container {
+        right: @padding;
+    }
+}
+
+@media all and (max-width:950px) { 
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 24px;
+        padding-top: 54px;
+    }
+    .leadin img {
+        top: 0;
+        width: 240px;
+        height: 270px;
+    }
+    .leadin .text-block  {
+        top: 32px;
+       left: 290px;
+    }
+    .button {
+        width: 250px;
+        padding: 12px;
+    }
+    .leadin .wrap {
+        height: 300px;
+    }
+    .mailing-list {
+        width: auto;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-dropdown {
+        display: block;
+    }
+}
+
+@media all and (max-width:770px) { 
+    body {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 22px;
+        padding-top: 54px;
+    }
+    .leadin img {
+        width: 192px;
+        height: 216px;
+    }
+    .leadin .text-block  {
+        top: 32px;
+       left: 232px;
+    }
+    .button {
+        font-size: 20px;
+        background-position: 100% -177px;
+        width: 220px;
+        padding: 10px;
+    }
+    .leadin .wrap {
+        height: 280px;
+    }
+    .platforms-list li.first a.link-apache, .platforms-list li.first a.link-github {
+        width: @link-box;
+    }
+    .platforms-list li.first a.link-apache {
+        right: @link-box + @link-box-gap;
+    }
+    .mailing-list li {
+        padding: 8px 4px;
+    }
+    .mailing-list a {
+        width: 56%;
+        padding-right: 42px;
+        .ellipsis;
+    }
+    .download-list .version {
+        width: 28%;
+    }
+    .menu-dropdown {
+        top: @padding;
+    }
+    #header, .header-placeholder {
+        height: 52px;
+    }
+    .logo {
+        top: 7px;
+        width: 110px;
+        height: 37px;
+        background-size: @background-half-size;
+    }
+    #footer {
+        padding-bottom: 28px;
+		padding-right: 72px;
+    }
+}
+
+@media all and (max-width:675px) { 
+    body {
+/*        font-size: 14px;*/
+    }
+    .leadin img {
+        left: -4px;
+        width: 160px;
+        height: 180px;
+    }
+    .leadin .text-block  {
+       left: 175px;
+       top: 11px;
+    }
+    .leadin .wrap {
+        height: 240px;
+    }
+    .leadin .button-container {
+        bottom: -10px;
+    }
+    .button {
+        font-size: 18px;
+        background-position: 100% -181px;
+        width: 200px;
+        padding: 8px;
+    }
+    .download-list .version {
+        width: 22%;
+    }
+}
+
+@media all and (max-width:620px) {  
+    h1 {
+        font-size: 16px;
+    }
+    .leadin img {
+         width: 128px;
+         height: 144px;
+    }
+    .leadin .text-block  {
+       left: 130px;
+    }
+    .wrap, #footer {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .leadin .wrap {
+        height: 200px;
+    }
+    .icon {
+        background-size: @background-half-size;
+        padding: 20px 48px 20px 48px;
+        .ellipsis;
+    }
+    @spacer-mini: @spacer/2;
+    @spacer-base-mini: @spacer-base/2;
+    .icon-about { 			    background-position: 0 @spacer-base-mini;}
+    .icon-contribute { 			background-position: 0 @spacer-base-mini - @spacer-mini;}
+    .icon-mailing-list { 		background-position: 0 @spacer-base-mini - @spacer-mini*2;}
+    .icon-download { 			background-position: 0 @spacer-base-mini - @spacer-mini*3;}
+    .icon-quick-links { 		background-position: 0 @spacer-base-mini - @spacer-mini*4;}
+
+	.platforms-list, .platforms-list.second {
+		width: auto;
+		position: static;
+		padding-bottom: 0;
+	}
+	.platforms-list.second {
+		padding-top: 0;
+	}
+	.mailing-list a {
+		width: 0;
+		padding-right: 30px;
+	}
+	.quick-links-header {
+		display: none;
+	}
+	.quick-links, .quick-links-header li {
+		float: none;
+		width: auto;
+		margin-right: 0;
+	}
+	.quick-links .corner {
+		display: none;
+	}
+	.quick-links {
+		padding-top: 0;
+	}
+    .download-list .type {
+        width: auto;
+        display: block;
+        position: static;
+        margin: -8px -8px 8px;
+    }
+    .download-list .info {
+        float: none;
+    }
+    .download-list li {
+        height: auto;
+    }
+}
+
+@media all and (max-width:446px) {  
+    .leadin .button-container {
+        right: auto;
+        left: 8px;
+    }
+    .leadin .text-block {
+        top: 110px;
+        left: -4px;
+        right: -2px;
+    }
+	.leadin .wrap {
+		height: 300px;
+	}
+	.icon {
+		padding: 22px 16px 20px 35px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	hr {
+		margin-top: 32px;
+	}
+}

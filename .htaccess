@@ -1,0 +1,8 @@
+RedirectMatch /community http://couchdb.apache.org/
+RedirectMatch /docs http://couchdb.apache.org/
+RedirectMatch /downloads http://couchdb.apache.org/
+RedirectMatch /notice http://couchdb.apache.org/
+RedirectMatch /roadmap http://couchdb.apache.org/
+RedirectMatch /screenshots http://couchdb.apache.org/
+RedirectMatch /search http://couchdb.apache.org/
+RedirectMatch /security http://couchdb.apache.org/

@@ -1,4 +1,0 @@
-Title: Coding Standards
-Location: http://wiki.apache.org/couchdb/Coding_Standards
-Navigation-Class: external
-Sort-Index: 050
