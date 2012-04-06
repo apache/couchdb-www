@@ -19,7 +19,7 @@ a {
   transition: all 0.25s linear;
 }
 .secondary-bg {
-  background: url(../image/linen_pattern2.jpg) #eeeeee 50% 0%;
+  background: url(../image/linen.jpg) #eeeeee 50% 0%;
 }
 .sprite {
   background: url(../image/sprite.png) no-repeat;
@@ -131,7 +131,7 @@ hr {
   position: relative;
 }
 .grid {
-  background: url(../image/linen_pattern2.jpg) #eeeeee 50% 0%;
+  background: url(../image/linen.jpg) #eeeeee 50% 0%;
   padding: 32px 0;
 }
 hr {
