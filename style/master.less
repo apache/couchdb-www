@@ -72,8 +72,14 @@ b, strong {
 
 label {
 	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
-	font-weight: 400;	
+	font-weight: 400;
 	font-size: 12px;
+}
+
+button {
+    font-size: 17px;
+    font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
 .feature {
@@ -286,13 +292,13 @@ blockquote {
 }
 
 /*---------------------------------------------------
-	Layout - Contribution, Mailing List, 
+	Layout - Contribution, Mailing List,
 	Download and Quick Links
 ---------------------------------------------------*/
 
 @link-box: 36px;
 @link-box-gap: 3px;
-.container-box {    
+.container-box {
     background: #fff;
     padding: @padding/2;
     position: relative;
@@ -527,6 +533,39 @@ blockquote {
 
 
 /*---------------------------------------------------
+	Search Form
+---------------------------------------------------*/
+
+#search-box {
+    border: none;
+    width: 716px;
+    padding: 8px;
+    font-size: 16px;
+    font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+#search-box,
+#search-button {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 32px;
+    vertical-align: bottom;
+}
+
+#search-button {
+    font-size: 16px;
+    margin-left: -1px;
+    padding: 5px;
+    border: none;
+    width: 36px;
+    background: url(../image/sprite.png) no-repeat;
+    background-position: -156px -95px;
+    background-color: #ff0000;
+}
+
+/*---------------------------------------------------
 	Misc
 ---------------------------------------------------*/
 
@@ -554,7 +593,7 @@ a.pt-top {
 }
 
 a.pt-about {
-	margin: -100px 0 130px; 
+	margin: -100px 0 130px;
 	border:none
 }
 
@@ -577,20 +616,20 @@ a.pt-about {
 ---------------------------------------------------*/
 @mobile-pad: 24px;
 
-@media all and (max-width:1024px) { 
+@media all and (max-width:1024px) {
     #wrap, .wrap, #footer, hr {
         width: auto;
-    }    
+    }
     .wrap, #footer {
         margin-left: @mobile-pad;
         margin-right: @mobile-pad;
-    }       
+    }
     .quick-links, .quick-links-header li {
         width: 30%;
     }
     .platforms-list {
         width: 48%;
-    }    
+    }
     h1 {
         font-size: 30px;
     }
@@ -599,7 +638,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:950px) { 
+@media all and (max-width:950px) {
     h1 {
         font-size: 24px;
     }
@@ -634,7 +673,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:770px) { 
+@media all and (max-width:770px) {
     body {
         font-size: 14px;
     }
@@ -697,7 +736,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:675px) { 
+@media all and (max-width:675px) {
     body {
 /*        font-size: 14px;*/
     }
@@ -727,7 +766,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:620px) {  
+@media all and (max-width:620px) {
     h1 {
         font-size: 16px;
     }
@@ -798,7 +837,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:446px) {  
+@media all and (max-width:446px) {
     .leadin .button-container {
         right: auto;
         left: 8px;

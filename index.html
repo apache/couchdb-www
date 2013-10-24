@@ -44,7 +44,7 @@ This fabulous linen texture was integrated into the site design.
             <a href="#about">About</a>
             <a href="http://docs.couchdb.org">Docs</a>
             <a href="#contribute">Contribute</a>
-            <a href="#mailing-list">Mailing List</a>
+            <a href="#mailing-lists">Mailing Lists</a>
             <a href="#download">Download</a>
             <a href="#quick-links">Quick Links</a>
         </div>
@@ -53,7 +53,7 @@ This fabulous linen texture was integrated into the site design.
             <select onchange="location = this.options[this.selectedIndex].value;">
                 <option value="#about">About</option>
                 <option value="#contribute">Contribute</option>
-                <option value="#mailing-list">Mailing List</option>
+                <option value="#mailing-lists">Mailing Lists</option>
                 <option value="#download">Download</option>
                 <option value="#quick-links">Quick Links</option>
             </select>
@@ -135,12 +135,12 @@ This fabulous linen texture was integrated into the site design.
 
 </div>
 
-<a class="scroll-point" name="mailing-list"></a>
+<a class="scroll-point" name="mailing-lists"></a>
 
 <hr/>
 
 <div class="wrap">
-    <h2 class="icon icon-mailing-list">Mailing List</h2>
+    <h2 class="icon icon-mailing-lists">Mailing Lists</h2>
 </div>
 
 <div class="grid">
@@ -148,6 +148,19 @@ This fabulous linen texture was integrated into the site design.
     <div class="wrap">
 
         <div class="corner"></div>
+
+        <br/>
+
+        <div class="list-header">
+            <a href="http://mail-archives.apache.org/mod_mbox/couchdb-announce/"><strong>Mail Search</strong></a>
+            <p>Search all of our mailing lists at once.</p>
+        </div>
+
+        <ul class="list mailing-list">
+            <form action="http://markmail.org/search/list:org.apache.couchdb-*">
+                <input id="search-box" type="text" placeholder="Search query&hellip;" name="q" size="50"><button id="search-button"></button>
+            </form>
+        </ul>
 
         <br/>
 
@@ -191,6 +204,21 @@ This fabulous linen texture was integrated into the site design.
             <li>Digest subscription address<a href="mailto:erlang-digest-subscribe@couchdb.apache.org">erlang-digest-subscribe@couchdb.apache.org<span></span></a></li>
             <li>Unsubscription addresses<a href="mailto:erlang-unsubscribe@couchdb.apache.org">erlang-unsubscribe@couchdb.apache.org<span></span></a></li>
             <li>Getting help with the list<a href="mailto:erlang-help@couchdb.apache.org">erlang-help@couchdb.apache.org<span></span></a></li>
+        </ul>
+
+        <br/>
+
+        <div class="list-header">
+            <a href="http://mail-archives.apache.org/mod_mbox/couchdb-l10n/"><strong>Localisation Mailing List</strong></a>
+            <p>Do you speak more than one language? Help us to translate CouchDB!</p>
+        </div>
+
+        <ul class="list mailing-list">
+            <li>Writing to the list<a href="mailto:l10n@couchdb.apache.org">l10n@couchdb.apache.org<span></span></a></li>
+            <li>Subscription address<a href="mailto:l10n-subscribe@couchdb.apache.org">l10n-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Digest subscription address<a href="mailto:l10n-digest-subscribe@couchdb.apache.org">l10n-digest-subscribe@couchdb.apache.org<span></span></a></li>
+            <li>Unsubscription addresses<a href="mailto:l10n-unsubscribe@couchdb.apache.org">l10n-unsubscribe@couchdb.apache.org<span></span></a></li>
+            <li>Getting help with the list<a href="mailto:l10n-help@couchdb.apache.org">l10n-help@couchdb.apache.org<span></span></a></li>
         </ul>
 
         <br/>

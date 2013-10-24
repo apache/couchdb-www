@@ -59,6 +59,11 @@ label {
   font-weight: 400;
   font-size: 12px;
 }
+button {
+  font-size: 17px;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
 .feature {
   font-size: 21px;
 }
@@ -246,7 +251,7 @@ blockquote {
   bottom: 0;
 }
 /*---------------------------------------------------
-	Layout - Contribution, Mailing List, 
+	Layout - Contribution, Mailing List,
 	Download and Quick Links
 ---------------------------------------------------*/
 .container-box {
@@ -464,6 +469,35 @@ blockquote {
   background-color: #ae2323;
 }
 /*---------------------------------------------------
+	Search Form
+---------------------------------------------------*/
+#search-box {
+  border: none;
+  width: 716px;
+  padding: 8px;
+  font-size: 16px;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+#search-box,
+#search-button {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 32px;
+  vertical-align: bottom;
+}
+#search-button {
+  font-size: 16px;
+  margin-left: -1px;
+  padding: 5px;
+  border: none;
+  width: 36px;
+  background: url(../image/sprite.png) no-repeat;
+  background-position: -156px -95px;
+  background-color: #ff0000;
+}
+/*---------------------------------------------------
 	Misc
 ---------------------------------------------------*/
 .icon {
@@ -640,7 +674,6 @@ a.pt-about {
 @media all and (max-width: 675px) {
   body {
     /*        font-size: 14px;*/
-  
   }
   .leadin img {
     left: -4px;
