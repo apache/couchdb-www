@@ -524,6 +524,9 @@ a.scroll-point {
   display: block;
   border-bottom: transparent 1px solid;
 }
+a.hash-target {
+  padding-top: 115px;
+}
 a.pt-top {
   border: none;
 }
