@@ -21,12 +21,5 @@ The site should now be updated.
 Publishing the Site
 -------------------
 
-Then, after reviewing the generated pages, check in the changed files.
-
-Log on to people.apache.org.
-
-Run:
-
-   svn up /www/couchdb.apache.org
-
-This will take up to an hour to become public.
+The site will be published automatically to http://couchdb.apache.org after 
+you have committed your changes to the svn repository.
