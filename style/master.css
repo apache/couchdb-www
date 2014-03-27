@@ -54,10 +54,12 @@ strong {
   font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
+small,
 label {
   font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
+  display: block;
 }
 button {
   font-size: 17px;
