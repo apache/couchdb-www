@@ -47,7 +47,7 @@ Scroller = {
 	      e.stopPropagation()
 	    }
 	},
-	
+
 	// move the scroll bar to the particular div.
 	scroll: function(d){
 		i = window.innerHeight || document.documentElement.clientHeight;
@@ -80,7 +80,7 @@ Scroller = {
 		        	l=this.hash.substr(1);
 		        	 a = document.getElementsByTagName('a');
 				     for (i=0;i<a.length;i++) {
-				     	if(a[i].name == l){
+				     	if(a[i].id == l){
 				     		clearInterval(Scroller.interval);
 				     		Scroller.interval=setInterval('Scroller.scroll('+Scroller.gy(a[i])+')',10);
 						}
