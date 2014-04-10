@@ -333,9 +333,9 @@ This fabulous linen texture was integrated into the site design.
 
             <ul class="list quick-links">
                 <li class="corner"></li>
-                <li><a href="http://docs.couchdb.org/en/latest/">Documentation<span></span></a></li>
+                <li><a href="http://docs.couchdb.org/en/latest/" onclick="_gaq.push(['_link', 'http://docs.couchdb.org/en/latest/']); return false;">Documentation</a>
                 <li><a href="http://wiki.apache.org/couchdb/CurrentReleases">Current Releases<span></span></a></li>
-                <li><a href="https://blogs.apache.org/couchdb/">Blog<span></span></a></li>
+                <li><a href="https://blogs.apache.org/couchdb/" onclick="_gaq.push(['_link', 'https://blogs.apache.org/couchdb/']); return false;">Blog</a>
                 <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li>
             </ul>
 
@@ -375,6 +375,8 @@ This fabulous linen texture was integrated into the site design.
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-658988-6']);
+  _gaq.push(['_setDomainName', 'couchdb.apache.com']);
+  _gaq.push(['_setAllowLinker', true]);
   _gaq.push(['_trackPageview']);
 
   (function() {
