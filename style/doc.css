@@ -1,0 +1,25 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+}
+
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: #FFF;
+    background-image: url(../image/logo.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #EEE;
+    padding: 10px;
+}
