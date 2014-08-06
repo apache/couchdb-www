@@ -8,15 +8,15 @@
 
 <h1>CouchDB Bylaws</h1>
 
-<p><em>These bylaws were officially adopted by the CouchDB PMC as of 2014-07-27 23:59 UTC.</em>
+<p><em>These bylaws were officially adopted by the CouchDB PMC as of 2014-07-27 23:59 UTC and last modified on 2014-07-31 14:00 UTC.</em>
 
-  <h2>Table of Contents</h2>
+    <h2>Table of Contents</h2>
 
 <div class="toc"></div>
 
   <h2 id="intro">1. Introduction</h2>
 
-<p>This document defines the bylaws under which the Apache CouchDB project operates. It defines the roles and responsibilities within the project, who may vote, how voting works, how conflicts are resolved, and voting rules for specific decision types.
+<p>This document defines the bylaws under which the Apache CouchDB project operates. It defines the <a href="#roles">roles and responsibilities</a> within the project, who may vote, how <a href="#voting">voting</a> works, how conflicts are resolved, and voting rules for specific <a href="#types">decision types</a>.
 
 <p>This document is written for anyone who wishes to participate in the project. <strong>If this is your first time through this document, read this introduction, then read all the bolded text for a summary of the bylaws.</strong> Then, as you need more detail, read past the bolded text for an expanded explanation.
 
@@ -102,9 +102,9 @@
 
 <p>At the most basic level, the role of the PMC is oversight. The PMC must ensure that all relevant bylaws , policies, and procedures  are adhered to. These exist at the Foundation-level and the project-level. See the <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Project+affairs">project affairs</a> page for more information.
 
-<p>Beyond this requirement, the primary goal of the PMC is to invest in the long term wellbeing of the community. For this reason, one of the most basic tasks of the PMC is the recruitment and management of project contributors. We believe that the size, diversity, and health of the community is essential for the quality, stability, and robustness of project and it's social structures.
+<p>Beyond this requirement, the primary goal of the PMC is to invest in the long term wellbeing of the community. For this reason, one of the most basic tasks of the PMC is the recruitment and management of project contributors. We believe that the size, diversity, and health of the community is essential for the quality, stability, and robustness of project and its social structures.
 
-<p>Actives of the PMC include, but are not limited to:
+<p>Activities of the PMC include, but are not limited to:
 
   <ul>
     <li>Project governance
@@ -118,7 +118,7 @@
 
 <p>PMC members are held to a much higher standard than regular community members. This includes strict hat wearing, equitable decision making, and exemplary conduct. People look to PMC members for cues about how to behave. It is important that all PMC members understand the responsibility that they bear, and that they are individually committed to improving themselves and the project.
 
-<p>While security issues and release management are worked by the PMC, the PMC typically delegates responsibility to the CouchDB committers.
+<p>While security issues and release management are the responsibility of the PMC, the PMC typically delegates this to committers.
 
   <h3 id="chair">2.5. Chair</h3>
 
@@ -128,7 +128,7 @@
 
 <p>The chair has primary responsibility to the Board, and has the power to establish rules and procedures for the day to day management of the communities for which the PMC is responsible, including the composition of the PMC itself.
 
-<p>Remember that, as in any meeting, the chair is a facilitator and their role within the PMC is to ensure that everyone has a chance to be heard and to enable meetings to flow smoothly. There is no concept of "leader" in the Apache way.
+<p>Remember that, as in any meeting, the Chair is a facilitator and their role within the PMC is to ensure that everyone has a chance to be heard and to enable meetings to flow smoothly.
 
 <p>If the current Chair resigns, or the term of the Chair expires, the PMC will hold a Chair election.
 
@@ -145,9 +145,9 @@
 <p><strong>In descending order of preference, we prefer that decisions are made via:</strong>
 
   <ul>
-    <li><strong>Lazy consensus</strong>
-    <li><strong>Discussion-led consensus gathering</strong>
-    <li><strong>Formal voting</strong>
+    <li><strong><a href="#lazy">Lazy consensus</a> or <a href="#rtc">RTC</a></strong>
+    <li><strong><a href="#discussions">Discussion-led consensus gathering</a></strong>
+    <li><strong><a href="#voting">Formal voting</a></strong>
   </ul>
 
 <p>Our goal is to build a community of trust, reduce mailing list traffic, and deal with disagreements swiftly when they occur.
@@ -160,7 +160,7 @@
 
   <h3 id="lazy">3.1. Lazy Consensus</h3>
 
-<p><strong>When you are convinced that you know what the community would like to see happen, you can assume that you already have permission and get on with the work. We call this <a href="http://www.apache.org/foundation/glossary.html#LazyConsensus">lazy consensus</a>.</strong> You don't have to insist that people discuss or approve your plan, and you certainly don't need to call a vote. Just assume your plan is okay unless someone says otherwise. This applies to anything in the list of decision types in section 3.6. where lazy consensus is allowed.
+<p><strong>When you are convinced that you know what the community would like to see happen, you can assume that you already have permission and get on with the work. We call this <a href="http://www.apache.org/foundation/glossary.html#LazyConsensus">lazy consensus</a>.</strong> You don't have to insist that people discuss or approve your plan, and you certainly don't need to call a vote. Just assume your plan is okay unless someone says otherwise. This applies to anything in the list of <a href="#types">decision types</a> in section 3.6. where lazy consensus is allowed.
 
   <blockquote>
     "It's easier to ask forgiveness than it is to get permission." — Grace Hopper
@@ -251,7 +251,7 @@
     </tr>
   </table>
 
-<p>There are three types of voting: informal, formal, and vetos. An informal vote is a quick way to get people's feelings on something. A formal vote, on the other hand, requires an approval model and a decision type. More detail on approval models, vetos and decision types is available in sections 3.4, 3.5., and 3.6.
+<p>There are three types of voting: informal, formal, and vetos. An informal vote is a quick way to get people's feelings on something. A formal vote, on the other hand, requires an approval model and a <a href="#decisions">decision type</a>. More detail on <a href="#approval">approval models</a>, <a href="#rtc">vetos</a>, and <a href="types">decision types</a> is available in sections 3.4, 3.5., and 3.6 respectively.
 
 <p>All formal voting must be done in an email thread with the appropriate <a href="#tags">subject tag</a>. Formal votes may contain multiple items for approval and these should be clearly separated. Formal voting is then carried out by replying to the vote mail. Formal votes are open for a period of at least 72 hours to allow all active voters time to consider the vote. Votes can be held open longer than this at the discretion of the person who initiated the vote.
 
@@ -261,16 +261,12 @@
 
   <h3 id="approval">3.4. Approval Models</h3>
 
-<p><strong>We use four different approval models for formal voting</strong>:
+<p><strong>We use three different approval models for formal voting</strong>:
 
   <ul>
     <li>RTC (see section 3.5)
       <ul>
 	<li>Requires one binding +1 vote and no vetos
-      </ul>
-    <li>Majority approval
-      <ul>
-	<li>Requires three binding +1 votes and no binding -1 votes
       </ul>
     <li>Lazy majority
       <ul>
@@ -284,11 +280,13 @@
 
 <p>RTC is only ever used in the context of a code review or a pull request, and does not require a separate vote thread. Each of the other approval models requires a vote thread.
 
+<p>A -1 vote is never called a veto except when using the RTC approval model. This is because a single -1 vote never has the power to block a vote outside of RTC.
+
 <p>Which approval model to use is dictated by the table in section 3.6. This is project policy, and can be changed by amending this document.
 
 <p>For electing a new Chair, the PMC may opt to use <em>Single Transferable Vote</em> (STV) which comes with its own rules. <a href="http://steve.apache.org/">Apache STeVe</a> was specifically designed to enable this process.
 
-  <h3 id="rtc">3.5. RTC Approval &amp; Vetos</h3>
+  <h3 id="rtc">3.5. RTC and Vetos</h3>
 
 <p>Typically, CouchDB uses the <a href="http://www.apache.org/foundation/glossary.html#ReviewThenCommit">Review-Then-Commit</a> (<em>RTC</em>) model of code collaboration. RTC allows work to proceed on separate feature or bugfix branches, and requires at least one other developer to review and approve the changes before they are committed to a release branch. A release branch is any branch that a release might be prepared from, such as <code>master</code>, <code>1.6.x</code>, and so on. Notifications of these changes are sent to <a href="https://mail-archives.apache.org/mod_mbox/couchdb-commits/">the commits mailing list</a>. It is expected that the rest of the community is regularly reviewing these changes.
 
@@ -342,7 +340,7 @@
 	Non-technical decisions should normally be made with lazy consensus, or by the entire community using discussion-led consensus-building, and not through formal voting.
       <td>Whichever mailing list is most appropriate
       <td>Allowed
-      <td>Majority approval
+      <td>Lazy majority
       <td>No
       <td>Committers
       <td> No
@@ -384,7 +382,7 @@
 	Nominations can be made by anyone by emailing <a href="https://mail-search.apache.org/pmc/private-arch/couchdb-private/">the private list</a>.
       <td><a href="https://mail-search.apache.org/pmc/private-arch/couchdb-private/">Private list</a>
       <td>No
-      <td>Majority approval
+      <td>Lazy majority
       <td>No
       <td>PMC members
       <td>No
@@ -398,7 +396,7 @@
 	Nominations can be made by anyone by emailing <a href="https://mail-search.apache.org/pmc/private-arch/couchdb-private/">the private list</a>.
       <td><a href="https://mail-search.apache.org/pmc/private-arch/couchdb-private/">Private list</a>
       <td>No
-      <td>Majority approval
+      <td>Lazy 2/3 majority
       <td>Yes
       <td>PMC members
       <td>No
@@ -408,7 +406,7 @@
       <td>Elect a new Chair.
       <td><a href="https://mail-search.apache.org/pmc/private-arch/couchdb-private/">Private list</a>
       <td>No
-      <td>Majority approval or STV
+      <td>Lazy 2/3 majority or STV
       <td>Yes
       <td>PMC members
       <td>No
@@ -448,7 +446,7 @@
       <td>Create or amend any document marked as official.
       <td><a href="https://mail-archives.apache.org/mod_mbox/couchdb-dev/">Main development list</a>
       <td>No
-      <td>Majority approval
+      <td>Lazy 2/3 majority
       <td>No
       <td>PMC members
       <td>No
@@ -460,6 +458,12 @@
   <h3 id="tags">4.1. Subject Tags</h3>
 
 <p><strong>A subject tag is a string like "[TAG]" that appears at the start of an email subject. We use these to communicate the type of message being sent.</strong>
+
+<p>Here's what an example subject looks like, using multiple tags:
+
+  <blockquote>
+    <code>[VOTE] [REVISED] Official CouchDB bylaws</code>
+  </blockquote>
 
 <p>If a VOTE or PROPOSAL thread is started without the requisite tag, its validity can be challenged. Every other tag is optional.
 
@@ -486,7 +490,7 @@
     </tr>
     <tr>
       <td>PROPOSAL
-      <td>This is a concrete proposal that will default lazy consensus
+      <td>This is a concrete proposal that will default to lazy consensus
       <td>Yes
       <td>72 hours
     </tr>
