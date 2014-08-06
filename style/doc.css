@@ -5,14 +5,19 @@ html {
 }
 
 body {
-    margin: 20px;
+    margin: 50px;
     padding: 0;
-    background-color: #FFF;
+    font-size: 18px;
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 1.5em;
     background-image: url(../image/logo.png);
     background-repeat: no-repeat;
     background-position: top right;
 }
 
+p {
+    width: 800px;
+}
 
 table {
     border-spacing: 0px;
