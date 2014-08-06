@@ -86,7 +86,7 @@ button {
 	font-size: 21px;
 }
 
-.platforms-list li, .list-header.mini, .quick-links-header li {
+.platforms-list li, .list-header.mini, .more-header li {
 	font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
 	font-weight: 500;
 }
@@ -293,7 +293,7 @@ blockquote {
 
 /*---------------------------------------------------
 	Layout - Contribution, Mailing List,
-	Download and Quick Links
+	Download and More
 ---------------------------------------------------*/
 
 @link-box: 36px;
@@ -457,14 +457,14 @@ blockquote {
 }
 
 
-/**** Quick Links ****/
+/**** More ****/
 
 
 .list-header.mini {
     display: inline;
 }
 
-.quick-links, .quick-links-header li {
+.more, .more-header li {
     float: left;
     width: @column;
     margin-right: @gutter;
@@ -472,31 +472,31 @@ blockquote {
 	position: relative;
 }
 
-.quick-links-header li {
+.more-header li {
     margin-bottom: @gutter;
 }
 
-.quick-links.last, .quick-links-header li.last {
+.more.last, .more-header li.last {
     margin-right: 0;
 }
 
-.quick-links li {
+.more li {
     padding: 0;
 }
 
-.quick-links a {
+.more a {
     .animate;
     display: block;
     text-decoration: none;
     padding: @padding/2;
 }
 
-.quick-links a:hover {
+.more a:hover {
     color: #fff;
     background: @key-color;
 }
 
-.quick-links a span {
+.more a span {
     .list-link;
     width: @link-box;
 	.sprite;
@@ -577,11 +577,11 @@ blockquote {
     background-position: 0 @spacer-base;
 	padding-left: 78px;
 }
-.icon-about { 			background-position: 0 @spacer-base;}
-.icon-contribute { 			background-position: 0 @spacer-base - @spacer;}
-.icon-mailing-list { 		background-position: 0 @spacer-base - @spacer*2;}
-.icon-download { 			background-position: 0 @spacer-base - @spacer*3;}
-.icon-quick-links { 		background-position: 0 @spacer-base - @spacer*4;}
+.icon-about {        background-position: 0 @spacer-base;}
+.icon-contribute {   background-position: 0 @spacer-base - @spacer;}
+.icon-mailing-list { background-position: 0 @spacer-base - @spacer*2;}
+.icon-download {     background-position: 0 @spacer-base - @spacer*3;}
+.icon-more {         background-position: 0 @spacer-base - @spacer*4;}
 
 a.scroll-point {
 	display: block;
@@ -601,7 +601,7 @@ a.pt-about {
 	border:none
 }
 
-.corner, .quick-links .corner {
+.corner, .more .corner {
 	.sprite;
 	background-position: 0 -808px;
 	position: absolute;
@@ -611,7 +611,7 @@ a.pt-about {
 	height: 40px;
 }
 
-.quick-links .corner {
+.more .corner {
 }
 
 
@@ -628,7 +628,7 @@ a.pt-about {
         margin-left: @mobile-pad;
         margin-right: @mobile-pad;
     }
-    .quick-links, .quick-links-header li {
+    .more, .more-header li {
         width: 30%;
     }
     .platforms-list {
@@ -795,11 +795,11 @@ a.pt-about {
     }
     @spacer-mini: @spacer/2;
     @spacer-base-mini: @spacer-base/2;
-    .icon-about { 			    background-position: 0 @spacer-base-mini;}
-    .icon-contribute { 			background-position: 0 @spacer-base-mini - @spacer-mini;}
-    .icon-mailing-list { 		background-position: 0 @spacer-base-mini - @spacer-mini*2;}
-    .icon-download { 			background-position: 0 @spacer-base-mini - @spacer-mini*3;}
-    .icon-quick-links { 		background-position: 0 @spacer-base-mini - @spacer-mini*4;}
+    .icon-about {        background-position: 0 @spacer-base-mini;}
+    .icon-contribute {   background-position: 0 @spacer-base-mini - @spacer-mini;}
+    .icon-mailing-list { background-position: 0 @spacer-base-mini - @spacer-mini*2;}
+    .icon-download {     background-position: 0 @spacer-base-mini - @spacer-mini*3;}
+    .icon-more {         background-position: 0 @spacer-base-mini - @spacer-mini*4;}
 
 	.platforms-list, .platforms-list.second {
 		width: auto;
@@ -813,18 +813,18 @@ a.pt-about {
 		width: 0;
 		padding-right: 30px;
 	}
-	.quick-links-header {
+	.more-header {
 		display: none;
 	}
-	.quick-links, .quick-links-header li {
+	.more, .more-header li {
 		float: none;
 		width: auto;
 		margin-right: 0;
 	}
-	.quick-links .corner {
+	.more .corner {
 		display: none;
 	}
-	.quick-links {
+	.more {
 		padding-top: 0;
 	}
     .download-list .type {

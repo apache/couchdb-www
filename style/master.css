@@ -59,7 +59,6 @@ label {
   font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
-  display: block;
 }
 button {
   font-size: 17px;
@@ -71,7 +70,7 @@ button {
 }
 .platforms-list li,
 .list-header.mini,
-.quick-links-header li {
+.more-header li {
   font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -254,7 +253,7 @@ blockquote {
 }
 /*---------------------------------------------------
 	Layout - Contribution, Mailing List,
-	Download and Quick Links
+	Download and More
 ---------------------------------------------------*/
 .container-box {
   background: #fff;
@@ -405,29 +404,29 @@ blockquote {
   font-size: 12px;
   margin-top: 2px;
 }
-/**** Quick Links ****/
+/**** More ****/
 .list-header.mini {
   display: inline;
 }
-.quick-links,
-.quick-links-header li {
+.more,
+.more-header li {
   float: left;
   width: 320px;
   margin-right: 24px;
   list-style: none;
   position: relative;
 }
-.quick-links-header li {
+.more-header li {
   margin-bottom: 24px;
 }
-.quick-links.last,
-.quick-links-header li.last {
+.more.last,
+.more-header li.last {
   margin-right: 0;
 }
-.quick-links li {
+.more li {
   padding: 0;
 }
-.quick-links a {
+.more a {
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
@@ -435,11 +434,11 @@ blockquote {
   text-decoration: none;
   padding: 8px;
 }
-.quick-links a:hover {
+.more a:hover {
   color: #fff;
   background: #ff0000;
 }
-.quick-links a span {
+.more a span {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -519,7 +518,7 @@ blockquote {
 .icon-download {
   background-position: 0 -508px;
 }
-.icon-quick-links {
+.icon-more {
   background-position: 0 -604px;
 }
 a.scroll-point {
@@ -537,7 +536,7 @@ a.pt-about {
   border: none;
 }
 .corner,
-.quick-links .corner {
+.more .corner {
   background: url(../image/sprite.png) no-repeat;
   background-position: 0 -808px;
   position: absolute;
@@ -561,8 +560,8 @@ a.pt-about {
     margin-left: 24px;
     margin-right: 24px;
   }
-  .quick-links,
-  .quick-links-header li {
+  .more,
+  .more-header li {
     width: 30%;
   }
   .platforms-list {
@@ -744,7 +743,7 @@ a.pt-about {
   .icon-download {
     background-position: 0 -254px;
   }
-  .icon-quick-links {
+  .icon-more {
     background-position: 0 -302px;
   }
   .platforms-list,
@@ -760,19 +759,19 @@ a.pt-about {
     width: 0;
     padding-right: 30px;
   }
-  .quick-links-header {
+  .more-header {
     display: none;
   }
-  .quick-links,
-  .quick-links-header li {
+  .more,
+  .more-header li {
     float: none;
     width: auto;
     margin-right: 0;
   }
-  .quick-links .corner {
+  .more .corner {
     display: none;
   }
-  .quick-links {
+  .more {
     padding-top: 0;
   }
   .download-list .type {
