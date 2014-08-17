@@ -15,7 +15,7 @@ body {
     background-position: top right;
 }
 
-p {
+p, ol, ul {
     width: 800px;
 }
 
