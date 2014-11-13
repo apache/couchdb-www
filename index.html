@@ -379,6 +379,16 @@ This fabulous linen texture was integrated into the site design.
     })();
   </script>
   <script type="text/javascript" src="https://issues.apache.org/jira/s/1c67ff5e37d44b99a6a3140ab88552c8-T/en_UK1zkmuk/6332/7/1.4.15/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=c4088f46"></script>
+  <script>
+    $(document).ready(function () {
+      $('.download-list').on('click', function (e) {
+        if (!attr('href')) {
+          return;
+        }
+        _gaq.push(['_trackEvent', 'Click', 'Download', $(e.target).attr('href')]);
+      });
+    });
+  </script>
 </body>
 
 </html>
