@@ -382,7 +382,7 @@ This fabulous linen texture was integrated into the site design.
   <script>
     $(document).ready(function () {
       $('.download-list').on('click', function (e) {
-        if (!attr('href')) {
+        if (!$(e.target).attr('href')) {
           return;
         }
         _gaq.push(['_trackEvent', 'Click', 'Download', $(e.target).attr('href')]);
