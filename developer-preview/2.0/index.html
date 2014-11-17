@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+<link rel="canonical" href="http://couchdb.apache.org/"/>
+
+<title>Apache CouchDB</title>
+
+<!--
+
+Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
+
+Thanks to Patrick Hoesly for his original artwork:
+
+    http://www.flickr.com/photos/zooboing/4715048673/
+
+This fabulous linen texture was integrated into the site design.
+
+-->
+
+<link rel="stylesheet" type="text/css" href="../../style/master.css">
+
+<script src="../../script/smooth.js" type="text/javascript"></script>
+
+  <style type="text/css" media="screen">
+  p {
+    line-spacing:1.3em;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+  }
+  ul {
+    margin-left:2em;
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <a class="scroll-point pt-top" id="top"></a>
+
+  <div id="header">
+
+    <div class="wrap">
+
+      <a class="logo" href="/"></a>
+
+      <div class="menu">
+        <a href="#about">About</a>
+        <a href="http://docs.couchdb.org">Docs</a>
+        <a href="#contribute">Contribute</a>
+        <a href="#mailing-lists">Mailing Lists</a>
+        <a href="#download">Download</a>
+        <a href="#more">More&hellip;</a>
+      </div>
+
+      <form class="menu-dropdown">
+        <select onchange="location = this.options[this.selectedIndex].value;">
+          <option value="#about">About</option>
+          <option value="#contribute">Contribute</option>
+          <option value="#mailing-lists">Mailing Lists</option>
+          <option value="#download">Download</option>
+          <option value="#more">More&hellip;</option>
+        </select>
+      </form>
+
+    </div>
+
+    <div class="shadow"></div>
+
+  </div>
+
+  <div class="header-placeholder"></div>
+
+  <a class="scroll-point pt-about" id="about"></a>
+
+  <div class="wrap feature">
+
+    <h2 class="icon icon-about">CouchDB 2.0 Developer Preview</h2>
+
+    <p> This is an early, still in-development version of CouchDB. It is a significant departure from the 1.x series and will be foundation of the 2.0 version and beyond.
+    
+    <p> The target audience of this release are people who use CouchDB today and want to see what the future brings.
+
+    <p> The CouchDB community is requesting feedback on the following areas:
+      <ul>
+        <li>New Features</li>
+        <li>Compatibility with existing software</li>
+        <li>Bug reports</li>
+      </ul>
+
+    <p> Please report your findings to the <a href="http://couchdb.apache.org#mailing-lists" title="Apache CouchDB Developer Mailing list">Developer Maling List</a> or the <a href="https://issues.apache.org/jira/browse/CouchDB">Issue Tracker</a>.
+
+
+      <h2>Installation</h2>
+
+      <p> We are working pre-built binaries, until then, follow these installation steps.
+
+      <p> <strong>Prerequisites</strong>:
+        <p>
+          <ul>
+            <li>Erlang (R14B or R16B or later)</li>
+            <li>Spidermonkey 1.8.5</li>
+            <li>libicu-dev</li>
+            <li><a href="https://github.com/basho/rebar">rebar</a></li>
+            <li>Node.js with npm (for Fauxton, the web UI)</li>
+        </ul>
+      </p>
+
+      <p> See the <a href="https://github.com/apache/couchdb/blob/master/INSTALL.Unix">CouchDB Install file</a> and the <a href="https://github.com/apache/couchdb-fauxton/blob/master/readme.md">Fauxton Readme</a> for more detailed instrucitons on how to get the prerequisits set up.
+
+      <p> With this all in place, run the following commands:
+
+<code><pre>
+  git clone https://git-wip-us.apache.org/repos/asf/couchdb.git
+  npm install -g grunt-cli
+  cd couchdb
+  git checkout developer-preview-2.0
+  ./configure
+  make
+  dev/rel
+</pre></code>
+
+    <p> The last command starts a three node cluster on the ports 15984, 25984 and 35984. They represent the endpoints in a three node cluster and you can connect to either one of them to access the full cluster.
+
+    <p> To get started, visit Fauxton, the new web UI at <a href="http://127.0.0.1:15984/_utils">http://127.0.0.1:15984/_utils</a>
+
+  </div>
+
+  <div id="footer">
+
+    <p>Copyright &copy; 2014 The Apache Software Foundation &mdash; Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a><br>
+      Apache CouchDB, CouchDB, and the project logo are <a href="http://www.apache.org/foundation/marks/list/">trademarks</a> of The Apache Software Foundation</p>
+
+    <a class="closing" href="#top"></a>
+
+  </div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-658988-6']);
+    _gaq.push(['_setDomainName', 'apache.org']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript" src="https://issues.apache.org/jira/s/1c67ff5e37d44b99a6a3140ab88552c8-T/en_UK1zkmuk/6332/7/1.4.15/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=c4088f46"></script>
+  <script>
+    $(document).ready(function () {
+      $('.download-list').on('click', function (e) {
+        if (!$(e.target).attr('href')) {
+          return;
+        }
+        _gaq.push(['_trackEvent', 'Click', 'Download', $(e.target).attr('href')]);
+      });
+    });
+  </script>
+</body>
+
+</html>
