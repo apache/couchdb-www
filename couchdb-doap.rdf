@@ -16,7 +16,7 @@
     <download-page rdf:resource="http://couchdb.apache.org/#download"/>
     <programming-language>JavaScript</programming-language>
     <programming-language>Erlang</programming-language>
-    <programming-language>Perl</programming-language>
+    <programming-language>C++</programming-language>
     <programming-language>C</programming-language>
     <category rdf:resource="http://projects.apache.org/category/database"/>
     <category rdf:resource="http://projects.apache.org/category/http"/>
