@@ -33,10 +33,10 @@
       </Version>
     </release>
     <repository>
-      <SVNRepository>
+      <GITRepository>
         <location rdf:resource="https://git-wip-us.apache.org/repos/asf/couchdb-couch/repo?p=couchdb.git;a=summary"/>
         <browse rdf:resource="https://git-wip-us.apache.org/repos/asf/couchdb-couch/repo?p=couchdb.git;a=summary"/>
-      </SVNRepository>
+      </GITRepository>
     </repository>
   </Project>
 </rdf:RDF>
