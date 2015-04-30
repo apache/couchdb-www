@@ -22,4 +22,6 @@ Publishing the Site
 -------------------
 
 The site will be published automatically to http://couchdb.apache.org after 
-you have committed your changes to the svn repository.
+you have committed your changes to the [git repository][1].
+
+[1]: https://git-wip-us.apache.org/repos/asf?p=couchdb-www.git
