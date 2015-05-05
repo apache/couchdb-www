@@ -113,9 +113,9 @@ This fabulous linen texture was integrated into the site design.
         </ul>
       </p>
 
-      <p> See the <a href="https://github.com/apache/couchdb/blob/master/INSTALL.Unix">CouchDB Install file</a> and the <a href="https://github.com/apache/couchdb-fauxton/blob/master/readme.md">Fauxton Readme</a> for more detailed instrucitons on how to get the prerequisits set up.
+      <p> See the <a href="https://github.com/apache/couchdb/blob/master/INSTALL.Unix">CouchDB Install file</a> and the <a href="https://github.com/apache/couchdb-fauxton/blob/master/readme.md">Fauxton Readme</a> for more detailed instrucitons on how to get the prerequisits set up.</p>
 
-      <p> With this all in place, run the following commands:
+      <p> With this all in place, run the following commands:</p>
 
 <code><pre>
   git clone https://git-wip-us.apache.org/repos/asf/couchdb.git
@@ -125,11 +125,20 @@ This fabulous linen texture was integrated into the site design.
   ./configure
   make
   dev/run
+</pre></code></p>
+
+    <p> The last command starts a three node cluster on the ports 15984, 25984 and 35984. They represent the endpoints in a three node cluster and you can connect to either one of them to access the full cluster.</p>
+
+    <p>We provide a haproxy config for the three cluster nodes, run:
+<code><pre>
+  haproxy -f rel/haproxy.cfg
 </pre></code>
+    </p>
+    <p>
+      to listen on port 5984 and proxy to the nodes. You will have the CouchDB API available at port 5984 again.
+    </p>
 
-    <p> The last command starts a three node cluster on the ports 15984, 25984 and 35984. They represent the endpoints in a three node cluster and you can connect to either one of them to access the full cluster.
-
-    <p> To get started, visit Fauxton, the new web UI at <a href="http://127.0.0.1:15984/_utils">http://127.0.0.1:15984/_utils</a>
+    <p> To get started, visit Fauxton, the new web UI at <a href="http://127.0.0.1:15984/_utils">http://127.0.0.1:5984/_utils</a></p>
 
   </div>
 
