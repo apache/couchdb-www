@@ -25,6 +25,9 @@ body, a {
 @key-color-hover:   #ae2323;
 @disable-color:     #abafb0;
 
+@contribute-icon-sprite-width: 50px;
+@contribute-icon-sprite-height:  40px;
+
 .animate-background {
     -webkit-transition: background 0.25s linear;
     -moz-transition: background 0.25s linear;
@@ -43,6 +46,10 @@ body, a {
 
 .sprite {
     background: url(../image/sprite.png) no-repeat
+}
+
+.sprite-contribution-icons {
+    background: url(../image/contribute-icons.png) no-repeat
 }
 
 .ellipsis {
@@ -146,9 +153,16 @@ div.button, div.button:hover {
     height: 16px;
 }
 
-.clear {
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after, .clear {
     clear: both;
 }
+
 
 /*---------------------------------------------------
     Layout
@@ -867,3 +881,97 @@ a.pt-about {
         margin-top: 32px;
     }
 }
+
+.skill-card {
+    background-color: #fff;
+    float: left;
+    width: @column;
+    margin-right: @gutter;
+    margin-bottom: @gutter;
+    position: relative;
+    height: 340px;
+    .stripe {
+        height: 5px;
+    }
+    .skill-card-slogan {
+        height: 125px;
+    }
+    .skill-card-content {
+        padding: 15px 20px 20px 20px;
+    }
+    .skill-card-heading-text {
+        margin-top: 0.4em;
+        position: absolute;
+    }
+    .card-icon {
+        .sprite-contribution-icons;
+        height: @contribute-icon-sprite-height;
+        width: @contribute-icon-sprite-width;
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: -7px;
+    }
+    .card-icon.core {
+        background-position: 0 0;
+    }
+    .card-icon.fauxton {
+        background-position: -@contribute-icon-sprite-width 0;
+    }
+    .card-icon.marketing {
+        background-position: -@contribute-icon-sprite-width * 2 0;
+    }
+    .card-icon.website {
+        background-position: -@contribute-icon-sprite-width * 3 0;
+    }
+    .card-icon.documentation {
+        background-position: -@contribute-icon-sprite-width * 4 0;
+    }
+    .card-icon.guidance {
+        background-position: -@contribute-icon-sprite-width * 5 0;
+    }
+    h3 {
+        font-size: 23px;
+        line-height: 1.1em;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+    }
+    ul, li {
+        margin-right: 7px;
+        font-size: 16px;
+        line-height: 1.8em;
+        list-style: none;
+        color: @key-color;
+        a {
+            color: @main-color;
+            text-decoration: none;
+        }
+    }
+    li.last {
+        margin-right: 0;
+    }
+
+}
+
+.skill-card:last-child {
+    margin-right: 0;
+}
+
+.skill-card:hover {
+    a {
+        text-decoration: underline;
+    }
+    .stripe {
+        height: 5px;
+        background-color: @key-color;
+    }
+}
+
+.skill-card a:hover {
+    color: @key-color;
+    text-decoration: underline;
+}
+
