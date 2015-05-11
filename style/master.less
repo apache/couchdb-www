@@ -8,15 +8,15 @@ body {
 }
 
 body, a {
-	color: @main-color;
+    color: @main-color;
 }
 
 /** LESS **/
-@column:		320px;
-@gutter:		24px;
+@column:        320px;
+@gutter:        24px;
 @padding:       16px;
-@full-width:	@column*3 + @gutter*2;
-@gap:			32px;
+@full-width:    @column*3 + @gutter*2;
+@gap:           32px;
 
 @background-half-size: 112px 425px;
 
@@ -26,23 +26,23 @@ body, a {
 @disable-color:     #abafb0;
 
 .animate-background {
-	-webkit-transition: background 0.25s linear;
-	-moz-transition: background 0.25s linear;
-	transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+    -moz-transition: background 0.25s linear;
+    transition: background 0.25s linear;
 }
 
 .animate {
-	-webkit-transition: all 0.25s linear;
-	-moz-transition: all 0.25s linear;
-	transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    transition: all 0.25s linear;
 }
 
 .secondary-bg {
-	background: url(../image/linen.jpg) #EEE 50% 0%;
+    background: url(../image/linen.jpg) #EEE 50% 0%;
 }
 
 .sprite {
-	background: url(../image/sprite.png) no-repeat
+    background: url(../image/sprite.png) no-repeat
 }
 
 .ellipsis {
@@ -53,27 +53,27 @@ body, a {
 }
 
 /*---------------------------------------------------
-	Font
+    Font
 ---------------------------------------------------*/
 
 body, h1, h2, h3, h4 {
-	font-size: 16px;
-	font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
-	font-weight: 300;
+    font-size: 16px;
+    font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+    font-weight: 300;
 }
 
 h1 {font-size: 34px;}
 h2 {font-size: 34px; padding: @gap+@padding 0;}
 
 b, strong {
-	font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
-	font-weight: 900;
+    font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
+    font-weight: 900;
 }
 
 small, label {
-	font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	font-size: 12px;
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 button {
@@ -83,16 +83,16 @@ button {
 }
 
 .feature {
-	font-size: 21px;
+    font-size: 21px;
 }
 
 .platforms-list li, .list-header.mini, .more-header li {
-	font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-	font-weight: 500;
+    font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 
 /*---------------------------------------------------
-	Generic
+    Generic
 ---------------------------------------------------*/
 
 a:hover {
@@ -100,12 +100,12 @@ a:hover {
 }
 
 p {
-	line-height: 2em;
-	margin-bottom: 2em;
+    line-height: 2em;
+    margin-bottom: 2em;
 }
 
 p + p {
-	margin-top: 2em;
+    margin-top: 2em;
 }
 
 
@@ -117,9 +117,9 @@ p + p {
 
 .button {
     display: block;
-	.sprite;
+    .sprite;
     background-color: @key-color;
-	background-position: 100% -171px;
+    background-position: 100% -171px;
     width: @column - @padding*2;
     padding: @padding;
     color: #fff;
@@ -128,7 +128,7 @@ p + p {
     position: relative;
     top: -5px;
     left: -5px;
-	.animate-background
+    .animate-background
 }
 
 .button:hover {
@@ -151,68 +151,68 @@ div.button, div.button:hover {
 }
 
 /*---------------------------------------------------
-	Layout
+    Layout
 ---------------------------------------------------*/
 
 #wrap, .wrap, #footer, hr {
-	width: @full-width;
-	margin: 0 auto;
-	position: relative;
+    width: @full-width;
+    margin: 0 auto;
+    position: relative;
 }
 
 .grid {
-	.secondary-bg;
-	padding: @gap 0;
+    .secondary-bg;
+    padding: @gap 0;
 }
 
 hr {
-	border: none;
-	border-top: 1px solid #ddd;
-	margin-top: @gap*2;
-	margin-bottom: @gap;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: @gap*2;
+    margin-bottom: @gap;
 }
 
 blockquote {
-	width: 70%;
-	margin: 0 auto;
-	font-style: italic;
+    width: 70%;
+    margin: 0 auto;
+    font-style: italic;
 }
 
 .cite {
-	text-align: right;
+    text-align: right;
 }
 
 /*---------------------------------------------------
-	Layout - Header
+    Layout - Header
 ---------------------------------------------------*/
 
 .header-placeholder {
-	height: 90px;
+    height: 90px;
 }
 
 #header {
     height: 90px;
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	right: 0;
-	background: #fff;
-	border-bottom: 1px solid #ddd;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
 #header .shadow {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: -3px;
-	height: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 3px;
     background: url(../image/shadow.png);
 }
 
 .logo, .closing {
     .sprite;
-	.animate-background;
-	background-color: @key-color;
+    .animate-background;
+    background-color: @key-color;
     background-position: 0 0px;
     position: absolute;
     left: 0;
@@ -222,7 +222,7 @@ blockquote {
 }
 
 .logo:hover {
-	background-color: @key-color-hover;
+    background-color: @key-color-hover;
 }
 
 .menu {
@@ -253,7 +253,7 @@ blockquote {
 }
 
 /*---------------------------------------------------
-	Layout - Leadin
+    Layout - Leadin
 ---------------------------------------------------*/
 
 .leadin {
@@ -261,30 +261,30 @@ blockquote {
 }
 
 .leadin .wrap {
-	height: @column+@gap+@padding;
+    height: @column+@gap+@padding;
 }
 
 .leadin .text-block {
-	position: absolute;
-	left: @padding*3 + @column;
-	top: @gap+@padding*2;
+    position: absolute;
+    left: @padding*3 + @column;
+    top: @gap+@padding*2;
 }
 
 .leadin img {
-	position: absolute;
-	top: @gap;
-	left: @gutter;
+    position: absolute;
+    top: @gap;
+    left: @gutter;
 }
 
 .leadin li {
-	list-style: none;
-	margin: 9px 8px;
+    list-style: none;
+    margin: 9px 8px;
 }
 
 .leadin h1 {
-	background: #fff;
-	display: inline;
-	padding: 4px 8px;
+    background: #fff;
+    display: inline;
+    padding: 4px 8px;
 }
 
 .leadin .button-container {
@@ -292,8 +292,8 @@ blockquote {
 }
 
 /*---------------------------------------------------
-	Layout - Contribution, Mailing List,
-	Download and More
+    Layout - Contribution, Mailing List,
+    Download and More
 ---------------------------------------------------*/
 
 @link-box: 36px;
@@ -338,7 +338,7 @@ blockquote {
 /**** Platforms ****/
 
 .platforms-list {
-	padding-top: @padding*2;
+    padding-top: @padding*2;
     width: @full-width/2 - @gutter*2;
 }
 
@@ -350,15 +350,15 @@ blockquote {
 
 .platforms-list li a {
     .list-link;
-	.animate-background;
+    .animate-background;
     width: @link-box;
-	.sprite;
-	background-position: 3px -127px;
+    .sprite;
+    background-position: 3px -127px;
     background-color: @key-color;
 }
 
 .platforms-list li a:hover {
-	background-color: @key-color-hover;
+    background-color: @key-color-hover;
 }
 
 .platforms-list li.first a {
@@ -367,11 +367,11 @@ blockquote {
 
 .platforms-list li a.link-apache {
     right: @link-box + @link-box-gap;
-	background-position: 2px -94px;
+    background-position: 2px -94px;
 }
 
 .platforms-list li.first a.link-apache {
-	width: @link-box*4;
+    width: @link-box*4;
     right: @link-box*3 + @link-box-gap;
 }
 
@@ -399,8 +399,8 @@ blockquote {
 .mailing-list a span {
     .list-link;
     width: @link-box;
-	.sprite;
-	background-position: -156px -95px;
+    .sprite;
+    background-position: -156px -95px;
     background-color: @key-color;
 }
 
@@ -435,15 +435,15 @@ blockquote {
 .download-list .type {
     .list-link;
     .animate-background;
-	.sprite;
-	background-position: -160px -127px;
+    .sprite;
+    background-position: -160px -127px;
     background-color: @key-color;
     color: #fff;
     text-decoration: none;
     right: auto;
     left: 0;
     padding: @padding/2;
-	padding-left: 32px;
+    padding-left: 32px;
     width: 40%;
 }
 .download-list .type:hover {
@@ -453,7 +453,7 @@ blockquote {
 .download-list .info {
     float: right;
     font-size: 12px;
-	margin-top: 2px;
+    margin-top: 2px;
 }
 
 
@@ -469,7 +469,7 @@ blockquote {
     width: @column;
     margin-right: @gutter;
     list-style: none;
-	position: relative;
+    position: relative;
 }
 
 .more-header li {
@@ -499,14 +499,14 @@ blockquote {
 .more a span {
     .list-link;
     width: @link-box;
-	.sprite;
-	background-position: -156px -95px;
+    .sprite;
+    background-position: -156px -95px;
     background-color: @key-color;
 }
 
 
 /*---------------------------------------------------
-	Layout - Footer
+    Layout - Footer
 ---------------------------------------------------*/
 
 #footer {
@@ -519,21 +519,21 @@ blockquote {
 }
 
 .closing {
-	background-position: 0 -725px;
+    background-position: 0 -725px;
     left: auto;
-	right: 0;
+    right: 0;
     top: 20px;
     width: 60px;
     height: 65px;
 }
 
 .closing:hover {
-	background-color: @key-color-hover;
+    background-color: @key-color-hover;
 }
 
 
 /*---------------------------------------------------
-	Search Form
+    Search Form
 ---------------------------------------------------*/
 
 #search-box {
@@ -566,7 +566,7 @@ blockquote {
 }
 
 /*---------------------------------------------------
-	Misc
+    Misc
 ---------------------------------------------------*/
 
 @spacer-base: -220px;
@@ -575,7 +575,7 @@ blockquote {
 .icon {
     .sprite;
     background-position: 0 @spacer-base;
-	padding-left: 78px;
+    padding-left: 78px;
 }
 .icon-about {        background-position: 0 @spacer-base;}
 .icon-contribute {   background-position: 0 @spacer-base - @spacer;}
@@ -584,8 +584,8 @@ blockquote {
 .icon-more {         background-position: 0 @spacer-base - @spacer*4;}
 
 a.scroll-point {
-	display: block;
-	border-bottom: transparent 1px solid;
+    display: block;
+    border-bottom: transparent 1px solid;
 }
 
 a.hash-target {
@@ -593,22 +593,22 @@ a.hash-target {
 }
 
 a.pt-top {
-	border: none;
+    border: none;
 }
 
 a.pt-about {
-	margin: -100px 0 130px;
-	border:none
+    margin: -100px 0 130px;
+    border:none
 }
 
 .corner, .more .corner {
-	.sprite;
-	background-position: 0 -808px;
-	position: absolute;
-	left: 0;
-	top: -@gap;
-	width: 40px;
-	height: 40px;
+    .sprite;
+    background-position: 0 -808px;
+    position: absolute;
+    left: 0;
+    top: -@gap;
+    width: 40px;
+    height: 40px;
 }
 
 .more .corner {
@@ -619,7 +619,7 @@ a.pt-about {
 }
 
 /*---------------------------------------------------
-	Mobile
+    Mobile
 ---------------------------------------------------*/
 @mobile-pad: 24px;
 
@@ -739,7 +739,7 @@ a.pt-about {
     }
     #footer {
         padding-bottom: 28px;
-		padding-right: 72px;
+        padding-right: 72px;
     }
 }
 
@@ -804,32 +804,32 @@ a.pt-about {
     .icon-download {     background-position: 0 @spacer-base-mini - @spacer-mini*3;}
     .icon-more {         background-position: 0 @spacer-base-mini - @spacer-mini*4;}
 
-	.platforms-list, .platforms-list.second {
-		width: auto;
-		position: static;
-		padding-bottom: 0;
-	}
-	.platforms-list.second {
-		padding-top: 0;
-	}
-	.mailing-list a {
-		width: 0;
-		padding-right: 30px;
-	}
-	.more-header {
-		display: none;
-	}
-	.more, .more-header li {
-		float: none;
-		width: auto;
-		margin-right: 0;
-	}
-	.more .corner {
-		display: none;
-	}
-	.more {
-		padding-top: 0;
-	}
+    .platforms-list, .platforms-list.second {
+        width: auto;
+        position: static;
+        padding-bottom: 0;
+    }
+    .platforms-list.second {
+        padding-top: 0;
+    }
+    .mailing-list a {
+        width: 0;
+        padding-right: 30px;
+    }
+    .more-header {
+        display: none;
+    }
+    .more, .more-header li {
+        float: none;
+        width: auto;
+        margin-right: 0;
+    }
+    .more .corner {
+        display: none;
+    }
+    .more {
+        padding-top: 0;
+    }
     .download-list .type {
         width: auto;
         display: block;
@@ -854,16 +854,16 @@ a.pt-about {
         left: -4px;
         right: -2px;
     }
-	.leadin .wrap {
-		height: 300px;
-	}
-	.icon {
-		padding: 22px 16px 20px 35px;
-	}
-	h2 {
-		font-size: 20px;
-	}
-	hr {
-		margin-top: 32px;
-	}
+    .leadin .wrap {
+        height: 300px;
+    }
+    .icon {
+        padding: 22px 16px 20px 35px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    hr {
+        margin-top: 32px;
+    }
 }
