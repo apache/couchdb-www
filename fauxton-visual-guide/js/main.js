@@ -1,0 +1,1 @@
+$(function(){var t,n;n=$("#toc");t=$("#toggle-toc-button");return t.click(function(){n.toggleClass("hidden");t.toggleClass("x");return t.text(function(){if(n.hasClass("hidden")){return"TOC"}else{return"X"}})})});

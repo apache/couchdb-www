@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+body,
+a {
+  color: #291d1e;
+}
+/*---------------------------------------------------
+    Font
+---------------------------------------------------*/
+body,
+h1,
+h2,
+h3,
+h4,
+pre {
+  font-size: 16px;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 34px;
+  padding: 48px 0;
+}
+b,
+strong {
+  font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
+.npm {
+  background-color: #E2E2E2;
+  border: 1px solid rgb(196, 196, 219);
+  margin-left: 50px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+
+#toggle-toc-button {
+  color: #888;
+  right: 20px;
+  top: 20px;
+  font-size: 12px;
+  padding: 10px;
+  position: fixed;
+  font-family: Arial,sans-serif;
+  &:hover {
+    cursor:sw-resize;
+  }
+  &.x{
+    height: 35px;
+    width: 100px;
+    font-size: 8px;
+    text-align: right;
+    margin-right: 6px;
+    &:hover {
+      cursor:ne-resize;
+    }
+  }
+  z-index: 1001;
+}
+
+#toc {
+  z-index: 1000;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  list-style-type: none;
+  position: fixed;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  li {
+    padding: 2px;
+  }
+
+  a {
+    color: rgb(197, 105, 105);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.pagecontainer {
+  min-height: 800px;
+  clear:both;
+}
+
+.page {
+  min-height: 800px;
+  img {
+    margin-top: 70px;
+    height: 600px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &.couch {
+      height: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(50%);
+    }
+  }
+  overflow-y: auto;
+}
+
+.leftside {
+  width: 50%;
+  float: left;
+}
+
+.rightside {
+  color: green;
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+
+.linen {
+  background: url(assets/linen.jpg) #eeeeee 50% 0%;
+}
+
+.textbox {
+  color: gray;
+  border: 1px solid rgb(216, 216, 216);
+  min-height: 600px;
+  width: 87%;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: rgba(242, 242, 242, 0.85);
+  overflow: hidden;
+  
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    color: #B5B5B5;
+  }
+  p {
+    padding: 5px 30px 15px 30px;
+    line-height: 1.5;
+
+    &.br { 
+      padding: 0px 30px 0px 30px;
+      line-height: 1;
+    }
+
+    &.indent {
+      margin-left: 15px;
+    }
+
+    &.question {
+      font-weight: 600;
+      padding-bottom: 0px;
+    }
+
+    &.answer {
+      padding-top: 0px;
+    }
+  }
+}
+
+#introBox {
+  text-align: center;
+  min-height: 320px;
+
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  h1 {
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 60px;
+    color: #C0C0C0;
+  }
+
+  h2 {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+#page-overview {
+  img {
+    margin-top: 300px;
+    height: auto;
+  }
+}
+
+#page-header-bar {
+
+  .head-header-section {
+
+
+    .firstleft{
+      padding-top: 100px;
+    }
+    .firstright{
+      height: 2806px;
+      
+      .long-header-textbox{
+        height: 95%;
+      }
+    }
+
+
+  }
+
+  .tail-header-section {
+    position: absolute;
+    width: 100%;
+    
+    .headerSection {
+
+      overflow: hidden;
+    }
+
+    >.headerSection:first-child  {
+      .leftside{
+        padding-top: 130px;
+      }
+    }
+
+    .leftside{
+      padding-top: 40px;
+    }
+  }
+  
+
+  img {
+    padding: 30px;
+    width: 936px;
+    height: auto;
+  }
+  .textbox {
+   min-height: auto;
+   border: none;
+  }
+  .border {
+    border: 1px solid black;
+  }
+
+  .redborder{
+    border: 1px solid red;
+  }
+
+  .blueborder{
+    border: 1px solid blue;
+  }
+
+  .greenborder{
+    border: 1px solid green;
+  }
+
+  .subleft {
+    overflow-y: auto;
+  }
+
+  .clearfix {
+     clear: both;
+  }
+}
+
+#page-answers {
+  img {
+    height: auto;
+  }
+}
+
