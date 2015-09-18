@@ -166,6 +166,10 @@
     }
 
     jQuery.each(files, function(idx, item) {
+      console.log(item);
+      if (item.Key == 'release-candidate/index.html') {
+        return;
+      }
       // strip off the prefix
       item.keyText = item.Key.substring(prefix.length);
       if (item.Type === 'directory') {
