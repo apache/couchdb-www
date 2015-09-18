@@ -167,7 +167,7 @@
 
     jQuery.each(files, function(idx, item) {
       console.log(item);
-      if (item.Key == 'release-candidate/index.html') {
+      if (item.Key == 'release-candidate/' || item.Key == 'release-candidate/index.html') {
         return;
       }
       // strip off the prefix
