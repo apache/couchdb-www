@@ -144,7 +144,7 @@
       if(a.LastModified == b.LastModified) {
         return 0;
       }
-      return a.LastModified > b.LastModified ? 1 : 0;
+      return a.LastModified < b.LastModified ? 1 : -1;
     });
     var cols = [ 45, 30, 15 ];
     var content = [];
