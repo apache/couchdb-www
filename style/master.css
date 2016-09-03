@@ -19,7 +19,7 @@ a {
   transition: all 0.25s linear;
 }
 .secondary-bg {
-  background: url(../image/linen.jpg) #eeeeee 50% 0%;
+  background: #EEE 50% 0%;
 }
 .sprite {
   background: url(../image/sprite.png) no-repeat;
@@ -69,7 +69,7 @@ button {
   font-weight: 300;
 }
 .feature {
-  font-size: 21px;
+  font-size: 24px;
 }
 .platforms-list li,
 .list-header.mini,
@@ -77,11 +77,17 @@ button {
   font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
+.menu {
+  font-size: 19px;
+}
+h2.main {
+  text-align: center;
+}
 /*---------------------------------------------------
     Generic
 ---------------------------------------------------*/
 a:hover {
-  color: #ff0000;
+  color: #e12830;
 }
 p {
   line-height: 2em;
@@ -98,7 +104,7 @@ p + p {
 .button {
   display: block;
   background: url(../image/sprite.png) no-repeat;
-  background-color: #ff0000;
+  background-color: #e12830;
   background-position: 100% -171px;
   width: 288px;
   padding: 16px;
@@ -148,7 +154,7 @@ hr {
   position: relative;
 }
 .grid {
-  background: url(../image/linen.jpg) #eeeeee 50% 0%;
+  background: #EEE 50% 0%;
   padding: 32px 0;
 }
 hr {
@@ -190,20 +196,13 @@ blockquote {
 }
 .logo,
 .closing {
-  background: url(../image/sprite.png) no-repeat;
-  -webkit-transition: background 0.25s linear;
-  -moz-transition: background 0.25s linear;
-  transition: background 0.25s linear;
-  background-color: #ff0000;
+  background: url(../image/logo.png);
   background-position: 0 0px;
   position: absolute;
   left: 0;
-  top: 5px;
-  width: 220px;
-  height: 75px;
-}
-.logo:hover {
-  background-color: #ae2323;
+  top: 13px;
+  width: 250px;
+  height: 65px;
 }
 .menu {
   padding: 16px 0;
@@ -215,11 +214,11 @@ blockquote {
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
   padding: 16px;
-  margin: 0 8px;
+  margin: 0 2.28571429px;
   line-height: 55px;
 }
 .menu a:hover {
-  color: #ff0000;
+  color: #e12830;
 }
 .menu-dropdown {
   display: none;
@@ -230,6 +229,7 @@ blockquote {
 }
 .menu-dropdown select {
   width: 100%;
+  font-size: 30px;
 }
 /*---------------------------------------------------
     Layout - Leadin
@@ -257,7 +257,7 @@ blockquote {
 .leadin h1 {
   background: #fff;
   display: inline;
-  padding: 4px 8px;
+  padding: 2px 8px;
 }
 .leadin .button-container {
   bottom: 0;
@@ -320,7 +320,7 @@ blockquote {
   width: 36px;
   background: url(../image/sprite.png) no-repeat;
   background-position: 3px -127px;
-  background-color: #ff0000;
+  background-color: #e12830;
 }
 .platforms-list li a:hover {
   background-color: #ae2323;
@@ -356,7 +356,7 @@ blockquote {
 }
 .mailing-list a:hover {
   color: #fff;
-  background: #ff0000;
+  background: #e12830;
 }
 .mailing-list a span {
   position: absolute;
@@ -366,7 +366,7 @@ blockquote {
   width: 36px;
   background: url(../image/sprite.png) no-repeat;
   background-position: -156px -95px;
-  background-color: #ff0000;
+  background-color: #e12830;
 }
 .mailing-list li {
   margin-bottom: 3px;
@@ -398,7 +398,7 @@ blockquote {
   transition: background 0.25s linear;
   background: url(../image/sprite.png) no-repeat;
   background-position: -160px -127px;
-  background-color: #ff0000;
+  background-color: #e12830;
   color: #fff;
   text-decoration: none;
   right: auto;
@@ -447,7 +447,7 @@ blockquote {
 }
 .more a:hover {
   color: #fff;
-  background: #ff0000;
+  background: #e12830;
 }
 .more a span {
   position: absolute;
@@ -457,7 +457,7 @@ blockquote {
   width: 36px;
   background: url(../image/sprite.png) no-repeat;
   background-position: -156px -95px;
-  background-color: #ff0000;
+  background-color: #e12830;
 }
 /*---------------------------------------------------
     Layout - Footer
@@ -470,11 +470,11 @@ blockquote {
   line-height: 1.5em;
 }
 .closing {
-  background-position: 0 -725px;
+  background-position: 0 0px;
   left: auto;
   right: 0;
-  top: 20px;
-  width: 60px;
+  top: 13px;
+  width: 250px;
   height: 65px;
 }
 .closing:hover {
@@ -597,9 +597,9 @@ a.pt-about {
     padding-top: 54px;
   }
   .leadin img {
-    top: 0;
+    top: 32px;
     width: 240px;
-    height: 270px;
+    height: 158px;
   }
   .leadin .text-block {
     top: 32px;
@@ -635,7 +635,7 @@ a.pt-about {
   }
   .leadin img {
     width: 192px;
-    height: 216px;
+    height: 126px;
   }
   .leadin .text-block {
     top: 32px;
@@ -679,10 +679,11 @@ a.pt-about {
     height: 52px;
   }
   .logo {
-    top: 7px;
+    top: 10px;
+    left: 10px;
     width: 110px;
-    height: 37px;
-    background-size: 112px 425px;
+    height: 28px;
+    background-size: 110px 28px;
   }
   #footer {
     padding-bottom: 28px;
@@ -696,7 +697,7 @@ a.pt-about {
   .leadin img {
     left: -4px;
     width: 160px;
-    height: 180px;
+    height: 105px;
   }
   .leadin .text-block {
     left: 175px;
@@ -724,7 +725,7 @@ a.pt-about {
   }
   .leadin img {
     width: 128px;
-    height: 144px;
+    height: 84px;
   }
   .leadin .text-block {
     left: 130px;
@@ -888,7 +889,7 @@ a.pt-about {
   font-size: 16px;
   line-height: 1.8em;
   list-style: none;
-  color: #ff0000;
+  color: #e12830;
 }
 .skill-card ul a,
 .skill-card li a {
@@ -906,9 +907,9 @@ a.pt-about {
 }
 .skill-card:hover .stripe {
   height: 5px;
-  background-color: #ff0000;
+  background-color: #e12830;
 }
 .skill-card a:hover {
-  color: #ff0000;
+  color: #e12830;
   text-decoration: underline;
 }

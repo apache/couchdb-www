@@ -51,6 +51,8 @@ This fabulous linen texture was integrated into the site design.
 
       <form class="menu-dropdown">
         <select onchange="location = this.options[this.selectedIndex].value;">
+          <option value="">Menu</option>
+          <option value="">----</option>
           <option value="#about">About</option>
           <option value="#contribute">Contribute</option>
           <option value="#mailing-lists">Mailing Lists</option>
@@ -67,6 +69,12 @@ This fabulous linen texture was integrated into the site design.
 
   <div class="header-placeholder"></div>
 
+  <div class="wrap feature">
+
+    <h2 class="main"><strong>Apache CouchDB</strong>: Data Sync Done Right</h2>
+
+  </div>
+
   <div class="grid leadin">
 
     <div class="wrap">
@@ -74,14 +82,14 @@ This fabulous linen texture was integrated into the site design.
       <img src="image/couch.png" alt=""/>
 
       <ul class="text-block">
-        <li><h1><strong>Apache CouchDB</strong>&trade; is a database</h1></li>
-        <li><h1>that uses <strong>JSON</strong> for documents,</h1></li>
-        <li><h1><strong>JavaScript</strong> for <strong>MapReduce</strong> indexes,</h1></li>
-        <li><h1>and regular <strong>HTTP</strong> for its <strong>API</strong></h1></li>
+        <li><h1><strong>Seamless</strong> multi-master sync, that</h1></li>
+        <li><h1>scales from <strong>Big Data</strong> to <strong>Mobile.</strong></h1></li>
+        <li><h1>With an <strong>Intuitive</strong> HTTP/JSON API</h1></li>
+        <li><h1>and designed for <strong>reliability</strong></h1></li>
       </ul>
 
       <div class="button-container">
-        <a class="button" href="#download">DOWNLOAD<small class="download-version">Version 1.6.1</small></a>
+        <a class="button" href="#download">DOWNLOAD<small class="download-version">Version 2.0.0 (September 6th 2016)</small></a>
       </div>
 
     </div>
@@ -92,11 +100,26 @@ This fabulous linen texture was integrated into the site design.
 
   <div class="wrap feature">
 
-    <h2 class="icon icon-about">A Database for the Web</h2>
+    <h2 class="icon icon-about">Data where you need it</h2>
 
-    <p>CouchDB is a database that completely embraces the web. Store your data with JSON documents. Access your documents and query your indexes with your web browser, via HTTP. Index, combine, and transform your documents with JavaScript. CouchDB works well with modern web and mobile apps. You can even serve web apps directly out of CouchDB. And you can distribute your data, or your apps, efficiently using CouchDB’s incremental replication. CouchDB supports master-master setups with automatic conflict detection.
+    <p>
+      Apache CouchDB&trade; lets you access your data where you need it by
+      defining the Couch Replication Protocol that is implemented by a variety of
+      projects and products that span every imaginable computing environment from
+      distributed server-clusters, over mobile phones to web browsers.
+    </p>
 
-    <p>CouchDB comes with a suite of features, such as on-the-fly document transformation and real-time change notifications, that makes web app development a breeze. It even comes with an easy to use web administration console. You guessed it, served up directly out of CouchDB! We care a lot about <a href="http://en.wikipedia.org/wiki/CAP_theorem">distributed scaling</a>. CouchDB is highly available and partition tolerant, but is also <a href="http://guide.couchdb.org/editions/1/en/consistency.html">eventually consistent</a>. And we care <em>a lot</em> about your data. CouchDB has a fault-tolerant storage engine that puts the safety of your data <em>first</em>.
+    <p>
+      Description: Store your data safely, on your own servers, or with any leading
+      cloud provider. Your web- and native applications love CouchDB, because it
+      speaks JSON natively and supports binary attachments for all your data storage
+      needs. The Couch Replication Protocol lets your data flow seamlessly between
+      server clusters to mobile phones and web browsers, enabling a compelling,
+      offline-first, user-experience while maintaining high performance and strong
+      reliability. CouchDB comes with a developer-friendly query language, and
+      optionally MapReduce for simple, efficient, and comprehensive data retrieval.
+    </p>
+
 
     <p>See the <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Introduction">introduction</a>, <a href="http://wiki.apache.org/couchdb/Technical%20Overview">technical overview</a>, or one of the <a href="http://wiki.apache.org/couchdb/Basics">guides</a> for more information.
 
@@ -372,6 +395,68 @@ This fabulous linen texture was integrated into the site design.
   <hr>
 
   <div class="wrap download-pane">
+    <h2 class="icon icon-download">Download CouchDB 2.0.0</h2>
+  </div>
+
+  <div class="grid">
+
+    <div class="wrap">
+
+      <div class="corner"></div>
+
+      <div class="download-list-container">
+
+        <ul class="list download-list">
+          <li>
+            <a href="https://www.apache.org/dyn/closer.lua?path=/couchdb/source/2.0.0/apache-couchdb-2.0.0.tar.gz" class="type">Source</a>
+            <span class="info">
+              Version 2.0.0 |
+              <a href="http://docs.couchdb.org/en/latest/whatsnew/1.6.html" class="release">Release Notes</a> |
+              <a href="https://www.apache.org/dist/couchdb/source/2.0.0/apache-couchdb-2.0.0.tar.gz.asc">OpenPGP</a> |
+              <a href="https://www.apache.org/dist/couchdb/source/2.0.0/apache-couchdb-2.0.0.tar.gz.md5">MD5</a> |
+              <a href="https://www.apache.org/dist/couchdb/source/2.0.0/apache-couchdb-2.0.0.tar.gz.sha">SHA</a>
+            </span>
+          </li>
+          <li>
+            <a href="https://dl.bintray.com/apache/couchdb/win/2.0.0/setup-couchdb-2.0.0_R16B02.exe" class="type">
+              Windows (x86)
+            </a>
+            <span class="info">
+              Erlang/OTP R16B02 | Version 2.0.0 |
+              <a href="http://docs.couchdb.org/en/latest/whatsnew/1.6.html" class="release">Release Notes</a> |
+              <a href="https://www.apache.org/dist/couchdb/binary/win/2.0.0/setup-couchdb-2.0.0_R16B02.exe.asc">OpenPGP</a> |
+              <a href="https://www.apache.org/dist/couchdb/binary/win/2.0.0/setup-couchdb-2.0.0_R16B02.exe.md5">MD5</a> |
+              <a href="https://www.apache.org/dist/couchdb/binary/win/2.0.0/setup-couchdb-2.0.0_R16B02.exe.sha">SHA</a>
+            </span>
+          </li>
+          <li>
+            <a href="https://dl.bintray.com/apache/couchdb/mac/2.0.0/Apache-CouchDB-2.0.0.zip" class="type">
+              Mac OS X (10.6+)
+            </a>
+            <span class="info">
+              Erlang/OTP R16B01 | Version 2.0.0 |
+              <a href="http://docs.couchdb.org/en/latest/whatsnew/1.6.html" class="release">Release Notes</a> |
+              <a href="https://www.apache.org/dist/couchdb/binary/mac/2.0.0/Apache-CouchDB-2.0.0.zip.asc">OpenPGP</a> |
+              <a href="https://www.apache.org/dist/couchdb/binary/mac/2.0.0/Apache-CouchDB-2.0.0.zip.md5">MD5</a> |
+              <a href="https://www.apache.org/dist/couchdb/binary/mac/2.0.0/Apache-CouchDB-2.0.0.zip.sha">SHA</a>
+            </span>
+          </li>
+              <li>
+                    <a href="https://launchpad.net/~couchdb/+archive/stable" class="type">Ubuntu packages</a>
+                    <span class="info">
+                  Version 2.0.0 |
+                  <a href="http://docs.couchdb.org/en/latest/whatsnew/1.6.html" class="release">Release Notes</a>
+                </span>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="wrap download-pane">
     <h2 class="icon icon-download">Download CouchDB 1.6.1</h2>
   </div>
 
@@ -424,10 +509,6 @@ This fabulous linen texture was integrated into the site design.
                   Version 1.6.1 |
                   <a href="http://docs.couchdb.org/en/latest/whatsnew/1.6.html" class="release">Release Notes</a>
                 </span>
-          </li>
-          <li>
-            <a href="/developer-preview/2.0/" class="type">2.0 Developer Preview</a>
-            <span class="info">Help us test the Future of CouchDB…</span>
           </li>
         </ul>
 

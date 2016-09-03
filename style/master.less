@@ -21,7 +21,7 @@ body, a {
 @background-half-size: 112px 425px;
 
 @main-color:        #291d1e;
-@key-color:         #ff0000;
+@key-color:         #e12830;
 @key-color-hover:   #ae2323;
 @disable-color:     #abafb0;
 
@@ -41,7 +41,7 @@ body, a {
 }
 
 .secondary-bg {
-    background: url(../image/linen.jpg) #EEE 50% 0%;
+    background: #EEE 50% 0%;
 }
 
 .sprite {
@@ -90,12 +90,20 @@ button {
 }
 
 .feature {
-    font-size: 21px;
+    font-size: 24px;
 }
 
 .platforms-list li, .list-header.mini, .more-header li {
     font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-weight: 500;
+}
+
+.menu {
+  font-size: 19px
+}
+
+h2.main {
+  text-align: center;
 }
 
 /*---------------------------------------------------
@@ -224,19 +232,13 @@ blockquote {
 }
 
 .logo, .closing {
-    .sprite;
-    .animate-background;
-    background-color: @key-color;
+    background: url(../image/logo.png);
     background-position: 0 0px;
     position: absolute;
     left: 0;
-    top: 5px;
-    width: 220px;
-    height: 75px;
-}
-
-.logo:hover {
-    background-color: @key-color-hover;
+    top: 13px;
+    width: 250px;
+    height: 65px;
 }
 
 .menu {
@@ -247,7 +249,7 @@ blockquote {
     text-decoration: none;
     .animate;
     padding: @padding;
-    margin: 0 @padding/2;
+    margin: 0 @padding/7;
     line-height: 55px;
 }
 .menu a:hover {
@@ -264,6 +266,7 @@ blockquote {
 
 .menu-dropdown select{
     width: 100%;
+    font-size: 30px;
 }
 
 /*---------------------------------------------------
@@ -298,7 +301,7 @@ blockquote {
 .leadin h1 {
     background: #fff;
     display: inline;
-    padding: 4px 8px;
+    padding: 2px 8px;
 }
 
 .leadin .button-container {
@@ -533,11 +536,11 @@ blockquote {
 }
 
 .closing {
-    background-position: 0 -725px;
+    background-position: 0 0px;
     left: auto;
     right: 0;
-    top: 20px;
-    width: 60px;
+    top: 13px;
+    width: 250px;
     height: 65px;
 }
 
@@ -668,9 +671,9 @@ a.pt-about {
         padding-top: 54px;
     }
     .leadin img {
-        top: 0;
+        top: @gap;
         width: 240px;
-        height: 270px;
+        height: 158px;
     }
     .leadin .text-block  {
         top: 32px;
@@ -707,7 +710,7 @@ a.pt-about {
     }
     .leadin img {
         width: 192px;
-        height: 216px;
+        height: 126px;
     }
     .leadin .text-block  {
         top: 32px;
@@ -746,10 +749,11 @@ a.pt-about {
         height: 52px;
     }
     .logo {
-        top: 7px;
+        top: 10px;
+        left: 10px;
         width: 110px;
-        height: 37px;
-        background-size: @background-half-size;
+        height: 28px;
+        background-size: 110px 28px;
     }
     #footer {
         padding-bottom: 28px;
@@ -764,7 +768,7 @@ a.pt-about {
     .leadin img {
         left: -4px;
         width: 160px;
-        height: 180px;
+        height: 105px;
     }
     .leadin .text-block  {
        left: 175px;
@@ -793,7 +797,7 @@ a.pt-about {
     }
     .leadin img {
          width: 128px;
-         height: 144px;
+         height: 84px;
     }
     .leadin .text-block  {
        left: 130px;
