@@ -247,7 +247,7 @@ blockquote {
 }
 .leadin img {
   position: absolute;
-  top: 32px;
+  top: 64px;
   left: 24px;
 }
 .leadin li {
@@ -474,11 +474,8 @@ blockquote {
   left: auto;
   right: 0;
   top: 13px;
-  width: 250px;
+  width: 70px;
   height: 65px;
-}
-.closing:hover {
-  background-color: #ae2323;
 }
 /*---------------------------------------------------
     Search Form
