@@ -246,7 +246,7 @@ blockquote {
 }
 .leadin img {
   position: absolute;
-  top: 64px;
+  top: 32px;
   left: 24px;
 }
 .leadin li {
@@ -593,9 +593,9 @@ a.pt-about {
     padding-top: 54px;
   }
   .leadin img {
-    top: 32px;
+    top: 10px;
     width: 240px;
-    height: 158px;
+    height: 270px;
   }
   .leadin .text-block {
     top: 32px;
@@ -630,8 +630,9 @@ a.pt-about {
     padding-top: 54px;
   }
   .leadin img {
+    top: 25px;
     width: 192px;
-    height: 126px;
+    height: 216px;
   }
   .leadin .text-block {
     top: 32px;
@@ -693,7 +694,7 @@ a.pt-about {
   .leadin img {
     left: -4px;
     width: 160px;
-    height: 105px;
+    height: 180px;
   }
   .leadin .text-block {
     left: 175px;
@@ -720,8 +721,9 @@ a.pt-about {
     font-size: 16px;
   }
   .leadin img {
+    top: 0;
     width: 128px;
-    height: 84px;
+    height: 144px;
   }
   .leadin .text-block {
     left: 130px;
