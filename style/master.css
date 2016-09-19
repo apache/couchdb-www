@@ -196,7 +196,9 @@ blockquote {
 }
 .logo,
 .closing {
-  background: url(../image/logo.png);
+  background: url(../image/logo@2x.png);
+  background-size: 250px;
+  background-repeat: no-repeat;
   background-position: 0 0px;
   position: absolute;
   left: 0;
@@ -248,6 +250,7 @@ blockquote {
   position: absolute;
   top: 32px;
   left: 24px;
+  width: 300px;
 }
 .leadin li {
   list-style: none;
