@@ -1,141 +1,182 @@
-<!DOCTYPE html><html><head><title>Fauxton Visual Guide</title><link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css "><link rel="stylesheet" href="main.css"><link rel="icon" type="image/png" href="imgs/favicon.png"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script><script src="js/jquery.visible.min.js"></script><script src="js/main.js"></script></head><body><div id="redsidebar"><div class="header"> <img src="imgs/CouchDB-SVG.svg" class="logo svg"><span class="title">Fauxton<span class="subtitle"> Visual Guide</span></span></div><a href="#getting-started" data-nav="getting-started" class="section getting-started"><div class="large-icon"></div><div class="big-nav-subtitle">GETTING STARTED</div></a><a href="#using-fauxton" data-nav="using-fauxton" class="section using-fauxton"><div class="large-icon"></div><div class="big-nav-subtitle">USING FAUXTON</div></a><a href="#answers" data-nav="answers" class="section answers"><div class="large-icon"></div><div class="big-nav-subtitle">ANSWERS</div></a></div><div id="content" class="showSideBar"><div id="getting-started" class="section shown"><div class="middleBar"><img src="imgs/getting-started-light.png" class="topic-image"><div class="section-title">GETTING STARTED</div></div><div id="rightContent"><div class="intro-section"><h1>Welcome to Fauxton.</h1><div>Apache CouchDB is a database that uses JSON for documents, JavaScript for MapReduce indexes, and regular HTTP for its API.</div><div>Fauxton is a native web-based interface built into CouchDB. It provides a basic interface to the majority of the functionality, including the ability to create, update, delete and view documents and design documents. It provides access to the configuration parameters, and an interface for initiating replication.</div></div><div class="intro-section"><h1>Getting Started</h1><h2>Download</h2><div class="dl-space">Start by downloading the CouchDB suite:</div><div>1. Go to <a href="https://couchdb.apache.org/">couchdb.apache.org</a><span>, and click </span><a href="https://couchdb.apache.org/#download"><img src="imgs/download-btn.png" class="download-btn"></a></div><div>2. Learn how to install and setup CouchDB from <a href="http://docs.couchdb.org/en/latest/install/index.html">here</a><span>, then go to </span><a href="http://127.0.0.1:5984/_utils">http://127.0.0.1:5984/_utils</a></div></div><div id="end-getting-started"></div></div></div><div id="using-fauxton" class="section"><div class="middleBar"><img src="imgs/using-fauxton-light.png" class="topic-image"><div class="section-title">USING FAUXTON</div><div class="fauxton-toc"><div class="icon-menu"><div><a href="#_all_dbs" class="icon-menu-_all_dbs"><i aria-hidden="true" class="fa fa-database"></i></a><div class="line"></div></div><div><a href="#setup" class="icon-menu-setup"><i aria-hidden="true" class="fa fa-wrench"></i></a><div class="line"></div></div><div><a href="#_activetasks" class="icon-menu-_activetasks"><i aria-hidden="true" class="fa fa-tasks"></i></a><div class="line"></div></div><div><a href="#_config" class="icon-menu-_config"><i aria-hidden="true" class="fa fa-cog"></i></a><div class="line"></div></div><div><a href="#replication" class="icon-menu-replication"><img src="imgs/replicate.svg" class="svg replicate-icon"></a><div class="line"></div></div><div><a href="#documentation" class="icon-menu-documentation"><img src="imgs/bookmark.svg" class="svg docs-icon"></a><div class="line"></div></div><div><a href="#login" class="icon-menu-login"><img src="imgs/user.svg" class="svg user-icon"></a><div class="line"></div></div><div><a href="#verifyinstall" class="icon-menu-verifyinstall"><i aria-hidden="true" class="fa fa-check-circle"></i></a></div></div><div class="toc"><a href="#intro" id="toc-intro" class="heading selected"> <div class="heading-title"> <span class="number">00</span><span class="heading-text"></span></div></a><div id="toc-_all_dbs" class="heading"> <a href="#_all_dbs" class="heading-title"> <span class="number">01 // </span><span class="heading-text">ALL DATABASES</span></a><a href="#_all_dbs" id="_all_dbs-sub" class="subheading">ADD A NEW DATABASE</a><a href="#_all_docs" id="_all_docs-sub" class="subheading">A SINGLE DB (ALL DOCS)</a><a href="#editor" id="editor-sub" class="subheading">THE EDITOR</a><a href="#db-action" id="db-actions-sub" class="subheading">DATABASE ACTIONS</a></div><a href="#setup" id="toc-setup" class="heading"><div class="heading-title"> <span class="number">02 // </span><span class="heading-text">SETUP</span></div></a><a href="#_activetasks" id="toc-_activetasks" class="heading"><div class="heading-title"> <span class="number">03 // </span><span class="heading-text">ACTIVE TASKS</span></div></a><a href="#_config" id="toc-_config" class="heading"><div class="heading-title"> <span class="number">04 // </span><span class="heading-text">CONFIGURATION</span></div></a><a href="#replication" id="toc-replication" class="heading"><div class="heading-title"> <span class="number">05 // </span><span class="heading-text">REPLICATION</span></div></a><a href="#documentation" id="toc-documentation" class="heading"> <div class="heading-title"> <span class="number">06 // </span><span class="heading-text">DOCUMENTATION </span></div></a><a href="#login" id="toc-login" class="heading"> <div class="heading-title"> <span class="number">07 // </span><span class="heading-text">LOGIN / ADMIN</span></div></a><a href="#verifyinstall" id="toc-verifyinstall" class="heading"> <div class="heading-title"> <span class="number">08 // </span><span class="heading-text">VERIFY</span></div></a></div></div></div><div id="rightContent"><div class="box"><div id="intro" class="chapter"> <h1 id="introduction">INTRODUCTION</h1>
-<h2 id="features-overview">Features Overview</h2>
-<p>This guide is from September 2016. Fauxton is continuously being improved, so there may be slight differences in the examples in this document vs the latest and greatest <a href="https://www.npmjs.com/package/fauxton">Fauxton on npm</a>.</p>
+<!DOCTYPE html><html><head><title>Fauxton Visual Guide</title><link rel="stylesheet" href="main.css"><link rel="icon" type="image/png" href="assets/couch.png"><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script><script src="js/main.js"></script></head><body><div id="toggle-toc-button">TOC</div><ul id="toc" class="hidden"><li><a href="#page-intro">Intro</a></li><li><a href="#page-overview">Overview</a></li><li><a href="#page-getting-started">Features: Getting Started</a></li><li><a href="#page-all-dbs">All Databases</a></li><li><a href="#page-all-docs">All Documents</a></li><li><a href="#page-active-tasks">Active Tasks</a></li><li><a href="#page-replication">Replication</a></li><li><a href="#page-config">Configuration</a></li><li><a href="#page-login">Login/User Management</a></li><li><a href="#page-verify">Verify</a></li><li><a href="#page-helpful-links">Helpful Links</a></li><li><a href="#page-answers">Answers!</a></li></ul><div id="page-intro" class="pagecontainer"><div class="leftside linen page"><div id="introBox" class="textbox"><h1>Fauxton</h1><h2>A visual guide</h2></div></div><div class="rightside page"><img src="assets/couch.png" class="couch"></div></div><div id="page-overview" class="pagecontainer"><div class="leftside page"><img src="assets/couchdb-logo1.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="overview">Overview</h1>
+<p>Welcome to Fauxton.</p>
+<p>Apache CouchDB is a database
+that uses JSON for documents,
+JavaScript for MapReduce indexes,
+and regular HTTP for its API.</p>
+<p>Fauxton is a native web-based interface built into CouchDB. It
+provides a basic interface to the majority of the functionality,
+including the ability to create, update, delete and view documents and
+design documents. It provides access to the configuration parameters,
+and an interface for initiating replication.</p>
+<p><a href="https://couchdb.apache.org/">CouchDB Homepage</a> (download available
+<a href="https://couchdb.apache.org/#download">here</a>!)</p>
+<p><a href="http://docs.couchdb.org/en/latest/install/index.html">How to Install/Setup</a></p>
+<p><a href="https://www.npmjs.com/package/fauxton">Install via npm</a>  </p>
+<div class="npm">
+  <code>npm install -g fauxton</code><br>  <code>fauxton</code>
+</div>
+
+<p><a href="http://docs.couchdb.org/en/latest/">CouchDB Documentation</a></p>
+<p><a href="http://blog.couchdb.org/">CouchDB Blog</a> Updates Weekly! :)</p>
+<p><a href="http://webchat.freenode.net/?channels=couchdb">CouchDB IRC</a> Chat
+with our volunteers and others in the community.</p>
+<p><a href="http://www.apache.org/">Apache Software Foundation</a> About the ASF</p>
+</div></div></div><div id="page-getting-started" class="pagecontainer"><div class="leftside page"><img src="assets/login.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="features-getting-started">Features: Getting Started</h1>
 <p>When you first start to use Fauxton, the left most navigation panel
 will allow you jump quickly between viewing different parts of what&#39;s
 going on in your CouchDB instance.</p>
-<p><img src="imgs/screenshots/start.png" alt="First Start" title="On Startup"></p>
-<p>You can expand or collapse the navigation by clicking <i aria-hidden="true" class="fa fa-bars"> icon</i> in the top left corner of the page.</p>
-<p><a href="#_all_dbs">Databases</a> will show you a list of all your databases,
+<p>You can expand or collapse the navigation by clicking on the area 
+above the topmost tab, &quot;Databases&quot;, where the icon of the three
+horizontal lines is.</p>
+<p><a href="#page-all-dbs">Databases</a> will show you a list of all your databases,
 their size, number of documents, and provides quick links to it&#39;s
 permissions page and replication page.</p>
-<p><a href="#setup">Setup</a> is a wizard to set up and configure CouchDB clusters or a single node.</p>
-<p><a href="#_activetasks">Active Tasks</a> displays a list of the running
+<p><a href="#page-active-tasks">Active Tasks</a> displays a list of the running
 background tasks on the server. Background tasks include view index
 building, compaction and replication. This page is an interface to
 the <a href="http://docs.couchdb.org/en/latest/api/server/common.html#api-server-active-tasks">Active Tasks API</a>
 call.</p>
-<p><a href="#_config">Config</a> is an interface for the configuration of your
+<p><a href="#page-config">Config</a> is an interface for the configuration of your
 CouchDB installation. The interface allows you to edit different
 configurable parameters. For more details on configuration, see
 <a href="http://docs.couchdb.org/en/latest/config/index.html#config">Configuring CouchDB</a>.</p>
-<p><a href="#replication">Replication</a> is an interface to the replication
+<p><a href="#page-replication">Replication</a> is an interface to the replication
 system, enabling you to initiate replication between local and remote
 databases.</p>
 <p><a href="http://docs.couchdb.org/en/latest/">Documentation</a>
 will direct you to your local copy of the documentation. The link 
 shown in this guide is to the online version.</p>
-<p><a href="#login">Login/User Management</a> lets you can change your password,
+<p><a href="#page-login">Login/User Management</a> lets you can change your password,
 or add administrator to your CouchDB instance.</p>
-<p><a href="#verifyinstall">Verify</a> verifies your installation and allows you to
+<p><a href="#page-verify">Verify</a> verifies your installation and allows you to
 check whether all of the components of your CouchDB installation are
 correctly installed.</p>
-</div><div id="_all_dbs" class="chapter"><h1 id="databases">Databases</h1>
-<p><strong> Create Database </strong>
+</div></div></div><div id="page-all-dbs" class="pagecontainer"><div class="leftside page"><img src="assets/all-dbs.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="all-databases">All Databases</h1>
+<p><strong> 1 Add a new Database </strong>
 Click this button on the top bar, and
-enter the name of the database you want to create.
-<img src="imgs/screenshots/createdb.png" alt="Create a database" title="Create a database"></p>
-<p>Once created, you should see a success message in green at the top of the window:
-<img src="imgs/screenshots/successful_create.png" alt="Create DB Sucess" title="Create DB Sucess"></p>
-<p><strong> Search for a Database </strong>
+enter the name of the database you want to create.</p>
+<p><strong> 2 Search for a Database </strong>
 This text field auto-completes and jumps directly to a specified
-database.
-<img src="imgs/screenshots/searchdb.png" alt="Search for a database" title="Search for a DB"></p>
-<p><strong> View a Database  </strong>
-This link will take to that database&#39;s &quot;<a href="#_all_docs">All Docs</a>&quot;
+database.</p>
+<p><strong> 3 View a Database  </strong>
+This link will take to that database&#39;s &quot;<a href="#page-all-docs">All Docs</a>&quot;
 page where you can view all of that database&#39;s contents. You can also
 delete, replicate, and change the permissions for a database from the
-database&#39;s &#39;All Docs&#39; page.
-<img src="imgs/screenshots/selectdb.png" alt="Select a DB" title="Select a DB"></p>
-<h1 id="_all_docs" class="sub">A Single Database<p><strong> All Documents </strong>
-When you click on the database name, from the Databases page, you will see the <strong>All Docs</strong> page. Here you can create and edit documents, and create and edit views.
-<img src="imgs/screenshots/empty_alldocs.png" alt="All Docs" title="All Docs"></p>
-<p><strong> Create a Document </strong>
-Click on the plus symbol to open the &#39;Add new&#39; menu.
-<img src="imgs/screenshots/create-doc-menu.png" alt="Create a Doc Menu" title="Create a Doc Menu"></p>
-<p>This should open a menu that will let you choose what the new document type you would like to create.</p>
-<p><img src="imgs/screenshots/create-doc-menu-2.png" alt="Create a Doc Menu" title="Create a Doc Menu"></p>
-<p>If you click New Doc, you&#39;ll be taken to the Fauxton text editor.</p>
-</h1><h1 id="editor" class="sub">The Editor<p><strong> The Editor </strong>
-When you first arrive at the editor, you will see:
-<img src="imgs/screenshots/editor1.png" alt="Editor" title="Editor"></p>
-<p>At this point, nothing has been created yet. The document on screen is pre-filled with a JSON object, and an _id with a Globally Unique Identifier (GUID). If you want to change the value of the _id, you must do that before you create the document.</p>
-<p>You can edit any data for the document before or after creating the document, except for the _id, after it has been created.</p>
-<p>Adding Data:
-<img src="imgs/screenshots/editor2.png" alt="Adding data" title="Adding data"></p>
-<p>Click the <strong>Create Document</strong> to save the document.</p>
-<p><img src="imgs/screenshots/editor3.png" alt="Click Create" title="Click Create Document"></p>
-<p>After you click <strong>Create Document</strong> you will go to back to the All Docs page, and you should see it there with a success message in green up top. If you did not change the ID, you may not be able to see your data on this screen. 
-<img src="imgs/screenshots/editor4
-.png" alt="Create Document Success" title="Create Document Success"></p>
-<p>You can click on the <strong> Include Docs </strong> checkbox to see the entire document on this screen.
-<img src="imgs/screenshots/editor5.png" alt="Included Docs" title="Include Docs"></p>
-<p><img src="imgs/screenshots/editor6.png" alt="Included Docs" title="Include Docs"></p>
-</h1><h1 id="db-action" class="sub">Database Maintenance<p><strong> DB Maintenance</strong>
-<img src="imgs/screenshots/db-admin1.png" alt="DB Admin Menu" title="DB Admin Menu">
-This menu will allows you replicate the Database, and as well as delete it.
-<img src="imgs/screenshots/db-admin2.png" alt="DB Admin Menu" title="DB Admin Menu"></p>
-<p><strong> Replication Link </strong>
-Jump directly to the Replication page for this database.
-<img src="imgs/screenshots/jumptoreplicate.png" alt="Replicate a DB" title="Replicate a DB"></p>
-<p><strong> Permissions Link  </strong>
-Jump directly to the Permissions page for this database.
-<img src="imgs/screenshots/jumptopermissions.png" alt="Jump to Permissions" title="Jump to Permissions"></p>
-</h1></div><div id="setup" class="chapter"><h1 id="setup">Setup</h1>
-<p>The Setup tab provides an installation wizard to help you setup a cluster, in case you haven’t done before, or in case you would prefer to use Fauxton.</p>
-<p>You can read more about it in the docs: 
-<a href="http://docs.couchdb.org/en/master/cluster/setup.html#the-cluster-setup-wizard">Cluster Setup Wizard</a></p>
-<p><img src="imgs/screenshots/setup1.png" alt="Setup 1" title="Setup 1">
-<img src="imgs/screenshots/setup2.png" alt="Setup 2" title="Setup 2"></p>
-<p>You can read more about CouchDB clusters in the docs as well: 
-<a href="http://docs.couchdb.org/en/master/cluster/index.html">CouchDB Clusters</a></p>
-</div><div id="_activetasks" class="chapter"><h1 id="active-tasks">Active Tasks</h1>
+database&#39;s &#39;All Docs&#39; page.</p>
+<p><strong> 4 Replication Link </strong>
+Jump directly to the Replication page for this database.</p>
+<p><strong> 5 Permissions Link  </strong>
+Jump directly to the Permissions page for this database.</p>
+</div></div></div><div id="page-all-docs" class="pagecontainer"><div class="leftside page"><img src="assets/all-docs.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="all-documents">All Documents</h1>
+<p><strong> 1 All Documents overview  </strong>
+This is the viewing area, the default view shows you all of the
+documents in your database. If you want to view each document&#39;s
+contents, you can either click &#39;Query Options&#39; (located in upper right
+corner), and then &#39;Include Docs&#39;. To edit a document, you can either
+click on the pencil in upper right of each card, or double click on 
+the document card, go to the editor page.</p>
+<p><strong> 2 Quick Links  </strong>
+These are all links that pertain to this specific database.</p>
+<p><strong> 3 View Design Documents  </strong>
+Design Documents are special documents, since they are data, they are
+included in the database as documents, but they are special because
+they contain functions for Map-Reduce which act on the rest of the 
+documents in the database.</p>
+</div></div></div><div id="page-header-bar" class="pagecontainer"><div class="headerSubsections"><div class="head-header-section"><div class="leftside"></div><div class="rightside linen firstright"><div class="long-header-textbox textbox"></div></div></div><div class="tail-header-section"><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/0.png"></div><div class="rightside subright"><div class="textbox"><h1 id="the-header-bar-all-documents">The Header Bar - All Documents</h1>
+<p><strong> Default Header Bar  </strong>
+The top image is the default view of the header bar. You can play 
+around with the controls to see how it works.  </p>
+</div></div></div><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/1.png"></div><div class="rightside subright"><div class="textbox"><p><strong> 1 Jump to another Database Dropdown   </strong>
+If you click on the database name here, a tray will pop out, and
+you can type the name of another database. Clicking ENTER on the name
+will cause the page to jump directly into that database.</p>
+</div></div></div><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/2.png"></div><div class="rightside subright"><div class="textbox"><p><strong> 2 Cog   </strong>
+You can do many things using the tray within the Cog button. You can
+replicate this database, delete this database, add a new document, a
+new view, or query an index.  </p>
+</div></div></div><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/3.png"></div><div class="rightside subright"><div class="textbox"><p><strong> 3 Multiple Document Select and delete   </strong>
+Clicking &#39;Select&#39; will allow you choose multiple documents, or
+deselect all the documents for deletion. You can also expand or
+collapse all of the documents to show more information.</p>
+</div></div></div><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/4.png"></div><div class="rightside subright"><div class="textbox"><p><strong> 4 Jump to a specific document in this database  </strong>
+This field takes the _id of the document you are trying to view.
+Use this search bar to jump to a specific document in the database.</p>
+</div></div></div><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/5.png"></div><div class="rightside subright"><div class="textbox"><p><strong> 5 Query Options   </strong>
+You choose how you want to view the documents in this database using
+Query Options. &#39;Include Docs&#39; will show all the data in each document.
+&#39;Keys&#39; will allow to narrow down the documents being viewed on this
+page based on the parameters you provide.</p>
+</div></div></div><div class="headerSection"><div class="leftside subleft"><img src="assets/headerbar/6.png"></div><div class="rightside subright"><div class="textbox"><p><strong> 6 API URL  </strong>
+The API URL button shows up on most pages. All the data in CouchDB is
+available through a pingable API URL. You can click on this link to
+view and copy the particular API for the page you are viewing.
+Many times, the browser will shows a interface based on one of the API
+endpoints.</p>
+</div></div></div></div></div></div><div id="page-active-tasks" class="pagecontainer"><div class="leftside page"><img src="assets/active-tasks.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="active-tasks">Active Tasks</h1>
 <p><strong> 1 Change Polling Interval  </strong>
 The status of each task can change as you are watching the Active 
 Tasks page. The page auto-updates, but polls at regular intervals. You
 can set the amount of time that the page updates itself by dragging on
-this bar.
-<img src="imgs/screenshots/activetasks1.png" alt="Active Tasks Polling" title="Active Tasks Polling"></p>
+this bar.</p>
 <p><strong> 2 API URL  </strong>
 This page is an interface to the
 <a href="http://docs.couchdb.org/en/latest/api/server/common.html#api-server-active-tasks">Active Tasks API</a>
-call. You can view or copy the raw JSON by clicking on this button.
-<img src="imgs/screenshots/activetasks2.png" alt="Active Tasks API" title="Active Tasks API"></p>
+call. You can view or copy the raw JSON by clicking on this button.</p>
 <p><strong> 3 Filter  </strong>
 You can filter by the type of task, or search active tasks by
-database name (either source or target) using these tabs.
-<img src="imgs/screenshots/activetasks3.png" alt="Active Tasks Filter" title="Active Tasks Filter"></p>
-</div><div id="_config" class="chapter"><h1 id="configuration">Configuration</h1>
-<p>This may be disabled in Fauxton if you are using CouchDB 2.0, and you can only change config parameters via the backdoor port. It&#39;s best not to use Fauxton for setting config in 2.0, rather use a config tool like chef, puppet, ansible, etc.</p>
-<p>In earlier versions, the interface allows you to edit some of the different configurable parameters. </p>
-<p><img src="imgs/screenshots/config.png" alt="Config" title="Config"></p>
-<h1 id="cors">CORS</h1>
-<p>CORS stands for Cross Origin Resource Sharing. It is a setting that pertains only to browsers.</p>
-<p>By enabling CORS, you allow other people, from their browsers, to access the data you have stored in your CouchDB databases.</p>
-<p>They can ping your CouchDB instance through an AJAX request, and it will return information. Or they can POST data to your CouchDB instance, and CORS allows you to recieve that information.</p>
-<p>For example, if your CouchDB installation is running on the domain alice.example you can ping someone else&#39;s CouchDB instance through an AJAX request from a different domain, e.g. bob.example - or even localhost!</p>
-<p>But be careful - allowing any domain to access your data can be a security risk. If you only want certain websites (origins) to be able to retrieve and change data, you can set &#39;Restrict to specific domains&#39;, and then list which origins you want to allow access for.</p>
-<p>By setting, &#39;All domains&#39;, you allow anyone from anywhere to ping your databases, and retrieve information that way.</p>
-<p>If you disable CORS, the JavaScript that makes the AJAX request needs to run on the same domain. With CORS disabled frontend code that runs on alice.example must be also hosted on alice.example. Disabling CORS, means that no browser that pings your databases will recieve information.</p>
-<p>You can also limit who can ping you. If you only want certain websites, or origins, to be able to recieve data from your stores, you can set &#39;Restrict to specific domains&#39;, and then list which origins you want to allow access.</p>
-<p>This is a browser specific layer of protection, a second layer of protection, if you will. The first layer of protection comes from the permissions you set on each database using roles. (For more information, see <a href="http://docs.couchdb.org/en/latest/api/database/security.html">CouchDB Security</a>)</p>
-<p><img src="imgs/screenshots/cors.png" alt="CORS" title="CORS"></p>
-<p>For more details on configuration, see the
+database name (either source or target) using these tabs.</p>
+</div></div></div><div id="page-config" class="pagecontainer"><div class="leftside page"><img src="assets/config.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="configuration">Configuration</h1>
+<p>An interface into the configuration of your CouchDB installation. The
+interface allows you to edit the different configurable parameters. 
+For more details on configuration, see the
 <a href="http://docs.couchdb.org/en/latest/config/index.html#config">Configuring CouchDB</a>
 section.</p>
-</div><div id="replication" class="chapter"><h1 id="replication">Replication</h1>
+</div></div></div><div id="page-cors" class="pagecontainer"><div class="leftside page"><img src="assets/cors.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="cors">CORS</h1>
+<p>CORS stands for Cross Origin Resource Sharing. It is a setting that
+pertains only to browsers.</p>
+<p>By enabling CORS, you allow other people, from <i>their</i> browsers,
+to access the data you have stored in your CouchDB databases.</p>
+<p>They can ping your CouchDB instance through an AJAX request,
+and it will return information. Or they can POST data to your CouchDB
+instance, and CORS allows you to recieve that information.</p>
+<p>For example,
+if your CouchDB installation is running on the domain <code>alice.example</code>
+you can ping someone else&#39;s CouchDB instance through an AJAX request
+from a different domain, e.g. <code>bob.example</code> - or even localhost!</p>
+<p>But be careful - allowing any domain to access your data can be a
+security risk. If you only want certain websites (origins) to be able 
+to retrieve and change data, you can set &#39;Restrict to specific
+domains&#39;, and then list which origins you want to allow access for.</p>
+<p>By setting, &#39;All domains&#39;, you allow anyone from anywhere to ping your
+databases, and retrieve information that way.</p>
+<p>If you disable CORS, the JavaScript that makes the AJAX request needs 
+to run on the same domain. With CORS disabled frontend code that runs 
+on <code>alice.example</code> must be also hosted on <code>alice.example</code>.
+Disabling CORS, means that no browser that pings your databases will 
+recieve information.</p>
+<p>You can also limit who can ping you. If you only
+want certain websites, or origins, to be able to recieve data from
+your stores, you can set &#39;Restrict to specific domains&#39;, and then list
+which origins you want to allow access.</p>
+<p>This is a browser specific layer of protection, a second layer of
+protection, if you will. The first layer of protection comes from the
+permissions you set on each database using roles. (For more 
+information, see
+<a href="http://docs.couchdb.org/en/latest/api/database/security.html">CouchDB Security</a>)</p>
+</div></div></div><div id="page-replication" class="pagecontainer"><div class="leftside page"><img src="assets/replicator.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="replication">Replication</h1>
 <p>This is the interface to the replication system, enabling you to initiate
 replication between local and remote databases.</p>
 <p>You will see two boxes, with 3 boxes in each bigger box.</p>
-<p><img src="imgs/screenshots/replication1.png" alt="Replication" title="Replication"></p>
-<p>Depending on how big your screen is, the top (or leftmost) box is the Source database. The bottom (or rightmost) box is the Target database.</p>
-<p><img src="imgs/screenshots/replcationSourceTarget.png" alt="Replication" title="Replication"></p>
-<p>From the Source database box, you can choose an existing 
+<p>Depending on how big your screen is, the top (or leftmost box, labeled
+#1 in the example) is the Source database. The bottom (or rightmost
+box, label #2) is the Target database.</p>
+<p>From the Source database box (#1), you can choose an existing 
 database from the dropdown, by selecting &#39;Local&#39; like in the image to 
 the left. Or you can specify a remote database as the Source, by 
 clicking on &#39;Remote&#39; in that box, and typing in the remote database&#39;s
 address.</p>
-<p>In the Target database box, choose either a local or remote
+<p>In the Target database box (#2), choose either a local or remote
 database. If you want to create a new database, and replicate into
 that new DB, check the &#39;Create Target&#39; button.</p>
 <p>For continuous Replications, select the &#39;continuous&#39; checkbox.
@@ -147,7 +188,7 @@ full URL of the remote database (including the host, port number and
 database name). If the remote instance requires authentication, you
 can specify the username and password as part of the URL, for example
 <code>http://username:pass@remotehost:5984/demo</code>.</p>
-<p>Under the <a href="#_activetasks">Active Tasks</a> tab, you should see in 
+<p>Under the <a href="#page-active-tasks">Active Tasks</a> tab, you should see in 
 the table your new created replication. You might miss it if the 
 database being replicated is on the small side, but continous 
 replications will always show up while they are active.</p>
@@ -155,37 +196,35 @@ replications will always show up while they are active.</p>
 <a href="http://docs.couchdb.org/en/latest/api/server/common.html#api-server-replicate">/_replicate</a>.</p>
 <p>For more information on replication, see
 <a href="http://docs.couchdb.org/en/latest/replication/index.html#replication">Replication</a>.</p>
-</div><div id="documentation" class="chapter"><h1 id="documentation">Documentation</h1>
-<p>Here you will find helpful online and offline versions of CouchDB Documentation, as well as links to various related links regarding the CouchDB community. If you need to look at this guide again, the link is also here.</p>
-<p><img src="imgs/screenshots/docs.png" alt="Documentation" title="Documentation"></p>
-</div><div id="login" class="chapter"> <h1 id="login-user-management">Login/User Management</h1>
-<p>You can change your password, or add admins to your CouchDB instance within this tab.
-<img src="imgs/screenshots/admin.png" alt="Admin" title="![Documentation](imgs/screenshots/docs.png &quot;Documentation"></p>
-</div><div id="verifyinstall" class="chapter"><h1 id="verify">Verify</h1>
-<p>The Verify Installation allows you to check whether all of the components of your CouchDB installation are correctly installed.</p>
-<p><img src="imgs/screenshots/verify.png" alt="Verify" title="Verify"></p>
-</div><div id="end-using-fauxton"></div></div></div></div><div id="answers" class="section"><div class="middleBar"> <img src="imgs/answers-light.png" class="topic-image"><div class="section-title">Answers</div></div><div id="rightContent"> <h1>Answers!<p class="question">Q: Where can I find answers about CouchDB?</p><p class="answer">A: Checkout the <a href="http://wiki.apache.org/couchdb/Frequently_asked_questions">CouchDB FAQ</a>.</p><p class="question">Q: Wow! this is awesome! how can I contribute?</p><p class="answer">A: Thanks! If you want to contribute, you can open a pull request 
+</div></div></div><div id="page-login" class="pagecontainer"><div class="leftside page"><img src="assets/add-admin.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="login-user-management">Login/User Management</h1>
+<p>You can change your password, or add admins to your CouchDB instance
+within this tab.</p>
+</div></div></div><div id="page-verify" class="pagecontainer"><div class="leftside page"><img src="assets/verify.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="verify">Verify</h1>
+<p>The Verify Installation allows you to check whether all of the
+components of your CouchDB installation are correctly installed.</p>
+</div></div></div><div id="page-helpful-links" class="pagecontainer"><div class="leftside page"><img src="assets/troubleshooting.png"></div><div class="rightside linen page"><div class="textbox"><h1 id="helpful-links">Helpful links</h1>
+<p><a href="http://docs.couchdb.org/en/latest/install/index.html">How to Install/Setup</a></p>
+<p><a href="https://couchdb.apache.org/">CouchDB Homepage</a> (more info is
+available here!)</p>
+<p><a href="http://docs.couchdb.org/en/latest/">CouchDB Documentation</a></p>
+<p><a href="http://wiki.apache.org/couchdb/">CouchDB Wiki</a></p>
+<p><a href="http://guide.couchdb.org/index.html">CoucDB: The Definitive Guide</a></p>
+<p><a href="http://wiki.apache.org/couchdb/Basics">CouchDB Tutorials</a> General and
+Tutorials for Specific Languages</p>
+<p><a href="http://webchat.freenode.net/?channels=couchdb">CouchDB IRC</a> Our chat 
+channel</p>
+</div></div></div><div id="page-answers" class="page"><div class="leftside page"><img src="assets/answers.png"></div><div class="rightside linen page"><div class="textbox"><h1>Answers!</h1><p class="question">Q: Where can I find answers about CouchDB?</p><p class="answer">A: Checkout the <a href="http://wiki.apache.org/couchdb/Frequently_asked_questions">CouchDB FAQ</a>.</p><p class="question">Q: Wow! this is awesome! how can I contribute?</p><p class="answer">A: Thanks! If you want to contribute, you can open a pull request 
 on <a href="https://github.com/apache/couchdb-fauxton">Github</a>.</p><p class="question">Q: What can I do?</p><p class="answer">A: Lots of things! checkout our <a href="https://issues.apache.org/jira/browse/COUCHDB/component/12320406/?selectedTab=com.atlassian.jira.jira-projects-plugin:component-summary-panel">JIRA</a> page for a list of things we need help fixing or building.</p><p class="question">Q: I'm not a programmer. What can I do?</p><p class="answer">A: Good question. There are many things you can do to help out! Find
 a place that you think needs fixing, and find out how to fix it.
-</p><p>If you have design skills, or would like to learn architecture 
+</p><p>For example, if you find the documentation a long rabbit hole of 
+links and links (and links and links....) you could come up with a
+hierarchical system of links or strategy guide that would help out a
+newbie.</p>
+<p>If you have design skills, or would like to learn architecture 
 skills, you can help out by finding a cumbersome or non-intuitive
 part of CouchDB and/or Fauxton and propose a fix. Good ideas are 
 always welcome :)</p>
 <p>Another thing is documentation. We have a lot, but the more the
 better! If you find a place in CouchDB that is not well-documented,
 feel free!</p>
-<p class="question">Q: I found a bug and I know how to fix it!!</p><p class="answer">A: Awesome! Open a pull request and we can make that happen!
-</p></h1><h1>Helpful Links<p><a href="https://couchdb.apache.org/">CouchDB Homepage</a> (more info is
-available here!)</p>
-<p><a href="http://docs.couchdb.org/en/latest/install/index.html">How to Install/Setup</a></p>
-<p><a href="https://www.npmjs.com/package/fauxton">Install via npm</a>  </p>
-<p><a href="http://docs.couchdb.org/en/latest/">CouchDB Documentation</a></p>
-<p><a href="http://blog.couchdb.org/">CouchDB Blog</a> Updates Weekly! :)</p>
-<p><a href="http://wiki.apache.org/couchdb/">CouchDB Wiki</a></p>
-<p><a href="http://guide.couchdb.org/index.html">CouchDB: The Definitive Guide</a></p>
-<p><a href="http://wiki.apache.org/couchdb/Basics">CouchDB Tutorials</a> General and
-Tutorials for Specific Languages</p>
-<p><a href="http://webchat.freenode.net/?channels=couchdb">CouchDB IRC</a> Our chat 
-channel</p>
-<p><a href="http://www.apache.org/">Apache Software Foundation</a> About the ASF</p>
-</h1><div id="end-answers"></div></div></div><div id="hamburger" class="showSideBar"><i aria-hidden="true" class="fa fa-bars"></i></div></div></body></html>
+<p class="question">Q: I found a bug and I think it should be fixed!</p><p class="answer">A: Awesome! Open a pull request and we can make that happen!</p></div></div></div></body></html>

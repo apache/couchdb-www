@@ -1,389 +1,291 @@
-html, body {
-  font-family: "Helvetica";
-  padding: 0;
-  background: #f9f9f9;
-  color: #444;
+* {
   margin: 0;
-  height: 100%;
-
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-  -khtml-user-select: none;    /* Konqueror */
-  -moz-user-select: none;      /* Firefox */
-  -ms-user-select: none;       /* Internet Explorer/Edge */
-  user-select: none;           /* Non-prefixed version, currently
-                                  not supported by any browser */
+  padding: 0;
+  -webkit-text-size-adjust: none;
 }
 
-#redsidebar {
-  width: 270px;
-  height: 100vh;
-  background-color: #d84d4d;
+body,
+a {
+  color: #291d1e;
+}
+/*---------------------------------------------------
+    Font
+---------------------------------------------------*/
+body,
+h1,
+h2,
+h3,
+h4,
+pre {
+  font-size: 16px;
+  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 34px;
+  padding: 48px 0;
+}
+b,
+strong {
+  font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
+.npm {
+  background-color: #E2E2E2;
+  border: 1px solid rgb(196, 196, 219);
+  margin-left: 50px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+
+#toggle-toc-button {
+  color: #888;
+  right: 20px;
+  top: 20px;
+  font-size: 12px;
+  padding: 10px;
   position: fixed;
-  text-align: center;
-
-  overflow: auto;
-
-  .header {
-    padding: 20px 20px 40px 20px;
-
-    font-weight: bold;
-    color: #f9f9f9;
-    vertical-align: middle;
-    font-size: 16px;
-
-    .logo {
-      fill: #9b0038;
-      height: 25px;
-      display: inline;
-      padding-right: 10px;
-      vertical-align: middle;
-    }
-
-    .title {
-      display: inline;
-      vertical-align: middle;
-      cursor: pointer;
-    }
-
-    .subtitle{
-      color: #750f34;
-      vertical-align: middle;
+  font-family: Arial,sans-serif;
+  &:hover {
+    cursor:sw-resize;
+  }
+  &.x{
+    height: 35px;
+    width: 100px;
+    font-size: 8px;
+    text-align: right;
+    margin-right: 6px;
+    &:hover {
+      cursor:ne-resize;
     }
   }
+  z-index: 1001;
+}
 
-  a.section {
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    display: block;
-    font-weight: 300;
-    color: #f9f9f9;
-    font-size: 12px;
+#toc {
+  z-index: 1000;
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  list-style-type: none;
+  position: fixed;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  li {
+    padding: 2px;
+  }
+
+  a {
+    color: rgb(197, 105, 105);
     text-decoration: none;
 
     &:hover {
-      cursor: pointer;
-      color: #750f34;
-    }
-
-    .large-icon {
-      height: 150px;
-      width: 150px;
-      background-repeat: no-repeat;
-      margin: auto;
-    }
-
-    &.getting-started .large-icon {
-      background-image: url('imgs/getting-started-light.png');
-
-      &:hover {
-        background-image: url('imgs/getting-started-dark.png');
-      }
-    }
-    
-    &.using-fauxton .large-icon {
-      cursor: pointer;
-      background-image: url('imgs/using-fauxton-light.png');
-
-      &:hover {
-        background-image: url('imgs/using-fauxton-dark.png');
-      }
-    }
-
-    &.answers .large-icon {
-      background-image: url('imgs/answers-light.png');
-
-      &:hover {
-        background-image: url('imgs/answers-dark.png');
-      }
-    }
-  }
-}
-
-#content {
-  width: 100%;
-  background: #f9f9f9;
-  display: inline-block;
-  -webkit-transition: padding-left 0.5s, width 0.5s;
-  -moz-transition: padding-left 0.5s, width 0.5s;
-  -o-transition: padding-left 0.5s, width 0.5s;
-  transition: padding-left 0.5s, width 0.5s;
-  overflow-y: auto;
-  overflow-x: auto;
-
-  &.showSideBar {
-    padding-left: 270px;
-    width: calc(100% ~"-" 270px);
-  }
-
-  #hamburger {
-    height: 25px;
-    text-align: left;
-    padding: 15px;
-    position: fixed;
-    left: 0px;
-    cursor: pointer;
-    color: #750f34;
-    font-size: 20px;
-    top: 0px;
-
-    -webkit-transition: left 0.5s, width 0.5s;
-    -moz-transition: left 0.5s, width 0.5s;
-    -o-transition: left 0.5s, width 0.5s;
-    transition: left 0.5s, width 0.5s;
-
-    &.showSideBar {
-      left: 275px;
+      text-decoration: underline;
     }
   }
 
-  .section {
+  &.hidden {
     display: none;
   }
-  .shown {
-    display: inline;
-  }
 }
 
-.middleBar {
-  width: 255px;
-  padding-left: 30px;
-  padding-top: 50px;
-  height: calc(100% ~"-" 100px);
-  padding-bottom: 50px;
+.pagecontainer {
+  min-height: 800px;
+  clear:both;
+}
+
+.page {
+  min-height: 800px;
+  img {
+    margin-top: 70px;
+    height: 600px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    &.couch {
+      height: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(50%);
+    }
+  }
+  overflow-y: auto;
+}
+
+.leftside {
+  width: 50%;
   float: left;
-  position: fixed;
-  background: #f9f9f9;
-  text-align: center;
+}
 
-  .topic-image {
-    height: 120px;
+.rightside {
+  color: green;
+  width: 50%;
+  float: right;
+  height: 100%;
+}
+
+.linen {
+  background: url(assets/linen.jpg) #eeeeee 50% 0%;
+}
+
+.textbox {
+  color: gray;
+  border: 1px solid rgb(216, 216, 216);
+  min-height: 600px;
+  width: 87%;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background-color: rgba(242, 242, 242, 0.85);
+  overflow: hidden;
+  
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    color: #B5B5B5;
   }
-  .section-title {
-    font-weight: 300;
-    color: #750f34;
+  p {
+    padding: 5px 30px 15px 30px;
+    line-height: 1.5;
+
+    &.br { 
+      padding: 0px 30px 0px 30px;
+      line-height: 1;
+    }
+
+    &.indent {
+      margin-left: 15px;
+    }
+
+    &.question {
+      font-weight: 600;
+      padding-bottom: 0px;
+    }
+
+    &.answer {
+      padding-top: 0px;
+    }
   }
 }
 
-#rightContent {
-  -webkit-touch-callout: text; 
-  -webkit-user-select: text;
-  -khtml-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
+#introBox {
+  text-align: center;
+  min-height: 320px;
 
-  width: calc(100% ~"-" 360px);
-  padding-left: 300px;
-  font-weight: 300;
-  text-align: left;
-  margin: auto;
-  min-width: 450px;
-  max-width: 960px;
-  margin-top: 50px;
-
-  .box {
-    overflow-x: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  h1 {
+    margin-top: 100px;
   }
 
   h1 {
-    font-size: 24px;
-    font-weight: normal;
-    padding-bottom: 20px;
-    
-    &::before {
-      content: url('imgs/diamond.png');
-      margin-right: 10px;
-    }
+    font-size: 60px;
+    color: #C0C0C0;
   }
 
-  div, h2, p {
-    margin-top: 15px;
-    margin: 15px 8px;
+  h2 {
     font-size: 16px;
+    padding: 0px;
+  }
+}
+
+#page-overview {
+  img {
+    margin-top: 300px;
+    height: auto;
+  }
+}
+
+#page-header-bar {
+
+  .head-header-section {
+
+
+    .firstleft{
+      padding-top: 100px;
+    }
+    .firstright{
+      height: 2806px;
+      
+      .long-header-textbox{
+        height: 95%;
+      }
+    }
+
+
   }
 
-  .intro-section , .dl-space{
-    padding-bottom: 40px;
-  }
-
-  .download-btn {
-    width: 200px;
-    vertical-align: middle;
-  }
-
-  a {
-    color: black;
+  .tail-header-section {
+    position: absolute;
+    width: 100%;
     
-    &:hover{
-      color: darkgray;
+    .headerSection {
+
+      overflow: hidden;
     }
+
+    >.headerSection:first-child  {
+      .leftside{
+        padding-top: 130px;
+      }
+    }
+
+    .leftside{
+      padding-top: 40px;
+    }
+  }
+  
+
+  img {
+    padding: 30px;
+    width: 936px;
+    height: auto;
+  }
+  .textbox {
+   min-height: auto;
+   border: none;
+  }
+  .border {
+    border: 1px solid black;
+  }
+
+  .redborder{
+    border: 1px solid red;
+  }
+
+  .blueborder{
+    border: 1px solid blue;
+  }
+
+  .greenborder{
+    border: 1px solid green;
+  }
+
+  .subleft {
+    overflow-y: auto;
+  }
+
+  .clearfix {
+     clear: both;
   }
 }
 
-#using-fauxton {
-  #rightContent {
-    .chapter {
-      padding: 75px 0 0 0;
-      border-top: 1px solid gainsboro;
-
-      a {
-        color: black;
-        
-        &:hover{
-          color: darkgray;
-        }
-      }
-
-      img {
-        width: 100%;      
-      }
-    }
+#page-answers {
+  img {
+    height: auto;
   }
-
-  #end-using-fauxton {
-    height: 40vh;
-  }
-}
-
-.fauxton-toc {
-  margin-top: 40px;
-
-  .icon-menu {
-    width: 50px;
-    height: 100%;
-    float: left;
-    font-size: 20px;
-    text-align: center;
-
-    a {
-      color: #b3b3b3;
-    }
-
-    > div i:hover, 
-    > div svg:hover, 
-    a.selected {
-      cursor: pointer;
-      color: black;
-
-      path {
-       fill: black;
-      }
-    }
-
-    .replicate-icon, .user-icon, .docs-icon {
-      width: 22px;
-
-      &:hover {
-        path {
-          fill: black;
-        }
-      }
-      path {
-        fill: #b3b3b3;
-      }
-    }
-
-    .line {
-      width: 50%;
-      border-right: 1px dotted black;
-      height: 10px;
-      margin: 5px 0 5px 0;
-    }
-  }
-
-  .toc {
-    float: right;
-    font-weight: 400;
-    text-align: left;
-    width: 175px;
-    cursor: pointer;
-    padding-right: 15px;
-
-    a {
-      text-decoration: none;
-      color: #b3b3b3;
-    }
-
-
-    .heading {
-      display: block;
-      margin-left: 5px;
-      margin-bottom: 15px;
-      font-size: 12px;
-      
-      .heading-title { 
-        padding-left: 18px;
-      }
-
-      .subheading {
-        font-weight: normal;
-        display: none;
-        line-height: 17px;
-        font-size: 10px;
-        margin-left: 8px;
-
-        &:hover {
-          color: red;
-        }
-      }
-
-      &.selected .subheading {
-        display:block;
-        padding-left: 19px;
-      }
-      
-      &:hover {
-        font-weight: bold;
-        color: black;
-        .subheading {
-          font-weight: normal;
-        }
-      }
-    }
-    
-    .selected {
-      color: black;
-      
-      &.heading {
-        padding-left: 0px;
-      }
-
-      .heading-title {
-        font-weight: bold;
-        margin-bottom: 10px;
-        padding-left: 15px;
-        border-left: 2px solid red;
-        color: black;
-
-        .number {
-          font-size: 18px;
-        }
-
-        .heading-text {
-          font-size: 12px;
-        }
-      }
-    }
-  }
-}
-
-#answers {
-  .question {
-    font-weight: bold;
-  }
-
-  a {
-    color: black;
-      
-    &:hover{
-      color: darkgray;
-    }
-  }
-}
-
-#end1, #end2 {
-  height: 40vh;
 }
 
