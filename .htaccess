@@ -6,3 +6,4 @@ RedirectMatch /roadmap http://couchdb.apache.org/
 RedirectMatch /screenshots http://couchdb.apache.org/
 RedirectMatch /search http://couchdb.apache.org/
 RedirectMatch /security http://couchdb.apache.org/
+ErrorDocument 404 http://couchdb.apache.org/404/error.html
