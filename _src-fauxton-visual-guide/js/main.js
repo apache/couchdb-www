@@ -64,8 +64,14 @@ function highlightFauxtonNavigation () {
     var address = hash.substring(1);
     var end = address.slice(-1);
 
-    $('#toc-' + address).addClass('selected');
-    $('.icon-menu-'+ address).addClass('selected');
+    // init middle bar
+    if (hash === '#using-fauxton') {
+      $('#toc-intro').addClass('selected');
+      $('icon-menu-_all_dbs').addClass('selected');
+    } else {
+      $('#toc-' + address).addClass('selected');
+      $('.icon-menu-'+ address).addClass('selected');
+    }
 
     function clearAll () {
       $('.toc .heading, .fauxton-toc .icon-menu a').each(function () {
@@ -146,18 +152,20 @@ function detectHashChange () {
 
   $(window).on('hashchange', function() {
     var hash = window.location.hash;
-
-    if (
-      hash === '#editor' ||
-      hash === '#_all_docs' ||
-      hash === '#db-action'
-    ) {
-      $('#toc-_all_dbs').addClass('selected');
-      $('.icon-menu-_all_dbs').addClass('selected');
-    }
-
-    if (hash === '#answers') {
-      $('#content').scrollTop(0);
+    switch (hash) {
+      case '#editor' : 
+      case '#_all_docs':
+      case '#db-action':
+        $('#toc-_all_dbs').addClass('selected');
+        $('.icon-menu-_all_dbs').addClass('selected');
+        break;
+      case '#answers': 
+        window.scrollTo(0,0);
+        break;
+      case '#using-fauxton':
+        highlightFauxtonNavigation();
+      default:
+        console.log('hello');
     }
   });
 }
@@ -209,7 +217,6 @@ function clickSidebarItemListener () {
 function usingFauxtonNavigationListener () {
   $('#using-fauxton .toc a, .fauxton-toc .icon-menu a').click(function (e) {
     clearAll();
-    console.log('f');
 
     if ($(this).hasClass('subheading')) {
       e.stopPropagation();
