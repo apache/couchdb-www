@@ -164,8 +164,8 @@ function detectHashChange () {
         break;
       case '#using-fauxton':
         highlightFauxtonNavigation();
+        break;
       default:
-        console.log('hello');
     }
   });
 }
