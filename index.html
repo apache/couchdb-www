@@ -386,6 +386,60 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
     </div>
   </div>
 
+   <a class="scroll-point" id="chat"></a>
+
+  <hr>
+
+  <div class="feature">
+    <div class="wrap">
+      <h2 class="icon icon-chat">CouchDB Chat</h2>
+
+      <p>
+        We run community chat channels on <a href="http://freenode.org">Freenode IRC network</a> and <a href="https://slack.com">Slack.</a>
+        IRC is open and very common, but Slack is more user-friendly. We have a Slack/IRC bridge so you can use what you prefer and your messages will be relayed.
+      </p>
+    </div>
+    <div class="grid contribute">
+      <div class="wrap cf">
+
+        <div class="skill-card">
+          <div class="stripe"></div>
+          <div class="skill-card-content">
+            <h3>
+              <span class="core card-icon"></span>
+              <span class="skill-card-heading-text">Slack</span>
+            </h3>
+            <p class="slack-slogan">To start using Slack, enter your email address here for an invite:</p>
+            <form id="slack-form" class="chat-slack-integration">
+              <input class="chat-email-input" type="email" placeholder="me@mydomain.com" required>
+              <button type="submit" class="chat-submit-slack">Get your invite</button>
+              <div class="chat-slack-form-message"></div>
+            </form>
+           </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="stripe"></div>
+          <div class="skill-card-content">
+            <h3>
+              <span class="documentation card-icon"></span>
+              <span class="skill-card-heading-text">IRC</span>
+            </h3>
+            <p class="skill-card-slogan">
+              We have two IRC channels. <strong>#Couchdb</strong> for discusisons on using CouchDB and <strong>#CouchDB-dev</strong> for discussions
+              on CouchDB development.
+            </p>
+            <ul>
+              <li>&mdash; <a href="irc://freenode.noet/#couchdb">#CouchDB</a></li>
+              <li>&mdash; <a href="irc://freenode.net/#couchdb-dev/">#CouchDB-dev</a></li>
+            </ul>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
   <a class="scroll-point" id="mailing-lists"></a>
 
   <div class="wrap">
@@ -722,6 +776,7 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
     })();
   </script>
   <script type="text/javascript" src="script/jira.js"></script>
+  <script type="text/javascript" src="script/slack.js"></script>
   <script>
     $(document).ready(function () {
       $('.download-list').on('click', function (e) {
