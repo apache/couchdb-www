@@ -135,8 +135,10 @@ div.button:hover {
 .cf:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .cf:after,
 .clear {
@@ -216,7 +218,7 @@ blockquote {
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
   padding: 16px;
-  margin: 0 2.28571429px;
+  margin: 0 2.2857142857142856px;
   line-height: 55px;
 }
 .menu a:hover {
@@ -461,6 +463,51 @@ blockquote {
   background-position: -156px -95px;
   background-color: #e12830;
 }
+/**** Chat ****/
+.slack-slogan {
+  height: 62px;
+}
+.chat-slack-integration {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+}
+.chat-slack-integration label {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 6px;
+}
+.chat-email-input {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-weight: 100;
+}
+.chat-submit-slack {
+  background-color: #e12830;
+  padding: 6px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-style: none;
+  margin-top: 6px;
+}
+.chat-submit-slack:hover {
+  background-color: #ae2323;
+}
+.chat-slack-form-message {
+  text-align: center;
+  margin-top: 6px;
+}
+.slack-message {
+  color: #291d1e;
+}
+.slack-message-fail {
+  color: #e12830;
+  font-size: 0.9rem;
+}
 /*---------------------------------------------------
     Layout - Footer
 ---------------------------------------------------*/
@@ -693,6 +740,7 @@ a.pt-about {
 @media all and (max-width: 675px) {
   body {
     /*        font-size: 14px;*/
+  
   }
   .leadin img {
     left: -4px;
