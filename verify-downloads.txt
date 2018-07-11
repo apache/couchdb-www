@@ -1,0 +1,11 @@
+All source tarballs and release binaries are signed with one of these GPG keys: https://www.apache.org/dist/couchdb/KEYS
+
+You can verify a release by importing the key file and running:
+
+    gpg --import KEYS
+    gpg --verify /path/to/downloaded/file.asc
+
+In addition, we produce hashes for the download files with sha256 and sha512. You can validate those hashes:
+
+    shasum -n 256 /path/to/downloaded/file.sha256
+    shasum -n 512 /path/to/downloaded/file.sha512
