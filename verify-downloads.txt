@@ -7,5 +7,5 @@ You can verify a release by importing the key file and running:
 
 In addition, we produce hashes for the download files with sha256 and sha512. You can validate those hashes:
 
-    shasum -n 256 /path/to/downloaded/file.sha256
-    shasum -n 512 /path/to/downloaded/file.sha512
+    shasum -a 256 --check /path/to/downloaded/file.sha256
+    shasum -a 512 --check /path/to/downloaded/file.sha512
