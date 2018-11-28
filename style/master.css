@@ -159,7 +159,6 @@ hr {
 }
 .grid-nomargin {
   background: #EEE 50% 0%;
-  padding-bottom: 32px;
 }
 hr {
   border: none;
@@ -479,9 +478,14 @@ blockquote {
   padding-top: 16px;
   float: left;
   width: 320px;
+  height: 250px;
   margin-right: 24px;
   list-style: none;
   position: relative;
+  background-color: #fff;
+}
+.testimonial-inner {
+  padding: 15px 20px 20px 20px;
 }
 .testimonial.last {
   margin-right: 0;
@@ -490,6 +494,12 @@ blockquote {
 .testimonial-attribution {
   text-align: right;
   font-style: italic;
+}
+.testimonial-more {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 40px;
 }
 /**** Chat ****/
 .slack-slogan {

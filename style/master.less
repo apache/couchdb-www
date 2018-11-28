@@ -189,7 +189,6 @@ div.button, div.button:hover {
 
 .grid-nomargin {
   .secondary-bg;
-  padding-bottom: @gap;
 }
 
 hr {
@@ -543,9 +542,15 @@ blockquote {
   padding-top: @padding;
   float: left;
   width: @column;
+  height: 250px;
   margin-right: @gutter;
   list-style: none;
   position: relative;
+  background-color: #fff;
+}
+
+.testimonial-inner {
+  padding: 15px 20px 20px 20px;
 }
 
 .testimonial.last {
@@ -558,8 +563,11 @@ blockquote {
   font-style: italic;
 }
 
-.testimonial-attribution a {
-
+.testimonial-more {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
 /**** Chat ****/
