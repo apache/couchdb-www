@@ -499,7 +499,7 @@ blockquote {
   width: 100%;
   display: inline-block;
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 16px;
 }
 /**** Chat ****/
 .slack-slogan {
