@@ -157,6 +157,10 @@ hr {
   background: #EEE 50% 0%;
   padding: 32px 0;
 }
+.grid-nomargin {
+  background: #EEE 50% 0%;
+  padding-bottom: 32px;
+}
 hr {
   border: none;
   border-top: 1px solid #ddd;
@@ -247,9 +251,6 @@ blockquote {
 /*---------------------------------------------------
     Layout - Leadin
 ---------------------------------------------------*/
-.leadin {
-  margin-bottom: 32px;
-}
 .leadin .wrap {
   height: 368px;
 }
@@ -474,11 +475,6 @@ blockquote {
   background-color: #e12830;
 }
 /**** Testimonials ****/
-.testimonials-container {
-  position: relative;
-  padding: 32px 0;
-  margin-bottom: 200px;
-}
 .testimonial {
   padding-top: 16px;
   float: left;
@@ -489,6 +485,7 @@ blockquote {
 }
 .testimonial.last {
   margin-right: 0;
+  margin-bottom: 40px;
 }
 .testimonial-attribution {
   text-align: right;

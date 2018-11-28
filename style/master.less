@@ -187,6 +187,11 @@ div.button, div.button:hover {
     padding: @gap 0;
 }
 
+.grid-nomargin {
+  .secondary-bg;
+  padding-bottom: @gap;
+}
+
 hr {
     border: none;
     border-top: 1px solid #ddd;
@@ -286,10 +291,6 @@ blockquote {
 /*---------------------------------------------------
     Layout - Leadin
 ---------------------------------------------------*/
-
-.leadin {
-    margin-bottom: @gap;
-}
 
 .leadin .wrap {
     height: @column+@gap+@padding;
@@ -538,12 +539,6 @@ blockquote {
 
 /**** Testimonials ****/
 
-.testimonials-container {
-  position: relative;
-  padding: 32px 0;
-  margin-bottom: 200px;
-}
-
 .testimonial {
   padding-top: @padding;
   float: left;
@@ -555,6 +550,7 @@ blockquote {
 
 .testimonial.last {
   margin-right: 0;
+  margin-bottom: 40px;
 }
 
 .testimonial-attribution {
