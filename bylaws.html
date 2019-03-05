@@ -262,7 +262,7 @@
 
 <h3 id="approval">3.4. Approval Models</h3>
 
-<p><strong>We use three different approval models for formal voting</strong>:
+<p><strong>We use four different approval models for formal voting</strong>:
 
   <ul>
     <li>RTC (see section 3.5)
@@ -273,6 +273,11 @@
       <ul>
 	<li>Requires three binding +1 votes and more binding +1 votes than binding -1 votes
       </ul>
+    <li>Qualified lazy majority
+      <ul>
+        <li>Requires three binding +1 votes and more binding +1 votes than binding -1 votes
+        <li>In addition, at least one binding +1 vote must be from an individual not directly affiliated with the proposer's employer (if applicable)
+      </ul>
     <li>Lazy 2/3 majority
       <ul>
 	<li>Requires three binding +1 votes and twice as many binding +1 votes as binding -1 votes
@@ -280,6 +285,8 @@
   </ul>
 
 <p>RTC is only ever used in the context of a code review or a pull request, and does not require a separate vote thread. Each of the other approval models requires a vote thread.
+
+<p>Qualified lazy majority is only used for the <a href="#rfc">RFC process</a>.</p>
 
 <p>A -1 vote is never called a veto except when using the RTC approval model. This is because a single -1 vote never has the power to block a vote outside of RTC.
 
@@ -316,7 +323,7 @@ The process is:
   <ul>
     <li>Start a [DISCUSS] thread on <a href="https://lists.apache.org/list.html?dev@couchdb.apache.org">the developer mailing list</a>. Discuss your proposal in detail, including which modules/applications are affected, any HTTP API additions and deprecations, and security issues.</li>
     <li>When there is consensus on the approach from the community, <a href="https://s.apache.org/CouchDB-RFC">complete the RFC template</a> and work through any final revisions to the document, with the support of the developer mailing list.</li>
-    <li>Start the RFC <strong>vote</strong> on the developer mailing list. Hold the vote according to the <em>lazy majority process</em>: at least 3 +1 votes, and more binding +1 than binding -1 votes.</li>
+    <li>Start the RFC <strong>vote</strong> on the developer mailing list. Hold the vote according to the <em>qualified lazy majority process</em>: at least 3 +1 votes, more +1 than -1 votes, and at least one +1 vote must be from someone not directly affiliated with the proposer's employer.</li>
   </ul>
 
 <h3 id="api">3.7 API changes and deprecations</h3>
@@ -355,7 +362,7 @@ The process is:
       <td>A decision on a specific proposal to alter CouchDB in a significant way.
       <td><a href="https://lists.apache.org/list.html?dev@couchdb.apache.org">Main development list</a>
       <td>No
-      <td>Lazy majority
+      <td>Qualified lazy majority
       <td>No
       <td>Committers
       <td>No
