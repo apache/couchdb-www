@@ -8,7 +8,8 @@
 
 <h1>CouchDB Bylaws</h1>
 
-<p><em>This document was officially adopted by the CouchDB PMC as of 31 July 2014.</em>
+<p><em>This document was officially adopted by the CouchDB PMC as of 31 July 2014.</em></p>
+<p>A full changelog is available <a href="https://github.com/apache/couchdb-www/commits/asf-site/bylaws.html">on GitHub</a>.</p>
 
 <h2>Table of Contents</h2>
 
@@ -251,7 +252,7 @@
     </tr>
   </table>
 
-<p>There are three types of voting: informal, formal, and vetos. An informal vote is a quick way to get people's feelings on something. A formal vote, on the other hand, requires an approval model and a <a href="#decisions">decision type</a>. More detail on <a href="#approval">approval models</a>, <a href="#rtc">vetos</a>, and <a href="types">decision types</a> is available in sections 3.4, 3.5., and 3.6 respectively.
+<p>There are three types of voting: informal, formal, and vetos. An informal vote is a quick way to get people's feelings on something. A formal vote, on the other hand, requires an approval model and a <a href="#decisions">decision type</a>. More detail on <a href="#approval">approval models</a>, <a href="#rtc">RTC and technical vetos</a>, <a href="#rfc">RFCs</a>, <a href="#api">API changes and deprecations</a> and <a href="#types">decision types</a> is available in the following sections.
 
 <p>All formal voting must be done in an email thread with the appropriate <a href="#tags">subject tag</a>. Formal votes may contain multiple items for approval and these should be clearly separated. Formal voting is then carried out by replying to the vote mail. Formal votes are open for a period of at least 72 hours to allow all active voters time to consider the vote. Votes can be held open longer than this at the discretion of the person who initiated the vote.
 
@@ -286,11 +287,9 @@
 
 <p>For electing a new Chair, the PMC may opt to use <em>Single Transferable Vote</em> (STV) which comes with its own rules. <a href="http://steve.apache.org/">Apache STeVe</a> was specifically designed to enable this process.
 
-<h3 id="rtc">3.5. Review-Then-Commit, API Changes and Technical Vetos</h3>
+<h3 id="rtc">3.5. Review-Then-Commit and Technical Vetos</h3>
 
 <p>Typically, CouchDB uses the <a href="http://www.apache.org/foundation/glossary.html#ReviewThenCommit">Review-Then-Commit</a> (<em>RTC</em>) model of code collaboration. RTC allows work to proceed on separate feature or bugfix branches, and requires at least one other developer to review and approve the changes before they are committed to a release branch. A release branch is any branch that a release might be prepared from, such as <code>master</code>, <code>1.6.x</code>, and so on. Notifications of these changes are sent to <a href="https://mail-archives.apache.org/mod_mbox/couchdb-commits/">the commits mailing list</a>. It is expected that the rest of the community is regularly reviewing these changes.
-
-<p>Whenever a change is proposed to a release branch or <code>master</code> that removes or changes an existing HTTP API endpoint in a way that breaks backwards compatibility with a released version of CouchDB, the proposed change <strong><em>must</em> be announced on the developer mailing list, and a minimum of a <a href="#lazy">lazy consensus</a> decision is required.</strong> This policy is not intended to preserve bugs in HTTP API endpoints across released versions of CouchDB in perpetuity, nor shall it be used to assert consistency of undocumented, implementation-specific behaviour across major releases. Additions of new endpoints, or changes that do not affect backwards compatibility, do not require this notification and process, but announcement to the developer mailing list is still strongly encouraged.</p>
 
 <p><strong>Any change made to a release branch or to the <code>master</code> branch is a <em>technical decision</em> of the project. If a committer wants to object to a technical decision, they have the option of casting a -1 vote. We call this a veto.</strong> Vetos can only be made for technical reasons. A -1 vote is not considered a veto in any other context. Vetos should be used sparingly, and only after careful consideration.
 
@@ -308,7 +307,25 @@
 
 <p>If the discussion did not reach consensus, Alice could challenge the validity of Bob's justification. At that point, the PMC would vote on the issue. If the PMC found that the justification was valid, Alice would have to revert the change or petition Bob to withdraw the veto. If the PMC found the justification invalid, the veto is null and void.
 
-<h3 id="types">3.6. Decision Types</h3>
+<h3 id="rfc">3.6 Request For Comment (RFC) process</h3>
+
+For major changes to the fuctionality of CouchDB, a Request For Comment (RFC) process has been established. The intent of an RFC is to ensure sufficient public discussion has occurred on the design of new features, that the proposal is adequately captured in a summary document, and that there is community acceptance of the proposal. The completed RFC template for the proposal then becomes the basis for the new functionality's documentation.
+
+The process is:
+
+  <ul>
+    <li>Start a [DISCUSS] thread on <a href="https://lists.apache.org/list.html?dev@couchdb.apache.org">the developer mailing list</a>. Discuss your proposal in detail, including which modules/applications are affected, any HTTP API additions and deprecations, and security issues.</li>
+    <li>When there is consensus on the approach from the community, <a href="https://s.apache.org/CouchDB-RFC">complete the RFC template</a> and work through any final revisions to the document, with the support of the developer mailing list.</li>
+    <li>Start the RFC <strong>vote</strong> on the developer mailing list. Hold the vote according to the <em>lazy majority process</em>: at least 3 +1 votes, and more binding +1 than binding -1 votes.</li>
+  </ul>
+
+<h3 id="api">3.7 API changes and deprecations</h3>
+
+<p>Whenever a change is proposed to a release branch or <code>master</code> that removes or changes an existing HTTP API endpoint in a way that breaks backwards compatibility with a released version of CouchDB, the proposed change <strong><em>must</em> be announced on <a href="https://lists.apache.org/list.html?dev@couchdb.apache.org">the developer mailing list</a>, and a minimum of a <a href="#lazy">lazy consensus</a> decision is required.</strong>
+
+<p>This policy is not intended to preserve bugs in HTTP API endpoints across released versions of CouchDB in perpetuity, nor shall it be used to assert consistency of undocumented, implementation-specific behaviour across major releases. Additions of new endpoints that fall short of the need for an RFC, or changes that do not affect backwards compatibility, do not require this notification and process, but announcement to the developer mailing list is still strongly encouraged.</p>
+
+<h3 id="types">3.8. Decision Types</h3>
 
 <p><strong>This section describes the various decision types and the rules that apply to them.</strong></p>
 
@@ -332,6 +349,16 @@
       <td>No
       <td>Committers
       <td> Yes
+    </tr>
+    <tr>
+      <td>Request For Comments (RFC) decision
+      <td>A decision on a specific proposal to alter CouchDB in a significant way.
+      <td><a href="https://lists.apache.org/list.html?dev@couchdb.apache.org">Main development list</a>
+      <td>No
+      <td>Lazy majority
+      <td>No
+      <td>Committers
+      <td>No
     </tr>
     <tr>
       <td>Non-technical decision
