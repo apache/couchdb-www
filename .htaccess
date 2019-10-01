@@ -1,9 +1,13 @@
-RedirectMatch /community http://couchdb.apache.org/
-RedirectMatch /docs http://couchdb.apache.org/
-RedirectMatch /downloads http://couchdb.apache.org/
-RedirectMatch /notice http://couchdb.apache.org/
-RedirectMatch /roadmap http://couchdb.apache.org/
-RedirectMatch /screenshots http://couchdb.apache.org/
-RedirectMatch /search http://couchdb.apache.org/
-RedirectMatch /security http://couchdb.apache.org/
+RedirectMatch /community https://couchdb.apache.org/
+RedirectMatch /docs https://docs.couchdb.org/
+RedirectMatch /downloads https://couchdb.apache.org/
+RedirectMatch /notice https://couchdb.apache.org/
+RedirectMatch /roadmap https://couchdb.apache.org/
+RedirectMatch /screenshots https://couchdb.apache.org/
+RedirectMatch /search https://couchdb.apache.org/
+RedirectMatch /security https://couchdb.apache.org/
 ErrorDocument 404 http://couchdb.apache.org/404/error.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
