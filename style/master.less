@@ -21,6 +21,7 @@ body, a {
 @background-half-size: 112px 425px;
 
 @main-color:        #291d1e;
+@main-color-soft:   #5b5b5b;
 @key-color:         #e12830;
 @key-color-hover:   #ae2323;
 @disable-color:     #abafb0;
@@ -213,11 +214,11 @@ blockquote {
 ---------------------------------------------------*/
 
 .header-placeholder {
-    height: 90px;
+    height: 70px;
 }
 
 #header {
-    height: 90px;
+    height: 70px;
     position: fixed;
     z-index: 10;
     left: 0;
@@ -237,7 +238,7 @@ blockquote {
 
 .logo, .closing {
     background: url(../image/logo@2x.png);
-    background-size: 250px;
+    background-size: auto 50px;
     background-repeat: no-repeat;
     background-position: 0 0px;
     position: absolute;
@@ -245,6 +246,9 @@ blockquote {
     top: 13px;
     width: 250px;
     height: 65px;
+}
+.closing {
+    background-size: 250px;
 }
 
 .conf {
@@ -540,10 +544,10 @@ blockquote {
 
 .testimonial {
   padding-top: @padding;
-  float: left;
+  /*float: left;
   width: @column;
-  height: 250px;
-  margin-right: @gutter;
+  height: 250px;*/
+  /*margin-right: @gutter;*/
   list-style: none;
   position: relative;
   background-color: #fff;
@@ -860,16 +864,8 @@ a.pt-about {
     .menu-dropdown {
         top: @padding;
     }
-    #header, .header-placeholder {
-        height: 52px;
-    }
-    .logo {
-        top: 10px;
-        left: 10px;
-        width: 110px;
-        height: 28px;
-        background-size: 110px 28px;
-    }
+   
+   
     #footer {
         padding-bottom: 28px;
         padding-right: 326px;
@@ -1004,17 +1000,16 @@ a.pt-about {
 
 .skill-card {
     background-color: #fff;
-    float: left;
-    width: @column;
-    margin-right: @gutter;
+    /*float: left;*/
+   /* width: @column;*/
+    /*margin-right: @gutter;*/
     margin-bottom: @gutter;
     position: relative;
-    height: 340px;
     .stripe {
         height: 5px;
     }
     .skill-card-slogan {
-        height: 125px;
+        /*height: 125px;*/
     }
     .skill-card-content {
         padding: 15px 20px 20px 20px;
