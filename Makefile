@@ -1,11 +1,11 @@
-all: style/master.css fauxton-visual-guide
+all: style/ui.css fauxton-visual-guide
 
-style/master.css: style/master.less
+style/ui.css: style/ui.less
 	lessc $< > $@
 
 fauxton-visual-guide:
 	harp compile _src-fauxton-visual-guide fauxton-visual-guide
 
 clean:
-	rm style/master.css
+	rm style/master.css style/ui.css
 	rm -rf fauxton-visual-guide

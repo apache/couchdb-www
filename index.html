@@ -4,32 +4,40 @@
 
 <head>
 
-<meta charset="utf-8">
+  <meta charset="utf-8">
 
-<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 
-<link rel="canonical" href="http://couchdb.apache.org/"/>
+  <link rel="canonical" href="http://couchdb.apache.org/" />
 
-<title>Apache CouchDB</title>
+  <title>Apache CouchDB</title>
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=rM3dEe7aPK">
-<link rel="icon" type="image/png" href="/favicon-32x32.png?v=rM3dEe7aPK" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicon-16x16.png?v=rM3dEe7aPK" sizes="16x16">
-<link rel="manifest" href="/manifest.json?v=rM3dEe7aPK">
-<link rel="mask-icon" href="/safari-pinned-tab.svg?v=rM3dEe7aPK" color="#e42528">
-<link rel="shortcut icon" href="/favicon.ico?v=rM3dEe7aPK">
-<meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=rM3dEe7aPK">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png?v=rM3dEe7aPK" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png?v=rM3dEe7aPK" sizes="16x16">
+  <link rel="manifest" href="/manifest.json?v=rM3dEe7aPK">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=rM3dEe7aPK" color="#e42528">
+  <link rel="shortcut icon" href="/favicon.ico?v=rM3dEe7aPK">
+  <meta name="theme-color" content="#ffffff">
 
-<!--
+  <!--
 
 Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style/ui.css">
 
-<link rel="stylesheet" type="text/css" href="style/master.css">
+  <script src="script/smooth.js" type="text/javascript"></script>
+  <script src="script/jquery-1.7.1.min.js" type="text/javascript"></script>
+  <!-- Bootstrap-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-<script src="script/smooth.js" type="text/javascript"></script>
-<script src="script/jquery-1.7.1.min.js" type="text/javascript"></script>
+
 
 </head>
 
@@ -39,7 +47,7 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
   <div id="header">
 
-    <div class="wrap">
+    <div class="container">
 
       <a class="logo" href="#top"></a>
 
@@ -77,197 +85,281 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
     <div class="wrap">
 
-      <img src="image/couch@2x.png" alt=""/>
+      <img src="image/couch@2x.png" alt="" />
 
       <ul class="text-block">
-        <li><h1><strong>Seamless</strong> multi-master sync, that</h1></li>
-        <li><h1>scales from <strong>Big Data</strong> to <strong>Mobile,</strong></h1></li>
-        <li><h1>with an <strong>Intuitive</strong> HTTP/JSON API</h1></li>
-        <li><h1>and designed for <strong>Reliability.</strong></h1></li>
+        <li>
+          <h1><strong>Seamless</strong> multi-master sync, that</h1>
+        </li>
+        <li>
+          <h1>scales from <strong>Big Data</strong> to <strong>Mobile,</strong></h1>
+        </li>
+        <li>
+          <h1>with an <strong>Intuitive</strong> HTTP/JSON API</h1>
+        </li>
+        <li>
+          <h1>and designed for <strong>Reliability.</strong></h1>
+        </li>
       </ul>
 
       <div class="button-container">
-        <a class="button" href="#download">DOWNLOAD<small class="download-version">3.0.0 (2020-02-26)</small></a>
+        <a class="button" href="#download">DOWNLOAD<small class="download-version">3.0.0 (2020-02-26)</small>
+          <ion-icon name="download-outline" class="dl-icon"></ion-icon>
+        </a>
       </div>
 
     </div>
 
   </div>
 
-  <div class="feature grid-nomargin">
-    <div class="wrap cf">
-      <div class="testimonial">
-        <div class="testimonial-inner">
-          "Amongst all the panic and horror [of a power outage], I was smiling."
-          <div class="testimonial-attribution">
-            <a href="https://blog.couchdb.org/2017/07/19/a-couchdb-user-story-chatting-with-assaf-morami/">- Assaf Morami</a>
+  <div class="feature grid-nomargin ">
+    <div class="container testimonials_section">
+      <div class="row">
+        <div class="col-md-4 textimonial-container">
+          <div class="testimonial">
+            <div class="testimonial-inner">
+              "Amongst all the panic and horror [of a power outage], I was smiling."
+              <div class="testimonial-attribution">
+                <a href="https://blog.couchdb.org/2017/07/19/a-couchdb-user-story-chatting-with-assaf-morami/">- Assaf
+                  Morami</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="testimonial">
-        <div class="testimonial-inner">
-          "The replication in CouchDB is really the killer feature that sets it
-          apart from other databases."
-          <div class="testimonial-attribution">
-            <a href="https://blog.couchdb.org/2017/07/12/replication-makes-couchdb-the-single-best-solution-for-hoptree/">- Patrick Wolf</a>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial last">
-        <div class="testimonial-inner">
-          "Even if the internet was very bad our databases in the two locations would eventually sync."
-          <div class="testimonial-attribution">
-            <a href="https://blog.couchdb.org/2018/08/21/shifting-from-mysql-to-couchdb-a-user-study/">- Ryan Meredith</a>
-          </div>
-        </div>
-      </div>
 
-      <a href="https://blog.couchdb.org/category/user-story/"
-        class="testimonial-more">More User Stories</a>
+        <div class="col-md-4 textimonial-container">
+          <div class="testimonial">
+            <div class="testimonial-inner">
+              "The replication in CouchDB is really the killer feature that sets it
+              apart from other databases."
+              <div class="testimonial-attribution">
+                <a
+                  href="https://blog.couchdb.org/2017/07/12/replication-makes-couchdb-the-single-best-solution-for-hoptree/">-
+                  Patrick Wolf</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 textimonial-container">
+          <div class="testimonial last">
+            <div class="testimonial-inner">
+              "Even if the internet was very bad our databases in the two locations would eventually sync."
+              <div class="testimonial-attribution">
+                <a href="https://blog.couchdb.org/2018/08/21/shifting-from-mysql-to-couchdb-a-user-study/">- Ryan
+                  Meredith</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="https://blog.couchdb.org/category/user-story/" class="testimonial-more">More User Stories</a>
     </div>
+
   </div>
 
   <a class="scroll-point pt-about" id="about"></a>
 
   <div class="feature">
-    <div class="wrap">
-      <h2 class="icon icon-about">Data Where You Need It</h2>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="section-icons-container ">
+              <ion-icon name="phone-portrait-outline" class="section-icon phone" style="--ionicon-stroke-width: 20px;">
+              </ion-icon>
+              <ion-icon name="laptop-outline" class="section-icon laptop" style="--ionicon-stroke-width: 20px;">
+              </ion-icon>
+              <ion-icon name="tablet-landscape-outline" class="section-icon tablet"
+                style="--ionicon-stroke-width: 20px;">
+              </ion-icon>
+            </div>
+            <h2 class="section-title">
+              Data <br /><b> Where You Need It </b>
+            </h2>
+          </div>
 
-      <p>
+          <div class="col-md-7 section_content">
+            <p>
+              Apache CouchDB™ lets you access your data where you need it. The <strong><a
+                  href="http://docs.couchdb.org/en/master/replication/protocol.html"
+                  title="Couch Replication Protocol">Couch
+                  Replication Protocol</a></strong> is implemented in a variety of projects and products that span every
+              imaginable computing environment from <strong>globally distributed server-clusters</strong>, over
+              <strong>mobile
+                phones</strong> to <strong>web browsers</strong>.
 
-        Apache CouchDB™ lets you access your data where you need it. The <strong><a href="http://docs.couchdb.org/en/master/replication/protocol.html" title="Couch Replication Protocol">Couch Replication Protocol</a></strong> is implemented in a variety of projects and products that span every imaginable computing environment from <strong>globally distributed server-clusters</strong>, over <strong>mobile phones</strong> to <strong>web browsers</strong>.
+            </p>
+            <p>
 
-      </p>
-      <p>
+              Store your data <strong>safely</strong>, on your own servers, or with any leading cloud provider. Your
+              web- and
+              native applications love CouchDB, because it speaks <strong>JSON natively</strong> and supports
+              <strong>binary
+                data</strong> for all your data storage needs.
 
-        Store your data <strong>safely</strong>, on your own servers, or with any leading cloud provider. Your web- and native applications love CouchDB, because it speaks <strong>JSON natively</strong> and supports <strong>binary data</strong> for all your data storage needs.
+            </p>
+            <p>
 
-      </p>
-      <p>
+              <strong><a href="http://docs.couchdb.org/en/master/replication/protocol.html"
+                  title="CouchDB Replication Protocol">The Couch Replication Protocol</a></strong> lets your data flow
+              seamlessly between server clusters to mobile phones and web browsers, enabling a compelling <strong><a
+                  href="http://offlinefirst.org">offline-first</a></strong> user-experience while maintaining high
+              performance
+              and strong reliability. CouchDB comes with a <strong>developer-friendly</strong> query language, and
+              optionally
+              MapReduce for simple, efficient, and comprehensive data retrieval.
 
-        <strong><a href="http://docs.couchdb.org/en/master/replication/protocol.html" title="CouchDB Replication Protocol">The Couch Replication Protocol</a></strong> lets your data flow seamlessly between server clusters to mobile phones and web browsers, enabling a compelling <strong><a href="http://offlinefirst.org">offline-first</a></strong> user-experience while maintaining high performance and strong reliability. CouchDB comes with a <strong>developer-friendly</strong> query language, and optionally MapReduce for simple, efficient, and comprehensive data retrieval.
+            </p>
 
-    </p>
+            <p>See the <a href="http://docs.couchdb.org/en/stable/intro/why.html">introduction</a>, <a
+                href="http://docs.couchdb.org/en/stable/intro/overview.html">technical overview</a> for more
+              information, or
+              learn <a href="http://docs.couchdb.org/en/latest/whatsnew/3.0.html">what’s new in 3.0</a>.</p>
+          </div>
 
-      <p>See the <a href="http://docs.couchdb.org/en/stable/intro/why.html">introduction</a>, <a href="http://docs.couchdb.org/en/stable/intro/overview.html">technical overview</a> for more information, or learn <a href="http://docs.couchdb.org/en/latest/whatsnew/3.0.html">what’s new in 3.0</a>.</p>
+        </div>
+
+
+      </div>
+
+
+
 
     </div>
 
     <div class="grid feature">
-      <div class="wrap cf">
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="core card-icon"></span>
-              <span class="skill-card-heading-text">Single Node Database</span>
-            </h3>
-            <p class="skill-card-slogan">
-              CouchDB is a terrific single-node database that works just like any other database
-              behind an application server of your choice.
-              <br><br>
-              Most people start with a single node CouchDB instance. More demanding projects can
-              seamlessly upgrade to a cluster.
-            </p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="share-social-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Single Node Database</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  CouchDB is a terrific single-node database that works just like any other database
+                  behind an application server of your choice.
+                  <br><br>
+                  Most people start with a single node CouchDB instance. More demanding projects can
+                  seamlessly upgrade to a cluster.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card ">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="file-tray-stacked-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Cluster</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  CouchDB is <em>also</em> a clustered database that allows you to run a single logical
+                  database server on any number of servers or VMs.
+                  <br><br>
+
+                  A CouchDB cluster improves on the single-node setup with higher capacity and
+                  high-availability without changing any APIs.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="repeat-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">HTTP/JSON</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  CouchDB makes use of the ubiquitous HTTP protocol and JSON data format and is
+                  compatible with any software that supports them. CouchDB also works great with
+                  external tools like HTTP proxy servers, load balancers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="sync-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Offline First Data Sync</span>
+                </h3>
+                <p class="skill-card-slogan">
+
+                  CouchDB’s unique <a href="http://docs.couchdb.org/en/master/replication/protocol.html">Replication
+                    Protocol</a> is the
+                  foundation for a whole new generation of <a href="http://offlinefirst.org/">“Offline
+                    First”</a> applications for Mobile applications and other environments with <a
+                    href="https://www.youtube.com/watch?v=1sLjWlWvCsc">challenging
+                    network infrastructures</a>.
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="cube-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Ecosystem</span>
+                </h3>
+                <p class="skill-card-slogan">
+
+                  CouchDB is built for servers (from a Raspberry Pi to big cloud installations), while
+                  PouchDB is built for mobile &amp; desktop web-browsers and Couchbase Lite is built for
+                  native iOS &amp; Android apps.
+
+                  <br><br>
+
+                  And all of them can seamlessly replicate data with each other.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="shield-checkmark-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Reliability</span>
+                </h3>
+                <p class="skill-card-slogan">
+
+                  CouchDB is serious about data reliability.
+                  <br><br>
+
+                  Individual nodes use a crash-resistent append-only data structure. A multi-node
+                  CouchDB cluster saves all data redundantly, so it is always available when you need
+                  it.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="fauxton card-icon"></span>
-              <span class="skill-card-heading-text">Cluster</span>
-            </h3>
-            <p class="skill-card-slogan">
-              CouchDB is <em>also</em> a clustered database that allows you to run a single logical
-              database server on any number of servers or VMs.
-              <br><br>
-
-              A CouchDB cluster improves on the single-node setup with higher capacity and
-              high-availability without changing any APIs.
-
-            </p>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="marketing card-icon"></span>
-              <span class="skill-card-heading-text">HTTP/JSON</span>
-            </h3>
-            <p class="skill-card-slogan">
-              CouchDB makes use of the ubiquitous HTTP protocol and JSON data format and is
-              compatible with any software that supports them. CouchDB also works great with
-              external tools like HTTP proxy servers, load balancers.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="wrap cf">
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="website card-icon"></span>
-              <span class="skill-card-heading-text">Offline First Data Sync</span>
-            </h3>
-            <p class="skill-card-slogan">
-
-              CouchDB’s unique <a href="http://docs.couchdb.org/en/master/replication/protocol.html">Replication Protocol</a> is the
-              foundation for a whole new generation of <a href="http://offlinefirst.org/">“Offline
-              First”</a> applications for Mobile applications and other environments with <a
-              href="https://www.youtube.com/watch?v=1sLjWlWvCsc">challenging
-              network infrastructures</a>.
-
-            </p>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="documentation card-icon"></span>
-              <span class="skill-card-heading-text">Ecosystem</span>
-            </h3>
-            <p class="skill-card-slogan">
-
-              CouchDB is built for servers (from a Raspberry Pi to big cloud installations), while
-              PouchDB is built for mobile &amp; desktop web-browsers and Couchbase Lite is built for
-              native iOS &amp; Android apps.
-
-              <br><br>
-
-              And all of them can seamlessly replicate data with each other.
-
-            </p>
-
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="guidance card-icon"></span>
-              <span class="skill-card-heading-text">Reliability</span>
-            </h3>
-            <p class="skill-card-slogan">
-
-              CouchDB is serious about data reliability.
-              <br><br>
-
-              Individual nodes use a crash-resistent append-only data structure. A multi-node
-              CouchDB cluster saves all data redundantly, so it is always available when you need
-              it.
-            </p>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -275,265 +367,403 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
   <a class="scroll-point" id="contribute"></a>
 
-  <hr>
+
 
   <div class="feature">
-    <div class="wrap">
-      <h2 class="icon icon-contribute">Want to Contribute?</h2>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="section-icons-container ">
+              <ion-icon name="code-slash-outline" class="section-icon code" style="--ionicon-stroke-width: 20px;">
+              </ion-icon>
+              <ion-icon name="color-palette-outline" class="section-icon design" style="--ionicon-stroke-width: 20px;">
+              </ion-icon>
+              <ion-icon name="pencil-outline" class="section-icon pen" style="--ionicon-stroke-width: 20px;">
+              </ion-icon>
+            </div>
+            <h2 class="section-title">
+              Want to <b>Contribute ?</b>
+            </h2>
 
-      <p><strong>We welcome your contributions. </strong>CouchDB is an open source project. Everything, from this website to the core of the database itself, has been contributed by helpful individuals. The time and attention of our contributors is our most precious resource, and we always need more of it. Our primary goal is to build a welcoming, supporting, inclusive and diverse community. We abide by <a href="http://couchdb.apache.org/conduct.html">Code of Conduct</a> and a set of <a href="http://couchdb.apache.org/bylaws.html">Project Bylaws</a>. Come join us!
-      </p>
-    </div>
-    <div class="grid contribute">
-      <div class="wrap cf">
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="core card-icon"></span>
-              <span class="skill-card-heading-text">CouchDB Core</span>
-            </h3>
-            <p class="skill-card-slogan">
-              Help shape the future of CouchDB! There’s still plenty of work to be
-              done on the core database. We use GitHub to track issues and pull requests.
-            </p>
-            <ul>
-
-              <li>&mdash; <a href="https://github.com/apache?q=couchdb">CouchDB on GitHub</a></li>
-              <li>&mdash; <a href="https://github.com/apache/couchdb/issues">GitHub Issues</a></li>
-              <li>&mdash; <a href="https://issues.apache.org/jira/browse/COUCHDB/?selectedTab=com.atlassian.jira.jira-projects-plugin:issues-panel">(Inactive) Jira issues</a></li>
-              <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-dev/">Dev mailing list</a></li>
-            </ul>
           </div>
+
+          <div class="col-md-7 section_content">
+            <p><strong>We welcome your contributions. </strong>CouchDB is an open source project. Everything, from this
+              website to the core of the database itself, has been contributed by helpful individuals. The time and
+              attention
+              of our contributors is our most precious resource, and we always need more of it. Our primary goal is to
+              build a
+              welcoming, supporting, inclusive and diverse community. We abide by <a
+                href="http://couchdb.apache.org/conduct.html">Code of Conduct</a> and a set of <a
+                href="http://couchdb.apache.org/bylaws.html">Project Bylaws</a>. Come join us!
+            </p>
+          </div>
+
         </div>
 
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="fauxton card-icon"></span>
-              <span class="skill-card-heading-text">Fauxton</span>
-            </h3>
-            <p class="skill-card-slogan">
-              Lend your JavaScript skills to the next-generation web UI for CouchDB.
-              Fauxton is the “killer app” that makes CouchDB so powerful and easy to manage.
-            </p>
-            <ul>
-              <li>&mdash; <a href="fauxton-visual-guide/index.html">Fauxton, a Visual Guide</a></li>
-              <li>&mdash; <a href="https://github.com/apache/couchdb-fauxton">Fauxton on GitHub</a></li>
-              <li>&mdash; <a href="http://docs.couchdb.org/en/latest/fauxton/addons.html">Writing an Addon</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="marketing card-icon"></span>
-              <span class="skill-card-heading-text">Marketing</span>
-            </h3>
-            <p class="skill-card-slogan">
-              We’re not just building a database – we’re crafting the CouchDB story.
-              Help us promote CouchDB: plan meetups, make video tutorials, write blog posts.
-            </p>
-            <ul>
-              <li>&mdash; <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Meetups">CouchDB Meetups</a></li>
-              <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-marketing/">Marketing Mailing List</a></li>
-              <li>&mdash; <a href="https://twitter.com/CouchDB">Tweet us a link</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
 
-      <div class="wrap cf">
+    </div>
+    <div class="grid contribute">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="server-outline" class="card-icon "></ion-icon>
+                  <span class="skill-card-heading-text">CouchDB Core</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  Help shape the future of CouchDB! There’s still plenty of work to be
+                  done on the core database. We use GitHub to track issues and pull requests.
+                </p>
+                <ul>
 
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="website card-icon"></span>
-              <span class="skill-card-heading-text">Website</span>
-            </h3>
-            <p class="skill-card-slogan">
-              Got a few suggestions for the very website you’re reading right now?
-              Think the UX, copy, or layout could be better? Welcome! We’d love to hear from you.
-            </p>
-            <ul>
-              <li>&mdash; <a href="https://github.com/apache/couchdb-www">Website on GitHub</a></li>
-              <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-marketing/">Marketing mailing list</a></li>
-              <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-www/">Website mailing list</a></li>
-            </ul>
+                  <li>&mdash; <a href="https://github.com/apache?q=couchdb">CouchDB on GitHub</a></li>
+                  <li>&mdash; <a href="https://github.com/apache/couchdb/issues">GitHub Issues</a></li>
+                  <li>&mdash; <a
+                      href="https://issues.apache.org/jira/browse/COUCHDB/?selectedTab=com.atlassian.jira.jira-projects-plugin:issues-panel">(Inactive)
+                      Jira issues</a></li>
+                  <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-dev/">Dev mailing list</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="laptop-outline" class="card-icon "></ion-icon>
+                  <span class="skill-card-heading-text">Fauxton</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  Lend your JavaScript skills to the next-generation web UI for CouchDB.
+                  Fauxton is the “killer app” that makes CouchDB so powerful and easy to manage.
+                </p>
+                <ul>
+                  <li>&mdash; <a href="fauxton-visual-guide/index.html">Fauxton, a Visual Guide</a></li>
+                  <li>&mdash; <a href="https://github.com/apache/couchdb-fauxton">Fauxton on GitHub</a></li>
+                  <li>&mdash; <a href="http://docs.couchdb.org/en/latest/fauxton/addons.html">Writing an Addon</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="megaphone-outline" class="card-icon "></ion-icon>
+                  <span class="skill-card-heading-text">Marketing</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  We’re not just building a database – we’re crafting the CouchDB story.
+                  Help us promote CouchDB: plan meetups, make video tutorials, write blog posts.
+                </p>
+                <ul>
+                  <li>&mdash; <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Meetups">CouchDB Meetups</a>
+                  </li>
+                  <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-marketing/">Marketing Mailing
+                      List</a></li>
+                  <li>&mdash; <a href="https://twitter.com/CouchDB">Tweet us a link</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="documentation card-icon"></span>
-              <span class="skill-card-heading-text">Documentation</span>
-            </h3>
-            <p class="skill-card-slogan">
-              Docs can be improved indefinitely. If you’ve got a flair for technical writing,
-              help us make the docs clearer, better structured, or even translate them.
-            </p>
-            <ul>
-              <li>&mdash; <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Apache+CouchDB+Wiki">CouchDB wiki</a></li>
-              <li>&mdash; <a href="https://github.com/apache/couchdb-documentation">Docs on GitHub</a></li>
-              <li>&mdash; <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Translation+Guide">Translation Guide</a></li>
-            </ul>
+        <div class="row">
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="color-palette-outline" class="card-icon "></ion-icon>
+                  <span class="skill-card-heading-text">Website</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  Got a few suggestions for the very website you’re reading right now?
+                  Think the UX, copy, or layout could be better? Welcome! We’d love to hear from you.
+                </p>
+                <ul>
+                  <li>&mdash; <a href="https://github.com/apache/couchdb-www">Website on GitHub</a></li>
+                  <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-marketing/">Marketing mailing
+                      list</a></li>
+                  <li>&mdash; <a href="http://mail-archives.apache.org/mod_mbox/couchdb-www/">Website mailing list</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="library-outline" class="card-icon "></ion-icon>
+                  <span class="skill-card-heading-text">Documentation</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  Docs can be improved indefinitely. If you’ve got a flair for technical writing,
+                  help us make the docs clearer, better structured, or even translate them.
+                </p>
+                <ul>
+                  <li>&mdash; <a href="https://cwiki.apache.org/confluence/display/COUCHDB/Apache+CouchDB+Wiki">CouchDB
+                      wiki</a></li>
+                  <li>&mdash; <a href="https://github.com/apache/couchdb-documentation">Docs on GitHub</a></li>
+                  <li>&mdash; <a
+                      href="https://cwiki.apache.org/confluence/display/COUCHDB/Translation+Guide">Translation
+                      Guide</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="chatbubble-ellipses-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Guidance</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  You can be the first person someone interacts with when they have a question.
+                  Giving guidance is a great way to help others while learning CouchDB.
+                </p>
+                <ul>
+                  <li>&mdash; <a href="http://webchat.freenode.net/?channels=#couchdb">Official CouchDB chat</a></li>
+                  <li>&mdash; <a href="http://stackoverflow.com/questions/tagged/couchdb">Stackoverflow questions</a>
+                  </li>
+                  <li>&mdash; <a href="https://github.com/apache/couchdb/issues">GitHub Issues</a></li>
+                  <li>&mdash; <a
+                      href="https://issues.apache.org/jira/browse/COUCHDB/?selectedTab=com.atlassian.jira.jira-projects-plugin:issues-panel">(Inactive)
+                      Jira issues</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="guidance card-icon"></span>
-              <span class="skill-card-heading-text">Guidance</span>
-            </h3>
-            <p class="skill-card-slogan">
-              You can be the first person someone interacts with when they have a question.
-              Giving guidance is a great way to help others while learning CouchDB.
-            </p>
-            <ul>
-              <li>&mdash; <a href="http://webchat.freenode.net/?channels=#couchdb">Official CouchDB chat</a></li>
-              <li>&mdash; <a href="http://stackoverflow.com/questions/tagged/couchdb">Stackoverflow questions</a></li>
-              <li>&mdash; <a href="https://github.com/apache/couchdb/issues">GitHub Issues</a></li>
-              <li>&mdash; <a href="https://issues.apache.org/jira/browse/COUCHDB/?selectedTab=com.atlassian.jira.jira-projects-plugin:issues-panel">(Inactive) Jira issues</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 
-   <a class="scroll-point" id="chat"></a>
+  <a class="scroll-point" id="chat"></a>
 
-  <hr>
+
 
   <div class="feature">
-    <div class="wrap">
-      <h2 class="icon icon-chat">CouchDB Chat</h2>
+    <div class="container">
+      <div class="section">
+        <h2 class="section-title">
+          <ion-icon name="chatbubbles-outline" class="card-icon"></ion-icon>
+          CouchDB Chat
+        </h2>
+        <p>
+          We run community chat channels on <a href="http://freenode.org">Freenode IRC network</a> and <a
+            href="https://slack.com">Slack.</a>
+          IRC is open and very common, but Slack is more user-friendly. We have a Slack/IRC bridge so you can use
+          what you
+          prefer and your messages will be relayed.
+        </p>
 
-      <p>
-        We run community chat channels on <a href="http://freenode.org">Freenode IRC network</a> and <a href="https://slack.com">Slack.</a>
-        IRC is open and very common, but Slack is more user-friendly. We have a Slack/IRC bridge so you can use what you prefer and your messages will be relayed.
-      </p>
-    </div>
-    <div class="grid contribute">
-      <div class="wrap cf">
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="core card-icon"></span>
-              <span class="skill-card-heading-text">Slack</span>
-            </h3>
-            <p class="slack-slogan">To start using Slack, enter your email address here for an invite:</p>
-            <form id="slack-form" class="chat-slack-integration">
-              <input class="chat-email-input" type="email" placeholder="me@mydomain.com" required>
-              <button type="submit" class="chat-submit-slack">Get your invite</button>
-              <div class="chat-slack-form-message"></div>
-            </form>
-           </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="stripe"></div>
-          <div class="skill-card-content">
-            <h3>
-              <span class="documentation card-icon"></span>
-              <span class="skill-card-heading-text">IRC</span>
-            </h3>
-            <p class="skill-card-slogan">
-              We have two IRC channels. <strong>#Couchdb</strong> for discussions on using CouchDB and <strong>#CouchDB-dev</strong> for discussions
-              on CouchDB development.
-            </p>
-            <ul>
-              <li>&mdash; <a href="irc://freenode.net/#couchdb">#CouchDB</a></li>
-              <li>&mdash; <a href="irc://freenode.net/#couchdb-dev/">#CouchDB-dev</a></li>
-            </ul>
+        <div class="row justify-content-center">
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="logo-slack" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">Slack</span>
+                </h3>
+                <p class="slack-slogan">To start using Slack, enter your email address here for an invite:</p>
+                <form id="slack-form" class="chat-slack-integration">
+                  <input class="chat-email-input" type="email" placeholder="me@mydomain.com" required>
+                  <button type="submit" class="chat-submit-slack">Get your invite</button>
+                  <div class="chat-slack-form-message"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 skill-card-container">
+            <div class="skill-card">
+              <div class="stripe"></div>
+              <div class="skill-card-content">
+                <h3>
+                  <ion-icon name="chatbubble-outline" class="card-icon"></ion-icon>
+                  <span class="skill-card-heading-text">IRC</span>
+                </h3>
+                <p class="skill-card-slogan">
+                  We have two IRC channels. <strong>#Couchdb</strong> for discussions on using CouchDB and
+                  <strong>#CouchDB-dev</strong> for discussions
+                  on CouchDB development.
+                </p>
+                <ul>
+                  <li>&mdash; <a href="irc://freenode.net/#couchdb">#CouchDB</a></li>
+                  <li>&mdash; <a href="irc://freenode.net/#couchdb-dev/">#CouchDB-dev</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
+
     </div>
+
   </div>
 
   <a class="scroll-point" id="mailing-lists"></a>
 
-  <div class="wrap">
-    <h2 class="icon icon-mailing-lists">Mailing Lists</h2>
-  </div>
 
   <div class="grid">
 
-    <div class="wrap">
+    <div class="container">
+      <div class="section">
+        <h2 class="section-title">
+          <ion-icon name="mail-outline" class="card-icon"></ion-icon>
+          Mailing Lists
+        </h2>
+      </div>
 
-      <div class="corner"></div>
-
-      <br/>
 
       <div class="list-header">
         <a href="http://mail-archives.apache.org/mod_mbox/couchdb-announce/"><strong>Mail Search</strong></a>
         <p>Search all of our mailing lists at once.</p>
+
+        <div class="list mailing-list">
+          <form action="http://markmail.org/search/list:org.apache.couchdb-*">
+
+            <div class="input-group mb-3 col-md-6 offset-md-3">
+              <input id="search-box" class="form-control" type="text" placeholder="Search query&hellip;" name="q"
+                size="50">
+              <div class="input-group-append">
+                <button id="search-button" class="btn btn-outline-secondary" type="button">
+                  <ion-icon name="search-outline" class="card-icon"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
       </div>
 
-      <div class="list mailing-list">
-        <form action="http://markmail.org/search/list:org.apache.couchdb-*">
-          <input id="search-box" type="text" placeholder="Search query&hellip;" name="q" size="50"><button id="search-button"></button>
-        </form>
-      </div>
+
 
       <br id="hide-mobile">
+      <div class="row">
+        <div class="col-md-3 list-header-container">
+          <div class="list-header">
+            <a href="https://lists.apache.org/list.html?announce@couchdb.apache.org" class="list-header-title">
+              <strong>
+                <ion-icon name="megaphone-outline" class="list-header-icon"></ion-icon>
+                Announcement
+                List
+              </strong>
+            </a>
+            <a id="announcement-mailing-list" class="hash-target"></a>
+            <p>This is a low-traffic list for release announcements and security disclosures.</p>
+            <div class="list-header-actions">
+              <a href="mailto:announce-unsubscribe@couchdb.apache.org" class="list-header-action">Unsubscribe</a>
 
-      <div class="list-header">
-        <a href="https://lists.apache.org/list.html?announce@couchdb.apache.org"><strong>Announcement List</strong></a>
-        <a id="announcement-mailing-list" class="hash-target">&nbsp;</a>
-        <a href="mailto:announce-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-        <a href="mailto:announce@couchdb.apache.org">Post</a> &middot;
-        <a href="mailto:announce-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is a low-traffic list for release announcements and security disclosures.</p>
+              <a href="mailto:announce@couchdb.apache.org" class="list-header-action positive">Post</a>
+              <a href="mailto:announce-subscribe@couchdb.apache.org" class="list-header-action positive">Subscribe</a>
+            </div>
+
+
+
+
+          </div>
+        </div>
+        <div class="col-md-3 list-header-container">
+          <div class="list-header">
+            <a href="https://lists.apache.org/list.html?user@couchdb.apache.org" class="list-header-title">
+              <strong>
+                <ion-icon name="person-outline" class="list-header-icon"></ion-icon>User List
+              </strong>
+            </a>
+            <a id="user-mailing-list" class="hash-target"></a>
+            <p>This is a general discussion and support forum for all CouchDB users.</p>
+            <div class="list-header-actions">
+              <a href="mailto:user-unsubscribe@couchdb.apache.org" class="list-header-action ">Unsubscribe</a>
+              <a href="mailto:user@couchdb.apache.org" class="list-header-action positive">Post</a>
+              <a href="mailto:user-subscribe@couchdb.apache.org" class="list-header-action positive">Subscribe</a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-3 list-header-container">
+          <div class="list-header">
+            <a href="https://lists.apache.org/list.html?dev@couchdb.apache.org">
+              <strong class="list-header-title">
+                <ion-icon name="code-slash-outline" class="list-header-icon"></ion-icon>
+                Developer List
+              </strong>
+
+            </a>
+            <a id="developer-mailing-list" class="hash-target"></a>
+            <p>This is where people working on CouchDB itself discuss things.</p>
+            <div class="list-header-actions">
+
+              <a href="mailto:dev-unsubscribe@couchdb.apache.org" class="list-header-action ">Unsubscribe</a>
+              <a href="mailto:dev-subscribe@couchdb.apache.org" class="list-header-action positive">Subscribe</a>
+              <a href="mailto:dev@couchdb.apache.org" class="list-header-action positive">Post</a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="col-md-3 list-header-container">
+          <div class="list-header">
+            <a href="https://lists.apache.org/list.html?commits@couchdb.apache.org" class="list-header-title">
+              <strong>
+                <ion-icon name="git-commit-outline" class="list-header-icon"></ion-icon>
+                Commits List
+              </strong>
+            </a>
+            <a id="commits-mailing-list" class="hash-target"></a>
+            <p>This is where all source code and wiki change notifications are sent.</p>
+            <div class="list-header-actions">
+              <a href="mailto:commits-unsubscribe@couchdb.apache.org" class="list-header-action">Unsubscribe</a>
+              <a href="mailto:commits@couchdb.apache.org" class="list-header-action positive">Post</a>
+              <a href="mailto:commits-subscribe@couchdb.apache.org" class="list-header-action positive">Subscribe</a>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="col-md-3 list-header-container">
+          <div class="list-header">
+            <a href="https://lists.apache.org/list.html?notifications@couchdb.apache.org" class="list-header-title">
+              <strong>
+                <ion-icon name="notifications-outline" class="list-header-icon"></ion-icon>
+                Notifications
+              </strong>
+            </a>
+            <a id="notifications-mailing-list" class="hash-target"></a>
+            <p>This is a single stream of generated notification from GitHub.</p>
+            <div class="list-header-actions">
+              <a href="mailto:notifications-unsubscribe@couchdb.apache.org" class="list-header-action">Unsubscribe</a>
+              <a href="mailto:notifications@couchdb.apache.org" class="list-header-action positive">Post</a>
+              <a href="mailto:notifications-subscribe@couchdb.apache.org"
+                class="list-header-action positive">Subscribe</a>
+            </div>
+
+
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="list-header">
-        <a href="https://lists.apache.org/list.html?user@couchdb.apache.org"><strong>User List</strong></a>
-        <a id="user-mailing-list" class="hash-target">&nbsp;</a>
-        <a href="mailto:user-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-        <a href="mailto:user@couchdb.apache.org">Post</a> &middot;
-        <a href="mailto:user-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is a general discussion and support forum for all CouchDB users.</p>
-      </div>
 
-      <div class="list-header">
-        <a href="https://lists.apache.org/list.html?dev@couchdb.apache.org"><strong>Developer List</strong></a>
-        <a id="developer-mailing-list" class="hash-target">&nbsp;</a>
-        <a href="mailto:dev-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-        <a href="mailto:dev@couchdb.apache.org">Post</a> &middot;
-        <a href="mailto:dev-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is where people working on CouchDB itself discuss things.</p>
-      </div>
-
-      <div class="list-header">
-        <a href="https://lists.apache.org/list.html?commits@couchdb.apache.org"><strong>Commits List</strong></a>
-        <a id="commits-mailing-list" class="hash-target">&nbsp;</a>
-        <a href="mailto:commits-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-        <a href="mailto:commits@couchdb.apache.org">Post</a> &middot;
-        <a href="mailto:commits-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is where all source code and wiki change notifications are sent.</p>
-      </div>
-
-      <div class="list-header">
-        <a href="https://lists.apache.org/list.html?notifications@couchdb.apache.org"><strong>Notifications</strong></a>
-        <a id="notifications-mailing-list" class="hash-target">&nbsp;</a>
-        <a href="mailto:notifications-subscribe@couchdb.apache.org">Subscribe</a> &middot;
-        <a href="mailto:notifications@couchdb.apache.org">Post</a> &middot;
-        <a href="mailto:notifications-unsubscribe@couchdb.apache.org">Unsubscribe</a>
-        <p>This is a single stream of generated notification from GitHub.</p>
-      </div>
 
     </div>
 
@@ -541,149 +771,71 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
   <a class="scroll-point" id="download"></a>
 
-  <hr>
 
-  <div class="wrap download-pane">
-    <h2 class="icon icon-download">Download CouchDB 3.0.0</h2>
-  </div>
 
-  <div class="grid">
-
-    <div class="wrap">
-
-      <div class="corner"></div>
+  <div class="container download-pane">
+    <div class="section">
+      <h2 class="section-title">
+        <ion-icon name="download-outline" class="card-icon"></ion-icon>
+        Download CouchDB 3.0.0
+      </h2>
 
       <div class="download-list-container">
 
-        <ul class="list download-list">
-          <li>
-            <a href="https://www.apache.org/dyn/closer.lua?path=/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz" class="type">Source</a>
+        <ul class="list download-list row">
+          <li class="col-md-3">
+            <a href="https://www.apache.org/dyn/closer.lua?path=/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz"
+              class="type">Source</a>
             <span class="info">
               Version 3.0.0 |
-              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release Notes</a> |
-              <a href="https://www.apache.org/dist/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz.asc">PGP Signature</a> |
-              <a href="https://www.apache.org/dist/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz.sha256">SHA256</a> |
+              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release
+                Notes</a> |
+              <a href="https://www.apache.org/dist/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz.asc">PGP
+                Signature</a> |
+              <a href="https://www.apache.org/dist/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz.sha256">SHA256</a>
+              |
               <a href="https://www.apache.org/dist/couchdb/source/3.0.0/apache-couchdb-3.0.0.tar.gz.sha512">SHA512</a>
             </span>
           </li>
-          <li>
+          <li class="col-md-3">
             <a href="https://neighbourhood.ie/download-apache-couchdb-win/" class="type">
               Windows (x64)
             </a>
             <span class="info">
               Erlang/OTP 20.3.8.25 | Version 3.0.0 |
-              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release Notes</a>
+              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release
+                Notes</a>
             </span>
           </li>
-          <li>
+          <li class="col-md-3">
             <a href="https://neighbourhood.ie/download-apache-couchdb-mac/" class="type">
               macOS (10.10+)
             </a>
             <span class="info">
               Erlang/OTP 22.2 | Version 3.0.0 |
-              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release Notes</a>
+              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release
+                Notes</a>
             </span>
-          <li>
-            <a href="http://docs.couchdb.org/en/latest/install/unix.html#installation-using-the-apache-couchdb-convenience-binary-packages" class="type">Debian/Ubuntu/RHEL/CentOS packages</a>
+          <li class="col-md-3">
+            <a href="http://docs.couchdb.org/en/latest/install/unix.html#installation-using-the-apache-couchdb-convenience-binary-packages"
+              class="type">Debian/Ubuntu/RHEL/CentOS packages</a>
             <span class="info">
               Erlang/OTP 20.3.8.25 | Version 3.0.0 |
-            <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release Notes</a>
+              <a href="http://docs.couchdb.org/en/3.0.0/whatsnew/3.0.html#version-3.0.0" class="release">Release
+                Notes</a>
             </span>
           </li>
         </ul>
         <div>
-          <a href="https://www.apache.org/info/verification.html">Instructions for verifying downloads.</a> <a href="https://www.apache.org/dist/couchdb/KEYS">KEYS file</a> for validating signatures.
+          <a href="https://www.apache.org/info/verification.html">Instructions for verifying downloads.</a> <a
+            href="https://www.apache.org/dist/couchdb/KEYS">KEYS file</a> for validating signatures.
         </div>
       </div>
 
-    </div>
 
-  </div>
-
-  <hr>
-
-  <div class="wrap download-pane">
-    <h2 class="icon icon-download">Download CouchDB 2.3.1</h2>
-  </div>
-
-  <div class="grid">
-
-    <div class="wrap">
-
-      <div class="corner"></div>
-
-      <div class="download-list-container">
-
-        <ul class="list download-list">
-          <li>
-            <a href="https://www.apache.org/dyn/closer.lua?path=/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz" class="type">Source</a>
-            <span class="info">
-              Version 2.3.1 |
-              <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release Notes</a> |
-              <a href="https://www.apache.org/dist/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz.asc">PGP Signature</a> |
-              <a href="https://www.apache.org/dist/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz.sha256">SHA256</a> |
-              <a href="https://www.apache.org/dist/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz.sha512">SHA512</a>
-            </span>
-          </li>
-          <li>
-            <a href="https://apache.bintray.com/couchdb/win/2.3.1/apache-couchdb-2.3.1.msi" class="type">
-              Windows (x64)
-            </a>
-            <span class="info">
-              Erlang/OTP 19.3 | Version 2.3.1 |
-              <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release Notes</a> |
-              <a href="https://www.apache.org/dist/couchdb/binary/win/2.3.1/apache-couchdb-2.3.1.msi.asc">PGP Signature</a> |
-              <a href="https://www.apache.org/dist/couchdb/binary/win/2.3.1/apache-couchdb-2.3.1.msi.sha256">SHA256</a> |
-              <a href="https://www.apache.org/dist/couchdb/binary/win/2.3.1/apache-couchdb-2.3.1.msi.sha512">SHA512</a>
-            </span>
-          </li>
-          <li>
-            <a href="https://dl.bintray.com/apache/couchdb/mac/2.3.1/Apache-CouchDB-2.3.1.zip" class="type">
-              macOS (10.10+)
-            </a>
-            <span class="info">
-              Erlang/OTP 19.3 | Version 2.3.1 |
-              <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release Notes</a> |
-              <a href="https://www.apache.org/dist/couchdb/binary/mac/2.3.1/Apache-CouchDB-2.3.1.zip.asc">PGP Signature</a> |
-              <a href="https://www.apache.org/dist/couchdb/binary/mac/2.3.1/Apache-CouchDB-2.3.1.zip.sha256">SHA256</a> |
-              <a href="https://www.apache.org/dist/couchdb/binary/mac/2.3.1/Apache-CouchDB-2.3.1.zip.sha512">SHA512</a>
-            </span>
-          <li>
-            <a href="http://docs.couchdb.org/en/latest/install/unix.html#installation-using-the-apache-couchdb-convenience-binary-packages" class="type">Debian/Ubuntu/RHEL/CentOS packages</a>
-            <span class="info">
-              Erlang/OTP 19.3 | Version 2.3.1 |
-            <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release Notes</a>
-            </span>
-          </li>
-        </ul>
-        <div>
-          <a href="https://www.apache.org/info/verification.html">Instructions for verifying downloads.</a> <a href="https://www.apache.org/dist/couchdb/KEYS">KEYS file</a> for validating signatures.
-        </div>
-      </div>
 
     </div>
-
   </div>
-
-  <hr>
-
-  <a class="scroll-point" id="more"></a>
-
-  <hr>
-
-  <div class="wrap more-pane">
-
-    <h2 class="icon icon-more">More &hellip;</h2>
-
-    <br>
-
-    <ul class="more-header">
-      <li>General</li>
-      <li>Development</li>
-      <li class="last">Apache Software Foundation</li>
-    </ul>
-
-    <div class="clear"></div>
 
   </div>
 
@@ -691,78 +843,198 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
     <div class="wrap">
 
-      <div class="list-container">
 
-        <ul class="list more">
-          <li class="corner"></li>
-          <li><a href="http://docs.couchdb.org">Documentation<span></span></a>
-          <li><a href="https://cwiki.apache.org/confluence/display/COUCHDB/Current+Releases">Current Releases<span></span></a></li>
-          <li><a href="http://blog.couchdb.org/">Blog<span></span></a>
-          <li><a href="http://couchdb.apache.org/bylaws.html">Bylaws<span></span></a>
-          <li><a href="http://couchdb.apache.org/conduct.html">Code of Conduct<span></span></a>
-          <li><a href="https://cwiki.apache.org/confluence/display/COUCHDB/Professional+Services">Professional Services<span></span></a>
-        </ul>
 
-        <ul class="list more">
-          <li class="corner"></li>
-          <li><a href="http://cwiki.apache.org/confluence/display/COUCHDB/">Wiki<span></span></a></li>
-          <li><a href="https://github.com/apache/couchdb/issues">Issue Tracker<span></span></a></li>
-          <li><a href="https://github.com/apache/couchdb/pulls">Pull Requests<span></span></a></li>
-          <li><a href="https://github.com/apache?q=couchdb">Git Mirrors<span></span></a></li>
-        </ul>
 
-        <ul class="list more last">
-          <li class="corner"></li>
-          <li><a href="http://www.apache.org/">About the ASF<span></span></a></li>
-          <li><a href="http://www.apache.org/foundation/thanks.html">Thanks<span></span></a></li>
-          <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a></li>
-          <li><a href="http://www.apache.org/security/">Security<span></span></a></li>
-          <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li>
-        </ul>
 
-        <div class="clear"></div>
+    </div>
+
+    <hr>
+
+    <div class="wrap download-pane">
+      <h2 class="icon icon-download">Download CouchDB 2.3.1</h2>
+    </div>
+
+    <div class="grid">
+
+      <div class="wrap">
+
+        <div class="corner"></div>
+
+        <div class="download-list-container">
+
+          <ul class="list download-list">
+            <li>
+              <a href="https://www.apache.org/dyn/closer.lua?path=/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz"
+                class="type">Source</a>
+              <span class="info">
+                Version 2.3.1 |
+                <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release
+                  Notes</a> |
+                <a href="https://www.apache.org/dist/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz.asc">PGP
+                  Signature</a> |
+                <a href="https://www.apache.org/dist/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz.sha256">SHA256</a>
+                |
+                <a href="https://www.apache.org/dist/couchdb/source/2.3.1/apache-couchdb-2.3.1.tar.gz.sha512">SHA512</a>
+              </span>
+            </li>
+            <li>
+              <a href="https://apache.bintray.com/couchdb/win/2.3.1/apache-couchdb-2.3.1.msi" class="type">
+                Windows (x64)
+              </a>
+              <span class="info">
+                Erlang/OTP 19.3 | Version 2.3.1 |
+                <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release
+                  Notes</a> |
+                <a href="https://www.apache.org/dist/couchdb/binary/win/2.3.1/apache-couchdb-2.3.1.msi.asc">PGP
+                  Signature</a> |
+                <a
+                  href="https://www.apache.org/dist/couchdb/binary/win/2.3.1/apache-couchdb-2.3.1.msi.sha256">SHA256</a>
+                |
+                <a
+                  href="https://www.apache.org/dist/couchdb/binary/win/2.3.1/apache-couchdb-2.3.1.msi.sha512">SHA512</a>
+              </span>
+            </li>
+            <li>
+              <a href="https://dl.bintray.com/apache/couchdb/mac/2.3.1/Apache-CouchDB-2.3.1.zip" class="type">
+                macOS (10.10+)
+              </a>
+              <span class="info">
+                Erlang/OTP 19.3 | Version 2.3.1 |
+                <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release
+                  Notes</a> |
+                <a href="https://www.apache.org/dist/couchdb/binary/mac/2.3.1/Apache-CouchDB-2.3.1.zip.asc">PGP
+                  Signature</a> |
+                <a
+                  href="https://www.apache.org/dist/couchdb/binary/mac/2.3.1/Apache-CouchDB-2.3.1.zip.sha256">SHA256</a>
+                |
+                <a
+                  href="https://www.apache.org/dist/couchdb/binary/mac/2.3.1/Apache-CouchDB-2.3.1.zip.sha512">SHA512</a>
+              </span>
+            <li>
+              <a href="http://docs.couchdb.org/en/latest/install/unix.html#installation-using-the-apache-couchdb-convenience-binary-packages"
+                class="type">Debian/Ubuntu/RHEL/CentOS packages</a>
+              <span class="info">
+                Erlang/OTP 19.3 | Version 2.3.1 |
+                <a href="http://docs.couchdb.org/en/2.3.1/whatsnew/2.3.html#version-2.3.1" class="release">Release
+                  Notes</a>
+              </span>
+            </li>
+          </ul>
+          <div>
+            <a href="https://www.apache.org/info/verification.html">Instructions for verifying downloads.</a> <a
+              href="https://www.apache.org/dist/couchdb/KEYS">KEYS file</a> for validating signatures.
+          </div>
+        </div>
 
       </div>
 
     </div>
 
-  </div>
+    <hr>
 
-  <div id="footer">
+    <a class="scroll-point" id="more"></a>
 
-    <p>Copyright &copy; 2020 The Apache Software Foundation &mdash; Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a><br>
-      Apache CouchDB, CouchDB, and the project logo are <a href="http://www.apache.org/foundation/marks/list/">trademarks</a> of The Apache Software Foundation</p>
+    <hr>
 
-    <a class="conf" href="https://www.apache.org/events/current-event.html"></a>
+    <div class="wrap more-pane">
 
-    <a class="closing" href="#top"></a>
+      <h2 class="icon icon-more">More &hellip;</h2>
 
-  </div>
+      <br>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-658988-6']);
-    _gaq.push(['_setDomainName', 'apache.org']);
-    _gaq.push(['_setAllowLinker', true]);
-    _gaq.push(['_trackPageview']);
+      <ul class="more-header">
+        <li>General</li>
+        <li>Development</li>
+        <li class="last">Apache Software Foundation</li>
+      </ul>
 
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-  <script type="text/javascript" src="script/slack.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.download-list').on('click', function (e) {
-        if (!$(e.target).attr('href')) {
-          return;
-        }
-        _gaq.push(['_trackEvent', 'Click', 'Download', $(e.target).attr('href')]);
+      <div class="clear"></div>
+
+    </div>
+
+    <div class="grid">
+
+      <div class="wrap">
+
+        <div class="list-container">
+
+          <ul class="list more">
+            <li class="corner"></li>
+            <li><a href="http://docs.couchdb.org">Documentation<span></span></a>
+            <li><a href="https://cwiki.apache.org/confluence/display/COUCHDB/Current+Releases">Current
+                Releases<span></span></a></li>
+            <li><a href="http://blog.couchdb.org/">Blog<span></span></a>
+            <li><a href="http://couchdb.apache.org/bylaws.html">Bylaws<span></span></a>
+            <li><a href="http://couchdb.apache.org/conduct.html">Code of Conduct<span></span></a>
+            <li><a href="https://cwiki.apache.org/confluence/display/COUCHDB/Professional+Services">Professional
+                Services<span></span></a>
+          </ul>
+
+          <ul class="list more">
+            <li class="corner"></li>
+            <li><a href="http://cwiki.apache.org/confluence/display/COUCHDB/">Wiki<span></span></a></li>
+            <li><a href="https://github.com/apache/couchdb/issues">Issue Tracker<span></span></a></li>
+            <li><a href="https://github.com/apache/couchdb/pulls">Pull Requests<span></span></a></li>
+            <li><a href="https://github.com/apache?q=couchdb">Git Mirrors<span></span></a></li>
+          </ul>
+
+          <ul class="list more last">
+            <li class="corner"></li>
+            <li><a href="http://www.apache.org/">About the ASF<span></span></a></li>
+            <li><a href="http://www.apache.org/foundation/thanks.html">Thanks<span></span></a></li>
+            <li><a href="http://www.apache.org/foundation/sponsorship.html">Become a Sponsor<span></span></a></li>
+            <li><a href="http://www.apache.org/security/">Security<span></span></a></li>
+            <li><a href="http://www.apache.org/licenses/LICENSE-2.0">License<span></span></a></li>
+          </ul>
+
+          <div class="clear"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="footer">
+
+      <p>Copyright &copy; 2020 The Apache Software Foundation &mdash; Licensed under the <a
+          href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a><br>
+        Apache CouchDB, CouchDB, and the project logo are <a
+          href="http://www.apache.org/foundation/marks/list/">trademarks</a> of The Apache Software Foundation</p>
+
+      <a class="conf" href="https://www.apache.org/events/current-event.html"></a>
+
+      <a class="closing" href="#top"></a>
+
+    </div>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-658988-6']);
+      _gaq.push(['_setDomainName', 'apache.org']);
+      _gaq.push(['_setAllowLinker', true]);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript" src="script/slack.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.download-list').on('click', function (e) {
+          if (!$(e.target).attr('href')) {
+            return;
+          }
+          _gaq.push(['_trackEvent', 'Click', 'Download', $(e.target).attr('href')]);
+        });
       });
-    });
-  </script>
+    </script>
+    <!-- Ionicons-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 
 </html>
