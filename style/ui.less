@@ -1,5 +1,21 @@
 @import "master.less";
 
+/* -- navbar --*/
+#header{
+    height:70px;
+    background-color: #f8f9fa;
+}
+.navbar{
+   height: 70px;
+}
+.navbar-nav{
+    background-color:#f8f9fa;
+    padding:10px;
+}
+.logo{
+    margin-left:10px;
+}
+
 /*-- download button*/
 .button{
     background-image: none;
@@ -22,6 +38,7 @@
     .testimonial{
         height:100%;
         border-radius:5px;
+        margin-bottom:5px;
 
         .testimonial-inner{
             padding-bottom:0px;
@@ -138,7 +155,7 @@
 }
 .chat-submit-slack {
     margin:20px 0px;
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 /* mails*/
@@ -213,7 +230,76 @@
 
     li{
         border:1px solid #eeeeee;
-        height:auto;
+        height:170px;
+        display:flex;
+        flex-direction: column;
+
+        .download-list-type{
+            height:40px;
+            display: block;
+        }
+
+        .info{
+            float:none;
+            display:block;
+            flex:1;
+            padding-top:10px;
+        }
+
+        .type{
+            display: block;
+            background-image: none;
+            background-color: @key-color;
+            width:100%;
+            border:1px solid @key-color;
+            color:#ffffff;
+            text-align: center;
+            border-radius: 2px;
+            padding-left:0px;
+            height:40px;
+            position:relative;
+            margin-top: 10px;
+
+            .dl-icon{
+                font-size:18px;
+                padding:0px 5px; 
+            }
+        }
+        .type:hover{
+            color:#ffffff
+        }
+
+        
     }
+}
+
+/* more bloc */
+.more-bloc-container{
+    border:1px solid #eeeeee;
+    background-color: #ffffff;
+
+    .more-bloc-title{
+        font-size:18px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px 10px 10px 10px;
+        text-align: center;
+        border-bottom: 1px solid #eeeeee;
+        height:80px;
+        
+
+        .more-bloc-icon{
+            font-size: 30px;
+            margin-right:5px;
+            position: absolute;
+            left:5px;
+            top:10px;
+        }
+    }
+}
+
+/* footer */
+#footer{
+    margin-top:50px;
 }
 

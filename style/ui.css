@@ -178,10 +178,10 @@ blockquote {
     Layout - Header
 ---------------------------------------------------*/
 .header-placeholder {
-  height: 90px;
+  height: 70px;
 }
 #header {
-  height: 90px;
+  height: 70px;
   position: fixed;
   z-index: 10;
   left: 0;
@@ -200,7 +200,7 @@ blockquote {
 .logo,
 .closing {
   background: url(../image/logo@2x.png);
-  background-size: 250px;
+  background-size: auto 50px;
   background-repeat: no-repeat;
   background-position: 0 0px;
   position: absolute;
@@ -208,6 +208,9 @@ blockquote {
   top: 13px;
   width: 250px;
   height: 65px;
+}
+.closing {
+  background-size: 250px;
 }
 .conf {
   background: url(https://www.apache.org/events/current-event-234x60.png);
@@ -769,17 +772,6 @@ a.pt-about {
   .menu-dropdown {
     top: 16px;
   }
-  #header,
-  .header-placeholder {
-    height: 52px;
-  }
-  .logo {
-    top: 10px;
-    left: 10px;
-    width: 110px;
-    height: 28px;
-    background-size: 110px 28px;
-  }
   #footer {
     padding-bottom: 28px;
     padding-right: 326px;
@@ -1008,6 +1000,21 @@ a.pt-about {
   color: #e12830;
   text-decoration: underline;
 }
+/* -- navbar --*/
+#header {
+  height: 70px;
+  background-color: #f8f9fa;
+}
+.navbar {
+  height: 70px;
+}
+.navbar-nav {
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+.logo {
+  margin-left: 10px;
+}
 /*-- download button*/
 .button {
   background-image: none;
@@ -1028,6 +1035,7 @@ a.pt-about {
 .testimonials_section .testimonial {
   height: 100%;
   border-radius: 5px;
+  margin-bottom: 5px;
 }
 .testimonials_section .testimonial .testimonial-inner {
   padding-bottom: 0px;
@@ -1123,7 +1131,7 @@ a.pt-about {
 }
 .chat-submit-slack {
   margin: 20px 0px;
-  border-radius: 20px;
+  border-radius: 2px;
 }
 /* mails*/
 .list-header-container {
@@ -1186,5 +1194,63 @@ a.pt-about {
 }
 /*-- download links */
 .download-list li {
-  height: auto;
+  border: 1px solid #eeeeee;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+}
+.download-list li .download-list-type {
+  height: 40px;
+  display: block;
+}
+.download-list li .info {
+  float: none;
+  display: block;
+  flex: 1;
+  padding-top: 10px;
+}
+.download-list li .type {
+  display: block;
+  background-image: none;
+  background-color: #e12830;
+  width: 100%;
+  border: 1px solid #e12830;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 2px;
+  padding-left: 0px;
+  height: 40px;
+  position: relative;
+  margin-top: 10px;
+}
+.download-list li .type .dl-icon {
+  font-size: 18px;
+  padding: 0px 5px;
+}
+.download-list li .type:hover {
+  color: #ffffff;
+}
+/* more bloc */
+.more-bloc-container {
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+}
+.more-bloc-container .more-bloc-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 20px 10px 10px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  height: 80px;
+}
+.more-bloc-container .more-bloc-title .more-bloc-icon {
+  font-size: 30px;
+  margin-right: 5px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+/* footer */
+#footer {
+  margin-top: 50px;
 }
