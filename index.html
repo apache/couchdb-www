@@ -419,7 +419,7 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
 
       <p>
         We run community chat channels on <a href="http://freenode.org">Freenode IRC network</a> and <a href="https://slack.com">Slack.</a>
-        IRC is open and very common, but Slack is more user-friendly. We have a Slack/IRC bridge so you can use what you prefer and your messages will be relayed.
+        IRC is open and very common, but Slack is more user-friendly.
       </p>
     </div>
     <div class="grid contribute">
@@ -432,12 +432,11 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
               <span class="core card-icon"></span>
               <span class="skill-card-heading-text">Slack</span>
             </h3>
-            <p class="slack-slogan">To start using Slack, enter your email address here for an invite:</p>
-            <form id="slack-form" class="chat-slack-integration">
-              <input class="chat-email-input" type="email" placeholder="me@mydomain.com" required>
-              <button type="submit" class="chat-submit-slack">Get your invite</button>
-              <div class="chat-slack-form-message"></div>
-            </form>
+            <p class="slack-slogan">To start using Slack, click on the join link below:</p>
+            <ul>
+              <li>&mdash; <a class="" href="https://join.slack.com/t/couchdb/shared_invite/zt-fa9zim0j-H04m4o_KcLdWeOxEAcwM8g" target="_blank" rel="noopener noreferrer">Join CouchDB Slack</a></li>
+            </ul>
+
            </div>
         </div>
 
@@ -752,7 +751,6 @@ Thanks to Yohei Shimomae and the Apache Cordova team for the original design.
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
-  <script type="text/javascript" src="script/slack.js"></script>
   <script>
     $(document).ready(function () {
       $('.download-list').on('click', function (e) {
