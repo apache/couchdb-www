@@ -3,6 +3,9 @@
   padding: 0;
   -webkit-text-size-adjust: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body,
 a {
   color: #291d1e;
