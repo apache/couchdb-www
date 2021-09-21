@@ -1,36 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-text-size-adjust:none;
+    -webkit-text-size-adjust: none;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
 }
 
-body, a {
+body,
+a {
     color: @main-color;
 }
 
 /** LESS **/
-@column:        320px;
-@gutter:        24px;
-@padding:       16px;
-@full-width:    @column*3 + @gutter*2;
-@gap:           32px;
+@column: 320px;
+@gutter: 24px;
+@padding: 16px;
+@full-width: @column*3 + @gutter*2;
+@gap: 32px;
 
 @background-half-size: 112px 425px;
 
-@main-color:        #291d1e;
-@key-color:         #e12830;
-@key-color-hover:   #ae2323;
-@disable-color:     #abafb0;
+@main-color: #291d1e;
+@key-color: #e12830;
+@key-color-hover: #ae2323;
+@disable-color: #abafb0;
 
 @contribute-icon-sprite-width: 50px;
-@contribute-icon-sprite-height:  40px;
+@contribute-icon-sprite-height: 40px;
 
 .animate-background {
     -webkit-transition: background 0.25s linear;
@@ -45,15 +46,15 @@ body, a {
 }
 
 .secondary-bg {
-    background: #EEE 50% 0%;
+    background: #eee 50% 0%;
 }
 
 .sprite {
-    background: url(../image/sprite.png) no-repeat
+    background: url(../image/sprite.png) no-repeat;
 }
 
 .sprite-contribution-icons {
-    background: url(../image/contribute-icons.png) no-repeat
+    background: url(../image/contribute-icons.png) no-repeat;
 }
 
 .ellipsis {
@@ -67,29 +68,40 @@ body, a {
     Font
 ---------------------------------------------------*/
 
-body, h1, h2, h3, h4 {
+body,
+h1,
+h2,
+h3,
+h4 {
     font-size: 16px;
-    font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
-h1 {font-size: 34px;}
-h2 {font-size: 34px; padding: @gap+@padding 0;}
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 34px;
+    padding: @gap+ @padding 0;
+}
 
-b, strong {
-    font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
+b,
+strong {
+    font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
     font-weight: 900;
 }
 
-small, label {
-    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+small,
+label {
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 12px;
 }
 
 button {
     font-size: 17px;
-    font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -97,17 +109,20 @@ button {
     font-size: 24px;
 }
 
-.platforms-list li, .list-header.mini, .more-header li {
-    font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+.platforms-list li,
+.list-header.mini,
+.more-header li {
+    font-family: "HelveticaNeue-Medium", "HelveticaNeue", Helvetica, Arial,
+        sans-serif;
     font-weight: 500;
 }
 
 .menu {
-  font-size: 19px
+    font-size: 19px;
 }
 
 h2.main {
-  text-align: center;
+    text-align: center;
 }
 
 /*---------------------------------------------------
@@ -126,7 +141,6 @@ p {
 p + p {
     margin-top: 2em;
 }
-
 
 .button-container {
     position: absolute;
@@ -147,7 +161,7 @@ p + p {
     position: relative;
     top: -5px;
     left: -5px;
-    .animate-background
+    .animate-background;
 }
 
 .button:hover {
@@ -155,7 +169,8 @@ p + p {
     color: #fff;
 }
 
-div.button, div.button:hover {
+div.button,
+div.button:hover {
     background-color: @disable-color;
 }
 
@@ -171,16 +186,19 @@ div.button, div.button:hover {
     display: table; /* 2 */
 }
 
-.cf:after, .clear {
+.cf:after,
+.clear {
     clear: both;
 }
-
 
 /*---------------------------------------------------
     Layout
 ---------------------------------------------------*/
 
-#wrap, .wrap, #footer, hr {
+#wrap,
+.wrap,
+#footer,
+hr {
     width: @full-width;
     margin: 0 auto;
     position: relative;
@@ -192,7 +210,7 @@ div.button, div.button:hover {
 }
 
 .grid-nomargin {
-  .secondary-bg;
+    .secondary-bg;
 }
 
 hr {
@@ -239,7 +257,8 @@ blockquote {
     background: url(../image/shadow.png);
 }
 
-.logo, .closing {
+.logo,
+.closing {
     background: url(../image/logo@2x.png);
     background-size: 250px;
     background-repeat: no-repeat;
@@ -272,7 +291,7 @@ blockquote {
     text-decoration: none;
     .animate;
     padding: @padding;
-    margin: 0 @padding/7;
+    margin: 0 @padding / 7;
     line-height: 55px;
 }
 .menu a:hover {
@@ -287,7 +306,7 @@ blockquote {
     width: 40%;
 }
 
-.menu-dropdown select{
+.menu-dropdown select {
     width: 100%;
 }
 
@@ -296,13 +315,13 @@ blockquote {
 ---------------------------------------------------*/
 
 .leadin .wrap {
-    height: @column+@gap+@padding;
+    height: @column+ @gap+ @padding;
 }
 
 .leadin .text-block {
     position: absolute;
     left: @padding*3 + @column;
-    top: @gap+@padding*2;
+    top: @gap+ @padding*2;
 }
 
 .leadin img {
@@ -336,7 +355,7 @@ blockquote {
 @link-box-gap: 3px;
 .container-box {
     background: #fff;
-    padding: @padding/2;
+    padding: @padding / 2;
     position: relative;
 }
 
@@ -346,7 +365,6 @@ blockquote {
     bottom: 0;
     right: 0;
 }
-
 
 .list {
     padding-top: @padding;
@@ -375,7 +393,7 @@ blockquote {
 
 .platforms-list {
     padding-top: @padding*2;
-    width: @full-width/2 - @gutter*2;
+    width: @full-width / 2 - @gutter*2;
 }
 
 .platforms-list.second {
@@ -422,7 +440,7 @@ blockquote {
     .list-link;
     .animate;
     backround: #fff;
-    padding: @padding/2;
+    padding: @padding / 2;
     width: @column + @gap*2 + @gutter;
     font-size: 14px;
 }
@@ -444,10 +462,9 @@ blockquote {
     margin-bottom: @link-box-gap;
 }
 
-
 /**** Download ****/
 
-.download-pane .button-container{
+.download-pane .button-container {
     bottom: -70px;
 }
 
@@ -465,7 +482,8 @@ blockquote {
 }
 
 .download-list li {
-    height: 18px;
+    height: 30px;
+    padding: 4px;
 }
 
 .download-list .type {
@@ -478,7 +496,7 @@ blockquote {
     text-decoration: none;
     right: auto;
     left: 0;
-    padding: @padding/2;
+    padding: @padding / 2;
     padding-left: 32px;
     width: 40%;
 }
@@ -492,15 +510,14 @@ blockquote {
     margin-top: 2px;
 }
 
-
 /**** More ****/
-
 
 .list-header.mini {
     display: inline;
 }
 
-.more, .more-header li {
+.more,
+.more-header li {
     float: left;
     width: @column;
     margin-right: @gutter;
@@ -512,23 +529,27 @@ blockquote {
     margin-bottom: @gutter;
 }
 
-.more.last, .more-header li.last {
+.more.last,
+.more-header li.last {
     margin-right: 0;
 }
 
 .more li {
-    padding: 0;
+    padding: 0px;
+    height: 30px;
 }
 
 .more a {
     .animate;
     display: block;
     text-decoration: none;
-    padding: @padding/2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
 }
 
 .more a:hover {
-    color: #fff;
+    color: rgb(133, 133, 133);
     background: @key-color;
 }
 
@@ -543,35 +564,35 @@ blockquote {
 /**** Testimonials ****/
 
 .testimonial {
-  padding-top: @padding;
-  float: left;
-  width: @column;
-  height: 250px;
-  margin-right: @gutter;
-  list-style: none;
-  position: relative;
-  background-color: #fff;
+    padding-top: @padding;
+    float: left;
+    width: @column;
+    height: 250px;
+    margin-right: @gutter;
+    list-style: none;
+    position: relative;
+    background-color: #fff;
 }
 
 .testimonial-inner {
-  padding: 15px 20px 20px 20px;
+    padding: 15px 20px 20px 20px;
 }
 
 .testimonial.last {
-  margin-right: 0;
-  margin-bottom: 40px;
+    margin-right: 0;
+    margin-bottom: 40px;
 }
 
 .testimonial-attribution {
-  text-align: right;
-  font-style: italic;
+    text-align: right;
+    font-style: italic;
 }
 
 .testimonial-more {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  padding-bottom: @padding;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: @padding;
 }
 
 /**** Chat ****/
@@ -629,8 +650,6 @@ blockquote {
     font-size: 0.9rem;
 }
 
-
-
 /*---------------------------------------------------
     Layout - Footer
 ---------------------------------------------------*/
@@ -653,7 +672,6 @@ blockquote {
     height: 65px;
 }
 
-
 /*---------------------------------------------------
     Search Form
 ---------------------------------------------------*/
@@ -663,7 +681,7 @@ blockquote {
     width: 716px;
     padding: 8px;
     font-size: 16px;
-    font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
 
@@ -699,11 +717,21 @@ blockquote {
     background-position: 0 @spacer-base;
     padding-left: 78px;
 }
-.icon-about {        background-position: 0 @spacer-base;}
-.icon-contribute {   background-position: 0 @spacer-base - @spacer;}
-.icon-mailing-list { background-position: 0 @spacer-base - @spacer*2;}
-.icon-download {     background-position: 0 @spacer-base - @spacer*3;}
-.icon-more {         background-position: 0 @spacer-base - @spacer*4;}
+.icon-about {
+    background-position: 0 @spacer-base;
+}
+.icon-contribute {
+    background-position: 0 @spacer-base - @spacer;
+}
+.icon-mailing-list {
+    background-position: 0 @spacer-base - @spacer*2;
+}
+.icon-download {
+    background-position: 0 @spacer-base - @spacer*3;
+}
+.icon-more {
+    background-position: 0 @spacer-base - @spacer*4;
+}
 
 a.scroll-point {
     display: block;
@@ -720,10 +748,11 @@ a.pt-top {
 
 a.pt-about {
     margin: -100px 0 130px;
-    border:none
+    border: none;
 }
 
-.corner, .more .corner {
+.corner,
+.more .corner {
     .sprite;
     background-position: 0 -808px;
     position: absolute;
@@ -745,15 +774,20 @@ a.pt-about {
 ---------------------------------------------------*/
 @mobile-pad: 24px;
 
-@media all and (max-width:1024px) {
-    #wrap, .wrap, #footer, hr {
+@media all and (max-width: 1024px) {
+    #wrap,
+    .wrap,
+    #footer,
+    hr {
         width: auto;
     }
-    .wrap, #footer {
+    .wrap,
+    #footer {
         margin-left: @mobile-pad;
         margin-right: @mobile-pad;
     }
-    .more, .more-header li {
+    .more,
+    .more-header li {
         width: 30%;
     }
     .platforms-list {
@@ -780,7 +814,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:950px) {
+@media all and (max-width: 950px) {
     h1 {
         font-size: 24px;
     }
@@ -793,9 +827,9 @@ a.pt-about {
         width: 240px;
         height: 270px;
     }
-    .leadin .text-block  {
+    .leadin .text-block {
         top: 32px;
-       left: 290px;
+        left: 290px;
     }
     .button {
         width: 250px;
@@ -815,7 +849,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:770px) {
+@media all and (max-width: 770px) {
     body {
         font-size: 14px;
     }
@@ -831,9 +865,9 @@ a.pt-about {
         width: 192px;
         height: 216px;
     }
-    .leadin .text-block  {
+    .leadin .text-block {
         top: 32px;
-       left: 232px;
+        left: 232px;
     }
     .button {
         font-size: 20px;
@@ -844,7 +878,8 @@ a.pt-about {
     .leadin .wrap {
         height: 280px;
     }
-    .platforms-list li.first a.link-apache, .platforms-list li.first a.link-github {
+    .platforms-list li.first a.link-apache,
+    .platforms-list li.first a.link-github {
         width: @link-box;
     }
     .platforms-list li.first a.link-apache {
@@ -864,7 +899,8 @@ a.pt-about {
     .menu-dropdown {
         top: @padding;
     }
-    #header, .header-placeholder {
+    #header,
+    .header-placeholder {
         height: 52px;
     }
     .logo {
@@ -880,18 +916,18 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:675px) {
+@media all and (max-width: 675px) {
     body {
-/*        font-size: 14px;*/
+        /*        font-size: 14px;*/
     }
     .leadin img {
         left: -4px;
         width: 160px;
         height: 180px;
     }
-    .leadin .text-block  {
-       left: 175px;
-       top: 11px;
+    .leadin .text-block {
+        left: 175px;
+        top: 11px;
     }
     .leadin .wrap {
         height: 240px;
@@ -910,7 +946,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:620px) {
+@media all and (max-width: 620px) {
     h1 {
         font-size: 16px;
     }
@@ -919,10 +955,11 @@ a.pt-about {
         width: 128px;
         height: 144px;
     }
-    .leadin .text-block  {
-       left: 130px;
+    .leadin .text-block {
+        left: 130px;
     }
-    .wrap, #footer {
+    .wrap,
+    #footer {
         margin-left: 12px;
         margin-right: 12px;
     }
@@ -934,15 +971,26 @@ a.pt-about {
         padding: 20px 48px 20px 48px;
         .ellipsis;
     }
-    @spacer-mini: @spacer/2;
-    @spacer-base-mini: @spacer-base/2;
-    .icon-about {        background-position: 0 @spacer-base-mini;}
-    .icon-contribute {   background-position: 0 @spacer-base-mini - @spacer-mini;}
-    .icon-mailing-list { background-position: 0 @spacer-base-mini - @spacer-mini*2;}
-    .icon-download {     background-position: 0 @spacer-base-mini - @spacer-mini*3;}
-    .icon-more {         background-position: 0 @spacer-base-mini - @spacer-mini*4;}
+    @spacer-mini: @spacer / 2;
+    @spacer-base-mini: @spacer-base / 2;
+    .icon-about {
+        background-position: 0 @spacer-base-mini;
+    }
+    .icon-contribute {
+        background-position: 0 @spacer-base-mini - @spacer-mini;
+    }
+    .icon-mailing-list {
+        background-position: 0 @spacer-base-mini - @spacer-mini*2;
+    }
+    .icon-download {
+        background-position: 0 @spacer-base-mini - @spacer-mini*3;
+    }
+    .icon-more {
+        background-position: 0 @spacer-base-mini - @spacer-mini*4;
+    }
 
-    .platforms-list, .platforms-list.second {
+    .platforms-list,
+    .platforms-list.second {
         width: auto;
         position: static;
         padding-bottom: 0;
@@ -957,7 +1005,8 @@ a.pt-about {
     .more-header {
         display: none;
     }
-    .more, .more-header li {
+    .more,
+    .more-header li {
         float: none;
         width: auto;
         margin-right: 0;
@@ -982,7 +1031,7 @@ a.pt-about {
     }
 }
 
-@media all and (max-width:446px) {
+@media all and (max-width: 446px) {
     .leadin .button-container {
         right: auto;
         left: 8px;
@@ -1008,7 +1057,6 @@ a.pt-about {
 
 .skill-card {
     background-color: #fff;
-    float: left;
     width: @column;
     margin-right: @gutter;
     margin-bottom: @gutter;
@@ -1063,7 +1111,8 @@ a.pt-about {
         line-height: 1.4em;
         margin-bottom: 20px;
     }
-    ul, li {
+    ul,
+    li {
         margin-right: 7px;
         font-size: 16px;
         line-height: 1.8em;
@@ -1077,7 +1126,6 @@ a.pt-about {
     li.last {
         margin-right: 0;
     }
-
 }
 
 .skill-card:last-child {

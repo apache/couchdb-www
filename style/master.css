@@ -22,7 +22,7 @@ a {
   transition: all 0.25s linear;
 }
 .secondary-bg {
-  background: #EEE 50% 0%;
+  background: #eee 50% 0%;
 }
 .sprite {
   background: url(../image/sprite.png) no-repeat;
@@ -45,7 +45,7 @@ h2,
 h3,
 h4 {
   font-size: 16px;
-  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 h1 {
@@ -57,18 +57,18 @@ h2 {
 }
 b,
 strong {
-  font-family: 'HelveticaNeue-Bold', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-weight: 900;
 }
 small,
 label {
-  font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
 button {
   font-size: 17px;
-  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .feature {
@@ -77,7 +77,7 @@ button {
 .platforms-list li,
 .list-header.mini,
 .more-header li {
-  font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Medium", "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
 .menu {
@@ -157,11 +157,11 @@ hr {
   position: relative;
 }
 .grid {
-  background: #EEE 50% 0%;
+  background: #eee 50% 0%;
   padding: 32px 0;
 }
 .grid-nomargin {
-  background: #EEE 50% 0%;
+  background: #eee 50% 0%;
 }
 hr {
   border: none;
@@ -234,7 +234,7 @@ blockquote {
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
   padding: 16px;
-  margin: 0 2.28571429px;
+  margin: 0 16px / 7;
   line-height: 55px;
 }
 .menu a:hover {
@@ -285,7 +285,7 @@ blockquote {
 ---------------------------------------------------*/
 .container-box {
   background: #fff;
-  padding: 8px;
+  padding: 16px / 2;
   position: relative;
 }
 .list-link {
@@ -299,14 +299,14 @@ blockquote {
 }
 .list li {
   background: #fff;
-  padding: 8px;
+  padding: 16px / 2;
   position: relative;
   list-style: none;
   margin-bottom: 16px;
 }
 .list-header {
   background: #fff;
-  padding: 8px;
+  padding: 16px / 2;
   position: relative;
   margin-top: 16px;
 }
@@ -319,7 +319,7 @@ blockquote {
 /**** Platforms ****/
 .platforms-list {
   padding-top: 32px;
-  width: 456px;
+  width: 1008px / 2 - 48px;
 }
 .platforms-list.second {
   position: absolute;
@@ -367,7 +367,7 @@ blockquote {
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
   backround: #fff;
-  padding: 8px;
+  padding: 16px / 2;
   width: 408px;
   font-size: 14px;
 }
@@ -403,7 +403,8 @@ blockquote {
   margin-bottom: 24px;
 }
 .download-list li {
-  height: 18px;
+  height: 30px;
+  padding: 4px;
 }
 .download-list .type {
   position: absolute;
@@ -420,7 +421,7 @@ blockquote {
   text-decoration: none;
   right: auto;
   left: 0;
-  padding: 8px;
+  padding: 16px / 2;
   padding-left: 32px;
   width: 40%;
 }
@@ -452,7 +453,8 @@ blockquote {
   margin-right: 0;
 }
 .more li {
-  padding: 0;
+  padding: 0px;
+  height: 30px;
 }
 .more a {
   -webkit-transition: all 0.25s linear;
@@ -460,10 +462,12 @@ blockquote {
   transition: all 0.25s linear;
   display: block;
   text-decoration: none;
-  padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 6px;
 }
 .more a:hover {
-  color: #fff;
+  color: #858585;
   background: #e12830;
 }
 .more a span {
@@ -575,7 +579,7 @@ blockquote {
   width: 716px;
   padding: 8px;
   font-size: 16px;
-  font-family: 'HelveticaNeue-Light', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 #search-box,
@@ -846,19 +850,19 @@ a.pt-about {
     white-space: nowrap;
   }
   .icon-about {
-    background-position: 0 -110px;
+    background-position: 0 -220px / 2;
   }
   .icon-contribute {
-    background-position: 0 -158px;
+    background-position: 0 -220px / 2 - 96px / 2;
   }
   .icon-mailing-list {
-    background-position: 0 -206px;
+    background-position: 0 -220px / 2 - 96px / 2*2;
   }
   .icon-download {
-    background-position: 0 -254px;
+    background-position: 0 -220px / 2 - 96px / 2*3;
   }
   .icon-more {
-    background-position: 0 -302px;
+    background-position: 0 -220px / 2 - 96px / 2*4;
   }
   .platforms-list,
   .platforms-list.second {
@@ -926,7 +930,6 @@ a.pt-about {
 }
 .skill-card {
   background-color: #fff;
-  float: left;
   width: 320px;
   margin-right: 24px;
   margin-bottom: 24px;
