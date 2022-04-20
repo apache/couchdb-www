@@ -213,16 +213,16 @@ blockquote {
   height: 65px;
 }
 .conf {
-  background: url(https://www.apache.org/events/current-event-234x60.png);
+  background: url(https://apachecon.com/acna2022/images/banner.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 0 0px;
   position: absolute;
   left: auto;
-  right: 85px;
+  right: 150px;
   top: 13px;
-  width: 234px;
-  height: 60px;
+  width: 100px;
+  height: 65px;
 }
 .menu {
   padding: 16px 0;
@@ -366,7 +366,7 @@ blockquote {
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
-  backround: #fff;
+  background: #fff;
   padding: 8px;
   width: 408px;
   font-size: 14px;
