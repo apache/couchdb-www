@@ -366,7 +366,7 @@ blockquote {
   -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   transition: all 0.25s linear;
-  backround: #fff;
+  background: #fff;
   padding: 8px;
   width: 408px;
   font-size: 14px;
