@@ -1,2 +1,11 @@
 publish:
- whoami: asf-site
+  description: "The official Apache CouchDB website"
+  homepage: https://couchdb.apache.org
+  labels:
+    - apache
+    - couchdb
+    - web
+    - www
+  whoami: asf-site
+  protected_branches:
+    asf-site
