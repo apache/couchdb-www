@@ -476,6 +476,13 @@ blockquote {
   background-position: -156px -95px;
   background-color: #e12830;
 }
+
+.download-list li img {
+  vertical-align: middle;
+  height: 24px;
+  padding-right: 1ex;
+}
+
 /**** Testimonials ****/
 .testimonial {
   padding-top: 16px;
